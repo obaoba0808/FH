@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歐巴傳播 | 台北頂級傳播公司 | 傳播妹、KTV歡唱、派對首選</title>
+    <meta name="description" content="台北最頂級傳播公司，提供優質傳播妹、傳播小姐。無論是一個人叫傳播、汽車旅館叫傳播或KTV歡唱派對，提供最透明叫傳播多少錢資訊，立即撥打叫傳播電話預約。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CDNs -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0D0616',
+                        bgStart: '#0F0A1A',
+                        bgEnd: '#2A0E3F',
+                        electricPurple: '#7B2CFF',
+                        neonPink: '#FF2DAF',
+                        violetBlue: '#6A5CFF',
+                        textWhite: '#F5F3FF',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        display: ['"Syncopate"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base Styles & Noise Texture */
+        body {
+            background-color: #0D0616;
+            color: #F5F3FF;
+            overflow-x: hidden;
+        }
+        
+        .noise-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Glassmorphism & Bento Box Core */
+        .glass-panel {
+            background: rgba(123, 44, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 45, 175, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(123, 44, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .glass-panel::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.05), transparent);
+            transform: skewX(-25deg);
+            transition: 0.5s;
+            z-index: 1;
+        }
+
+        .glass-panel:hover::before {
+            left: 150%;
+        }
+
+        .glass-panel:hover {
+            border-color: rgba(255, 45, 175, 0.5);
+            box-shadow: 0 10px 40px rgba(123, 44, 255, 0.3), 0 0 20px rgba(255, 45, 175, 0.2);
+            transform: translateY(-5px);
+        }
+
+        /* Neon Glow Text */
+        .text-glow {
+            text-shadow: 0 0 10px rgba(123, 44, 255, 0.8), 0 0 20px rgba(255, 45, 175, 0.5);
+        }
+        .text-glow-pink {
+            text-shadow: 0 0 10px rgba(255, 45, 175, 0.8), 0 0 20px rgba(255, 45, 175, 0.5);
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(135deg, #7B2CFF, #FF2DAF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Animated Button */
+        .btn-neon {
+            background: linear-gradient(45deg, #7B2CFF, #FF2DAF);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .btn-neon::after {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            background: linear-gradient(45deg, #FF2DAF, #7B2CFF, #6A5CFF, #FF2DAF);
+            z-index: -1;
+            filter: blur(10px);
+            background-size: 400%;
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .btn-neon:hover::after {
+            opacity: 1;
+        }
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0D0616; }
+        ::-webkit-scrollbar-thumb { background: #7B2CFF; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #FF2DAF; }
+
+        /* Cinematic Lens Flare */
+        .lens-flare {
+            position: absolute;
+            top: -10%; right: -10%;
+            width: 60vw; height: 60vw;
+            background: radial-gradient(circle, rgba(123,44,255,0.15) 0%, rgba(255,45,175,0.05) 40%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Background Animation Canvas */
+        #bg-canvas {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+            background: linear-gradient(135deg, #0F0A1A 0%, #2A0E3F 100%);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-neonPink selection:text-white relative">
+
+    <!-- Global Noise Texture & Background -->
+    <div class="noise-overlay"></div>
+    <div id="bg-canvas"></div>
+    <div class="lens-flare"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-40 top-0 transition-all duration-300 glass-panel border-x-0 border-t-0 border-b border-white/10" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl drop-shadow-[0_0_8px_rgba(255,45,175,0.8)]"></iconify-icon>
+                <span class="font-display text-2xl tracking-widest text-textWhite font-bold">歐巴傳播</span>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                <a href="#services" class="hover:text-neonPink transition-colors">極致服務</a>
+                <a href="#about" class="hover:text-neonPink transition-colors">工作內容</a>
+                <a href="#pricing" class="hover:text-neonPink transition-colors">透明收費</a>
+                <a href="#faq" class="hover:text-neonPink transition-colors">常見問題</a>
+            </div>
+            <a href="#contact" class="btn-neon px-6 py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105">
+                立即預約
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-4 overflow-hidden">
+        <!-- Hero Background Image with Gradient Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=2079&auto=format&fit=crop" alt="Nightlife Club" class="w-full h-full object-cover opacity-40 mix-blend-luminosity">
+            <div class="absolute inset-0 bg-gradient-to-b from-midnight/80 via-bgEnd/70 to-midnight"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto text-center hero-content">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-6 border-electricPurple/30">
+                <span class="w-2 h-2 rounded-full bg-neonPink animate-pulse"></span>
+                <span class="text-xs text-violetBlue tracking-widest font-bold uppercase">Taipei Premium Entertainment</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight">
+                點燃夜的誘惑 <br>
+                <span class="text-gradient">頂級VIP專屬體驗</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                台北首選<strong class="text-textWhite font-bold">傳播公司</strong>。無論是KTV歡唱、狂歡派對，為您精準安排顏值與氣質兼具的<strong class="text-textWhite font-bold">傳播妹</strong>，打造令人上癮的專屬夜晚。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <!-- 更新電話連結 -->
+                <a href="tel:+886926656666" class="btn-neon px-10 py-4 rounded-full font-bold text-lg flex items-center gap-2 group">
+                    <iconify-icon icon="ph:phone-call-fill" class="group-hover:animate-bounce"></iconify-icon>
+                    叫傳播 0926-656666
+                </a>
+                <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="px-10 py-4 rounded-full font-bold text-lg glass-panel hover:bg-white/5 transition-colors flex items-center gap-2 text-[#06C755] border-[#06C755]/30">
+                    <iconify-icon icon="bi:line" class="text-2xl"></iconify-icon>
+                    加 LINE 預約
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Services Section -->
+    <section id="services" class="py-24 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 gsap-fade-up">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">重新定義夜生活</h2>
+                <p class="text-violetBlue">精準匹配・絕對隱私・極致享受</p>
+            </div>
+
+            <!-- Bento Box Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 auto-rows-[300px]">
+                
+                <!-- Box 1: Large Feature (Spans 2 cols, 2 rows) -->
+                <div class="glass-panel rounded-3xl md:col-span-2 md:row-span-2 relative group overflow-hidden gsap-fade-up">
+                    <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=2070&auto=format&fit=crop" alt="KTV歡唱" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent"></div>
+                    <div class="relative h-full flex flex-col justify-end p-8 z-10">
+                        <iconify-icon icon="ph:microphone-stage-duotone" class="text-5xl text-electricPurple mb-4 drop-shadow-[0_0_10px_rgba(123,44,255,1)]"></iconify-icon>
+                        <h3 class="text-3xl font-bold mb-2">KTV歡唱派對</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            最專業的<strong class="text-textWhite font-bold">傳播公司</strong>為您調度。嚴選優質<strong class="text-textWhite font-bold">傳播小姐</strong>，不僅顏值出眾，更具備極佳的帶動氣氛能力。唱歌、玩遊戲、敬酒，讓聚會絕不冷場。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Box 2: Solo Experience -->
+                <div class="glass-panel rounded-3xl md:col-span-2 flex flex-col justify-center p-8 relative group gsap-fade-up" style="transition-delay: 0.1s;">
+                    <div class="absolute right-0 top-0 w-32 h-32 bg-neonPink/20 rounded-full blur-3xl group-hover:bg-neonPink/40 transition-colors"></div>
+                    <h3 class="text-2xl font-bold mb-2 flex items-center gap-2">
+                        <iconify-icon icon="ph:user-focus-duotone" class="text-neonPink"></iconify-icon>
+                        一個人叫傳播可以嗎？
+                    </h3>
+                    <p class="text-gray-300 text-sm">
+                        絕對沒問題！我們提供專屬的<strong class="text-textWhite">一個人叫傳播</strong>陪伴服務。無論是深夜想找人傾訴、喝杯小酒，或是尋求專屬的私人時光，我們為您提供最具隱私的高品質陪伴。
+                    </p>
+                </div>
+
+                <!-- Box 3: Motel Delivery -->
+                <div class="glass-panel rounded-3xl md:col-span-1 p-8 flex flex-col justify-between gsap-fade-up hover:border-violetBlue transition-colors" style="transition-delay: 0.2s;">
+                    <iconify-icon icon="ph:bed-duotone" class="text-4xl text-violetBlue"></iconify-icon>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">私密空間派對</h3>
+                        <p class="text-xs text-gray-400"><strong class="text-gray-300">汽車旅館叫傳播</strong>首選，保證絕對隱密與安全，讓您徹底放鬆。</p>
+                    </div>
+                </div>
+
+                <!-- Box 4: Quality -->
+                <div class="glass-panel rounded-3xl md:col-span-1 p-8 relative overflow-hidden gsap-fade-up" style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?q=80&w=1974&auto=format&fit=crop" alt="Premium Quality" class="absolute inset-0 w-full h-full object-cover opacity-20">
+                    <div class="relative z-10 h-full flex flex-col justify-end">
+                        <h3 class="text-xl font-bold mb-1 text-glow">台北傳播頂尖陣容</h3>
+                        <p class="text-xs text-gray-300">每日百位佳麗在線，風格百變任君挑選。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Information & Pricing Section -->
+    <section id="pricing" class="py-24 relative z-10 border-t border-white/5 bg-black/20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-1/2 gsap-fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">了解行情，拒絕當冤大頭</h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        很多人詢問<strong class="text-textWhite font-bold text-glow-pink">叫傳播多少錢</strong>？歐巴傳播堅持透明定價，無隱藏費用。依據小姐等級（公關、保三、VIP）與服務時數，提供業界最公道的價格。
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="ph:check-circle-fill" class="text-electricPurple text-xl"></iconify-icon>
+                            <span>透明報價，絕不事後加價</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="ph:check-circle-fill" class="text-electricPurple text-xl"></iconify-icon>
+                            <span>支援多種支付方式</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="ph:check-circle-fill" class="text-electricPurple text-xl"></iconify-icon>
+                            <span>不滿意打槍制度，保障權益</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="w-full md:w-1/2 relative gsap-fade-left">
+                    <div class="absolute inset-0 bg-electricPurple/20 blur-[100px] rounded-full"></div>
+                    <div class="glass-panel p-8 rounded-3xl relative z-10 border-t-2 border-t-electricPurple">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold">立即獲取今日班表與報價</h3>
+                            <p class="text-sm text-gray-400 mt-2">加入官方 LINE，專人 1 對 1 諮詢</p>
+                        </div>
+                        <div class="space-y-4">
+                            <!-- 更新 LINE 連結 -->
+                            <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-[#06C755] hover:bg-[#05a546] text-white font-bold flex items-center justify-center gap-2 transition-colors shadow-[0_4px_15px_rgba(6,199,85,0.3)]">
+                                <iconify-icon icon="bi:line" class="text-2xl"></iconify-icon>
+                                點擊加入 LINE 官方帳號
+                            </a>
+                            <!-- 更新電話連結 -->
+                            <a href="tel:+886926656666" class="w-full py-4 rounded-xl border border-white/20 hover:bg-white/10 text-white font-bold flex items-center justify-center gap-2 transition-colors">
+                                <iconify-icon icon="ph:phone-fill" class="text-2xl text-neonPink"></iconify-icon>
+                                直撥專線 0926-656666
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive FAQ / SEO Section -->
+    <section id="faq" class="py-24 px-6 relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">內行人的夜生活指南</h2>
+            
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="glass-panel p-6 rounded-2xl gsap-fade-up">
+                    <h3 class="text-xl font-bold text-violetBlue mb-3 flex items-center gap-2">
+                        <iconify-icon icon="ph:sparkle-fill"></iconify-icon>
+                        傳播小姐工作內容是什麼？
+                    </h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        <strong class="text-white">傳播小姐工作內容</strong>主要為提供高質感的桌面服務與陪伴。包括：KTV陪唱、倒酒遞毛巾、划拳玩遊戲帶動氣氛、聊天傾聽。我們要求旗下女孩具備專業素養，確保客戶享受尊榮待遇。
+                    </p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="glass-panel p-6 rounded-2xl gsap-fade-up" style="transition-delay: 0.1s;">
+                    <h3 class="text-xl font-bold text-neonPink mb-3 flex items-center gap-2">
+                        <iconify-icon icon="ph:hand-palm-fill"></iconify-icon>
+                        傳播可以摸嗎？
+                    </h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        這是許多客人的疑問：「<strong class="text-white">傳播可以摸嗎？</strong>」我們主打高端休閒陪伴，女孩們提供專業的陪唱與互動服務。基本的手臂勾挽、禮貌性互動是有的，但本公司嚴禁強迫女孩進行違反意願的肢體接觸。互相尊重，才能擁有最完美的夜晚體驗。若有特殊尺度的需求，請直接透過客服詢問特殊方案。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Footer -->
+    <footer id="contact" class="relative pt-24 pb-12 overflow-hidden border-t border-white/10 mt-12 z-10">
+        <div class="absolute inset-0 bg-gradient-to-t from-bgEnd to-midnight opacity-50 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-6 text-glow">今晚，不想一個人？</h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                台北最強<strong class="text-white">傳播妹</strong>陣容已準備就緒。一通<strong class="text-white">叫傳播電話</strong>，30分鐘內為您送達快樂。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
+                <!-- 更新電話連結 -->
+                <a href="tel:+886926656666" class="btn-neon px-8 py-4 rounded-full font-bold text-xl flex items-center gap-3 w-full sm:w-auto justify-center">
+                    <iconify-icon icon="ph:phone-call-fill"></iconify-icon>
+                    0926-656666
+                </a>
+                <!-- 更新 LINE 連結 -->
+                <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-xl flex items-center gap-3 transition-colors shadow-[0_0_20px_rgba(6,199,85,0.4)] w-full sm:w-auto justify-center">
+                    <iconify-icon icon="bi:line"></iconify-icon>
+                    LINE 快速預約
+                </a>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-sm text-gray-500">
+                <div class="flex items-center gap-2 mb-4 md:mb-0">
+                    <iconify-icon icon="mdi:crown" class="text-xl text-neonPink"></iconify-icon>
+                    <span class="font-display font-bold text-gray-300">歐巴傳播 OPPA ENT.</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span>台北傳播公司首選</span>
+                    <span>|</span>
+                    <span>傳播妹</span>
+                    <span>|</span>
+                    <span>KTV派對</span>
+                </div>
+                <p class="mt-4 md:mt-0">© 2024 歐巴傳播. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for Animations -->
+    <script>
+        // 1. Anime.js Background Particles (Floating Orbs)
+        const canvas = document.getElementById('bg-canvas');
+        const numParticles = 30;
+        
+        for (let i = 0; i < numParticles; i++) {
+            let el = document.createElement('div');
+            el.classList.add('absolute', 'rounded-full', 'mix-blend-screen');
+            
+            // Randomize size and colors (purples and pinks)
+            let size = Math.random() * 8 + 2;
+            el.style.width = `${size}px`;
+            el.style.height = `${size}px`;
+            
+            const colors = ['#7B2CFF', '#FF2DAF', '#6A5CFF'];
+            el.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            el.style.boxShadow = `0 0 ${size*2}px ${el.style.backgroundColor}`;
+            
+            // Randomize start position
+            el.style.left = `${Math.random() * 100}vw`;
+            el.style.top = `${Math.random() * 100}vh`;
+            el.style.opacity = Math.random() * 0.5 + 0.1;
+            
+            canvas.appendChild(el);
+
+            // Animate using anime.js
+            anime({
+                targets: el,
+                translateX: () => anime.random(-100, 100),
+                translateY: () => anime.random(-100, 100),
+                scale: () => anime.random(0.5, 2),
+                opacity: () => [anime.random(0.1, 0.5), anime.random(0.1, 0.6)],
+                easing: 'easeInOutSine',
+                duration: () => anime.random(5000, 10000),
+                direction: 'alternate',
+                loop: true
+            });
+        }
+
+        // 2. GSAP Scroll Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Animation
+        gsap.from(".hero-content > *", {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.15,
+            ease: "power3.out",
+            delay: 0.2
+        });
+
+        // Fade Up Elements
+        gsap.utils.toArray('.gsap-fade-up').forEach(element => {
+            gsap.from(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+        });
+
+        // Directional Fades
+        gsap.from(".gsap-fade-right", {
+            scrollTrigger: { trigger: ".gsap-fade-right", start: "top 80%" },
+            x: -50, opacity: 0, duration: 0.8, ease: "power2.out"
+        });
+
+        gsap.from(".gsap-fade-left", {
+            scrollTrigger: { trigger: ".gsap-fade-left", start: "top 80%" },
+            x: 50, opacity: 0, duration: 0.8, ease: "power2.out"
+        });
+
+        // 3. Navbar Glass Effect on Scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-midnight/60', 'shadow-lg');
+                navbar.classList.remove('border-white/10');
+            } else {
+                navbar.classList.remove('bg-midnight/60', 'shadow-lg');
+                navbar.classList.add('border-white/10');
+            }
+        });
+
+        // 4. Vanilla JS Tilt Effect for Bento Cards
+        const cards = document.querySelectorAll('.glass-panel');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = ((y - centerY) / centerY) * -5; // max rotation degrees
+                const rotateY = ((x - centerX) / centerX) * 5;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+            });
+        });
+    </script>
+</body>
+</html>
