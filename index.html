@@ -229,20 +229,39 @@
     <div class="lens-flare"></div>
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-40 top-0 transition-all duration-300 glass-panel border-x-0 border-t-0 border-b border-white/10" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 glass-panel border-x-0 border-t-0 border-b border-white/10" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center relative z-20">
+            <!-- Logo -->
             <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
                 <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl drop-shadow-[0_0_8px_rgba(255,45,175,0.8)]"></iconify-icon>
-                <span class="font-display text-2xl tracking-widest text-textWhite font-bold">歐巴傳播</span>
+                <span class="font-display text-xl md:text-2xl tracking-widest text-textWhite font-bold">歐巴傳播</span>
             </div>
+            
+            <!-- Desktop Menu (隱藏於手機版) -->
             <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
-                <a href="/FH/news.html" class="hover:text-neonPink transition-colors">情報特搜站</a>
+                <a href="/news.html" class="hover:text-neonPink transition-colors">情報特搜站</a>
                 <a href="#pricing" class="hover:text-neonPink transition-colors">透明收費</a>
                 <a href="#faq" class="hover:text-neonPink transition-colors">常見問題</a>
             </div>
-            <a href="tel:+886926656666" class="btn-neon px-6 py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105">
-                預約 0926-656666
-            </a>
+
+            <!-- CTA 按鈕與手機版漢堡選單按鈕 -->
+            <div class="flex items-center gap-3 md:gap-4">
+                <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-xs md:text-sm tracking-wide transition-transform hover:scale-105">
+                    預約 <span class="hidden sm:inline">0926-656666</span>
+                </a>
+                
+                <!-- 手機版漢堡選單按鈕 (只在手機版顯示) -->
+                <button id="mobile-menu-btn" class="md:hidden text-2xl text-white focus:outline-none flex items-center hover:text-neonPink transition-colors">
+                    <iconify-icon icon="ph:list-bold"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown (手機版下拉選單) -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-midnight/95 backdrop-blur-xl border-b border-white/10 flex-col items-center py-8 space-y-6 z-10 shadow-2xl">
+            <a href="/news.html" class="text-lg font-medium text-white hover:text-neonPink transition-colors mobile-link">情報特搜站</a>
+            <a href="#pricing" class="text-lg font-medium text-white hover:text-neonPink transition-colors mobile-link">透明收費</a>
+            <a href="#faq" class="text-lg font-medium text-white hover:text-neonPink transition-colors mobile-link">常見問題</a>
         </div>
     </nav>
 
@@ -553,6 +572,35 @@
 
             card.addEventListener('mouseleave', () => {
                 card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+            });
+        });
+        // 5. Mobile Menu Toggle (手機版選單開關邏輯)
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const menuIcon = mobileBtn.querySelector('iconify-icon');
+
+        // 點擊漢堡按鈕開關選單
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            
+            // 切換 Icon (從漢堡變成 X)
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('icon', 'ph:list-bold');
+            } else {
+                menuIcon.setAttribute('icon', 'ph:x-bold');
+                // 加上一點出現的動畫
+                gsap.fromTo(mobileMenu, {opacity: 0, y: -20}, {opacity: 1, y: 0, duration: 0.3});
+            }
+        });
+
+        // 當點擊手機選單內的任何連結時，自動關閉選單
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                menuIcon.setAttribute('icon', 'ph:list-bold');
             });
         });
     </script>
