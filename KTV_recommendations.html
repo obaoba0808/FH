@@ -54,20 +54,71 @@
 </head>
 <body class="antialiased selection:bg-neonPink selection:text-white relative">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-40 top-0 transition-all duration-300 glass-panel border-x-0 border-t-0 border-b border-white/10 bg-midnight/80">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2">
-                <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl"></iconify-icon>
-                <span class="font-display text-2xl tracking-widest font-bold">歐巴傳播</span>
+    <!-- Navbar 導覽列 (支援手機版佈局 + 下拉選單) -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-midnight/60 backdrop-blur-xl border-b border-white/10" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex flex-wrap justify-between items-center">
+            
+            <!-- Logo區塊 -->
+            <a href="/FH/index.html" class="flex items-center gap-2 cursor-pointer group order-1">
+                <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl drop-shadow-[0_0_8px_rgba(255,45,175,0.8)] group-hover:rotate-12 transition-transform"></iconify-icon>
+                <span class="font-display text-xl md:text-2xl tracking-widest text-textWhite font-bold">歐巴傳播</span>
             </a>
-            <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
-                <a href="news.html" class="text-neonPink transition-colors font-bold">回情報特搜</a>
+            
+            <!-- 預約按鈕 -->
+            <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105 order-2 md:order-3">
+                預約 <span class="hidden sm:inline">0926-656666</span>
+            </a>
+
+            <!-- 選單連結區塊 (手機版自動換行置中) -->
+            <div class="w-full md:w-auto flex justify-center space-x-6 md:space-x-8 items-center text-sm font-medium order-3 md:order-2 mt-3 md:mt-0 pt-3 md:pt-0 border-t border-white/10 md:border-none relative">
+                
+                <a href="/FH/index.html" class="hover:text-neonPink transition-colors">回首頁</a>
+                
+                <!-- 情報特搜 下拉選單結構 -->
+                <div class="relative group">
+                    <button class="hover:text-neonPink transition-colors flex items-center gap-1 focus:outline-none text-left">
+                        情報特搜 <iconify-icon icon="ph:caret-down-bold"></iconify-icon>
+                    </button>
+                    
+                    <!-- Dropdown Content (已優化寬度，確保手機螢幕能完美容納) -->
+                    <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full mt-2 w-[85vw] md:w-[450px] bg-midnight/95 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 max-h-[60vh] overflow-y-auto dropdown-scroll text-left">
+                        <div class="p-2 flex flex-col">
+                            <a href="https://obaoba0808.github.io/FH/how_much.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 叫傳播多少錢？2024台北傳播妹收費行情大公開
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/KTV_recommendations.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 台北夜生活特搜：最適合叫傳播的KTV推薦
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/shoot_switch_personnel.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 遇到照騙怎麼辦？了解「打槍換人」制度
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/one_by_one.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 一個人叫傳播會不會很尷尬？單身客專屬玩法解密
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/special_industries.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 八大行業大解密：酒店與傳播到底差在哪？
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/suitable_female.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 公關、保三、VIP等級怎麼分？教你挑選最適合的女伴
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/motel_safe.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 汽車旅館叫傳播安全嗎？私密空間派對注意事項
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/KTV_party.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> KTV派對怎麼玩最嗨？傳播妹帶動氣氛的隱藏招式
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/interaction_%20scale.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 傳播小姐可以摸嗎？行內人教你拿捏互動尺度
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/first_time_called.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 第一次叫傳播？新手必看的5大避坑指南
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="tel:+886926656666" class="btn-neon px-6 py-2.5 rounded-full font-bold text-sm tracking-wide">預約 0926-656666</a>
         </div>
     </nav>
-
     <!-- ========================================== -->
     <!-- 以下區塊為每篇文章需要替換的內容 (HERO + CONTENT) -->
     <!-- ========================================== -->
