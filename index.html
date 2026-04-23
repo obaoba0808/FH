@@ -11,7 +11,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
+      "@graph":[
         {
           "@type": "EntertainmentBusiness",
           "@id": "https://obaoba0808.github.io/FH/#organization",
@@ -34,7 +34,7 @@
         {
           "@type": "FAQPage",
           "@id": "https://obaoba0808.github.io/FH/#faq",
-          "mainEntity": [
+          "mainEntity":[
             {
               "@type": "Question",
               "name": "叫傳播多少錢？",
@@ -92,7 +92,7 @@
                         textWhite: '#F5F3FF',
                     },
                     fontFamily: {
-                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        sans:['"Noto Sans TC"', 'sans-serif'],
                         display: ['"Syncopate"', 'sans-serif'],
                     },
                     backgroundImage: {
@@ -196,10 +196,13 @@
         }
 
         /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0D0616; }
-        ::-webkit-scrollbar-thumb { background: #7B2CFF; border-radius: 4px; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #7B2CFF; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #FF2DAF; }
+
+        /* Dropdown Scrollbar (Thinner) */
+        .dropdown-scroll::-webkit-scrollbar { width: 4px; }
 
         /* Cinematic Lens Flare */
         .lens-flare {
@@ -228,28 +231,70 @@
     <div id="bg-canvas"></div>
     <div class="lens-flare"></div>
 
-    <!-- Navbar 導覽列 (已修正手機版適配) -->
-    <nav class="fixed w-full z-40 top-0 transition-all duration-300 glass-panel border-x-0 border-t-0 border-b border-white/10" id="navbar">
+    <!-- Navbar 導覽列 (支援手機版佈局 + 下拉選單，已移除 glass-panel 避免截斷) -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-midnight/60 backdrop-blur-xl border-b border-white/10" id="navbar">
         <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex flex-wrap justify-between items-center">
             
-            <!-- Logo區塊 (手機版顯示於左上角) -->
-            <div class="flex items-center gap-2 cursor-pointer order-1" onclick="window.scrollTo(0,0)">
-                <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl drop-shadow-[0_0_8px_rgba(255,45,175,0.8)]"></iconify-icon>
+            <!-- Logo區塊 -->
+            <a href="/FH/index.html" class="flex items-center gap-2 cursor-pointer group order-1">
+                <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl drop-shadow-[0_0_8px_rgba(255,45,175,0.8)] group-hover:rotate-12 transition-transform"></iconify-icon>
                 <span class="font-display text-xl md:text-2xl tracking-widest text-textWhite font-bold">歐巴傳播</span>
-            </div>
+            </a>
             
-            <!-- 預約按鈕 (手機版顯示於右上角) -->
+            <!-- 預約按鈕 -->
             <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105 order-2 md:order-3">
                 預約 <span class="hidden sm:inline">0926-656666</span>
             </a>
 
-            <!-- 選單連結區塊 (手機版會自動掉到第二行並置中顯示) -->
-            <div class="w-full md:w-auto flex justify-center space-x-6 md:space-x-8 items-center text-sm font-medium order-3 md:order-2 mt-3 md:mt-0 pt-3 md:pt-0 border-t border-white/10 md:border-none">
-                <a href="/FH/news.html" class="hover:text-neonPink transition-colors">情報特搜站</a>
+            <!-- 選單連結區塊 -->
+            <div class="w-full md:w-auto flex justify-center space-x-6 md:space-x-8 items-center text-sm font-medium order-3 md:order-2 mt-3 md:mt-0 pt-3 md:pt-0 border-t border-white/10 md:border-none relative">
+                
+                <!-- 情報特搜 下拉選單結構 -->
+                <div class="relative group">
+                    <button class="hover:text-neonPink transition-colors flex items-center gap-1 focus:outline-none text-left">
+                        情報特搜站 <iconify-icon icon="ph:caret-down-bold"></iconify-icon>
+                    </button>
+                    
+                    <!-- Dropdown Content (已優化寬度，確保手機螢幕能完美容納) -->
+                    <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full mt-2 w-[85vw] md:w-[450px] bg-midnight/95 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 max-h-[60vh] overflow-y-auto dropdown-scroll text-left">
+                        <div class="p-2 flex flex-col">
+                            <a href="https://obaoba0808.github.io/FH/how_much.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 叫傳播多少錢？2024台北傳播妹收費行情大公開
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/KTV_recommendations.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 台北夜生活特搜：最適合叫傳播的KTV推薦
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/shoot_switch_personnel.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 遇到照騙怎麼辦？了解「打槍換人」制度
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/one_by_one.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 一個人叫傳播會不會很尷尬？單身客專屬玩法解密
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/special_industries.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 八大行業大解密：酒店與傳播到底差在哪？
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/suitable_female.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 公關、保三、VIP等級怎麼分？教你挑選最適合的女伴
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/motel_safe.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 汽車旅館叫傳播安全嗎？私密空間派對注意事項
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/KTV_party.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> KTV派對怎麼玩最嗨？傳播妹帶動氣氛的隱藏招式
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/interaction_%20scale.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 傳播小姐可以摸嗎？行內人教你拿捏互動尺度
+                            </a>
+                            <a href="https://obaoba0808.github.io/FH/first_time_called.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors leading-relaxed flex items-start gap-2">
+                                <span class="text-neonPink mt-0.5">✦</span> 第一次叫傳播？新手必看的5大避坑指南
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
                 <a href="#pricing" class="hover:text-neonPink transition-colors">透明收費</a>
                 <a href="#faq" class="hover:text-neonPink transition-colors">常見問題</a>
             </div>
-            
         </div>
     </nav>
 
@@ -270,7 +315,7 @@
                 <span class="text-gradient">頂級VIP專屬體驗</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-                大台北地區首選<strong class="text-textWhite font-bold">傳播公司</strong>。無論是KTV歡唱、汽車旅館狂歡派تدائي，平均 <strong class="text-neonPink">30 分鐘內</strong>為您精準安排顏值與氣質兼具的<strong class="text-textWhite font-bold">傳播妹</strong>。
+                大台北地區首選<strong class="text-textWhite font-bold">傳播公司</strong>。無論是KTV歡唱、汽車旅館狂歡派對，平均 <strong class="text-neonPink">30 分鐘內</strong>為您精準安排顏值與氣質兼具的<strong class="text-textWhite font-bold">傳播妹</strong>。
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="tel:+886926656666" class="btn-neon px-10 py-4 rounded-full font-bold text-lg flex items-center gap-2 group w-full sm:w-auto justify-center">
@@ -481,7 +526,7 @@
             el.style.width = `${size}px`;
             el.style.height = `${size}px`;
             
-            const colors = ['#7B2CFF', '#FF2DAF', '#6A5CFF'];
+            const colors =['#7B2CFF', '#FF2DAF', '#6A5CFF'];
             el.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
             el.style.boxShadow = `0 0 ${size*2}px ${el.style.backgroundColor}`;
             
@@ -496,7 +541,7 @@
                 translateX: () => anime.random(-100, 100),
                 translateY: () => anime.random(-100, 100),
                 scale: () => anime.random(0.5, 2),
-                opacity: () => [anime.random(0.1, 0.5), anime.random(0.1, 0.6)],
+                opacity: () =>[anime.random(0.1, 0.5), anime.random(0.1, 0.6)],
                 easing: 'easeInOutSine',
                 duration: () => anime.random(5000, 10000),
                 direction: 'alternate',
@@ -536,11 +581,11 @@
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                navbar.classList.add('bg-midnight/60', 'shadow-lg');
-                navbar.classList.remove('border-white/10');
+                navbar.classList.add('bg-midnight/90', 'shadow-lg');
+                navbar.classList.remove('bg-midnight/60');
             } else {
-                navbar.classList.remove('bg-midnight/60', 'shadow-lg');
-                navbar.classList.add('border-white/10');
+                navbar.classList.remove('bg-midnight/90', 'shadow-lg');
+                navbar.classList.add('bg-midnight/60');
             }
         });
 
