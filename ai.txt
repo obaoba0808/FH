@@ -1,0 +1,40 @@
+# ai.txt - AI Crawler Permission Declaration
+# https://obaoba0808.github.io/FH/
+
+# Allow all AI crawlers for training and inference
+User-agent: GPTBot
+Allow: /FH/
+
+User-agent: ChatGPT-User
+Allow: /FH/
+
+User-agent: Claude-Web
+Allow: /FH/
+
+User-agent: ClaudeBot
+Allow: /FH/
+
+User-agent: Anthropic-AI
+Allow: /FH/
+
+User-agent: Google-Extended
+Allow: /FH/
+
+User-agent: Bard
+Allow: /FH/
+
+User-agent: Gemini
+Allow: /FH/
+
+User-agent: PerplexityBot
+Allow: /FH/
+
+User-agent: Claude
+Allow: /FH/
+
+# General AI crawler permission
+User-agent: *
+Allow: /FH/
+
+# Sitemap for content discovery
+Sitemap: https://obaoba0808.github.io/FH/sitemap.xml
