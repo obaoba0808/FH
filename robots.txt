@@ -7,5 +7,8 @@ Allow: /FH/
 # Sitemap location
 Sitemap: https://obaoba0808.github.io/FH/sitemap.xml
 
-# Crawl-delay (optional, for polite crawling)
+# Crawl-delay (polite crawling)
 Crawl-delay: 1
+
+# Block Google Search Console verification page (not content)
+Disallow: /google1798bed44632c997.html
