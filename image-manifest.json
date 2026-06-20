@@ -1,0 +1,78 @@
+[
+  {
+    "page": "index.html",
+    "heroImage": "images/hero-index.webp"
+  },
+  {
+    "page": "KTV_party.html",
+    "heroImage": "images/hero-ktv-party.webp"
+  },
+  {
+    "page": "KTV_recommendations.html",
+    "heroImage": "images/hero-ktv-rec.webp"
+  },
+  {
+    "page": "one_by_one.html",
+    "heroImage": "images/hero-one-by-one.webp"
+  },
+  {
+    "page": "how_much.html",
+    "heroImage": "images/hero-how-much.webp"
+  },
+  {
+    "page": "first_time_called.html",
+    "heroImage": "images/hero-first-time.webp"
+  },
+  {
+    "page": "motel_safe.html",
+    "heroImage": "images/hero-motel-safe.webp"
+  },
+  {
+    "page": "interaction_scale.html",
+    "heroImage": "images/hero-interaction.webp"
+  },
+  {
+    "page": "business_dinner.html",
+    "heroImage": "images/hero-business-dinner.webp"
+  },
+  {
+    "page": "suitable_female.html",
+    "heroImage": "images/hero-suitable.webp"
+  },
+  {
+    "page": "special_industries.html",
+    "heroImage": "images/hero-special.webp"
+  },
+  {
+    "page": "recruitment.html",
+    "heroImage": "images/hero-recruitment.webp"
+  },
+  {
+    "page": "safety_privacy.html",
+    "heroImage": "images/hero-safety.webp"
+  },
+  {
+    "page": "news.html",
+    "heroImage": "images/hero-news.webp"
+  },
+  {
+    "page": "shoot_guide.html",
+    "heroImage": "images/hero-shoot-guide.webp"
+  },
+  {
+    "page": "shoot_switch_personnel.html",
+    "heroImage": "images/hero-shoot-switch.webp"
+  },
+  {
+    "page": "is_this_right_for_you.html",
+    "heroImage": "images/hero-is-right.webp"
+  },
+  {
+    "page": "can-touch-guide.html",
+    "heroImage": "images/hero-can-touch.webp"
+  },
+  {
+    "page": "companion-levels-2026.html",
+    "heroImage": "images/hero-companion-levels.webp"
+  }
+]
