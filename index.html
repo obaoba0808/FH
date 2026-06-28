@@ -466,9 +466,13 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-glow">精彩瞬間</h2>
             <p class="text-center text-gray-400 mb-12">感受歐巴傳播的頂級夜生活體驗</p>
             
+            
+    param($match)
+    
+    $videoBlock = @'
             <div class="flex flex-col md:flex-row gap-6 justify-center items-stretch">
                 <!-- Video 1 -->
-                <div class="glass-panel rounded-2xl overflow-hidden flex-1 min-w-0">
+                <div class="glass-panel rounded-2xl overflow-hidden w-72 md:w-80">
                     <div class="aspect-9-16 bg-black">
                         <video class="w-full h-full object-cover" controls preload="metadata">
                             <source src="images/highlight-1.mp4" type="video/mp4">
@@ -478,7 +482,7 @@
                 </div>
                 
                 <!-- Video 2 -->
-                <div class="glass-panel rounded-2xl overflow-hidden flex-1 min-w-0">
+                <div class="glass-panel rounded-2xl overflow-hidden w-72 md:w-80">
                     <div class="aspect-9-16 bg-black">
                         <video class="w-full h-full object-cover" controls preload="metadata">
                             <source src="images/highlight-2.mp4" type="video/mp4">
@@ -488,7 +492,7 @@
                 </div>
                 
                 <!-- Video 3 -->
-                <div class="glass-panel rounded-2xl overflow-hidden flex-1 min-w-0">
+                <div class="glass-panel rounded-2xl overflow-hidden w-72 md:w-80">
                     <div class="aspect-9-16 bg-black">
                         <video class="w-full h-full object-cover" controls preload="metadata">
                             <source src="images/highlight-4.mp4" type="video/mp4">
@@ -497,8 +501,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section><!-- Deep Dive FAQ / GEO Section (Answer First Architecture) -->
+'@
+    
+    return $videoBlock + $match.Groups[1].Value
+<!-- Deep Dive FAQ / GEO Section (Answer First Architecture) -->
     <section id="faq" class="py-24 px-6 relative z-10">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">內行人的夜生活指南 (FAQ)</h2>
@@ -666,6 +672,8 @@
     </script>
 </body>
 </html>
+
+
 
 
 
