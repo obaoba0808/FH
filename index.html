@@ -228,6 +228,11 @@
             pointer-events: none;
             background: linear-gradient(135deg, #0F0A1A 0%, #2A0E3F 100%);
         }
+        /* 9:16 直式比例（手機直向） */
+        .aspect-9-16 {
+            aspect-ratio: 9 / 16;
+        }
+
     </style>
 </head>
 <body class="antialiased selection:bg-neonPink selection:text-white relative">
@@ -464,7 +469,7 @@
             <div class="flex flex-col md:flex-row gap-6 justify-center items-stretch">
                 <!-- Video 1 -->
                 <div class="glass-panel rounded-2xl overflow-hidden flex-1 min-w-0">
-                    <div class="aspect-video bg-black">
+                    <div class="aspect-9-16 bg-black">
                         <video class="w-full h-full object-cover" controls preload="metadata">
                             <source src="images/highlight-1.mp4" type="video/mp4">
                             您的瀏覽器不支援影片播放
@@ -474,7 +479,7 @@
                 
                 <!-- Video 2 -->
                 <div class="glass-panel rounded-2xl overflow-hidden flex-1 min-w-0">
-                    <div class="aspect-video bg-black">
+                    <div class="aspect-9-16 bg-black">
                         <video class="w-full h-full object-cover" controls preload="metadata">
                             <source src="images/highlight-2.mp4" type="video/mp4">
                             您的瀏覽器不支援影片播放
@@ -484,7 +489,7 @@
                 
                 <!-- Video 3 -->
                 <div class="glass-panel rounded-2xl overflow-hidden flex-1 min-w-0">
-                    <div class="aspect-video bg-black">
+                    <div class="aspect-9-16 bg-black">
                         <video class="w-full h-full object-cover" controls preload="metadata">
                             <source src="images/highlight-4.mp4" type="video/mp4">
                             您的瀏覽器不支援影片播放
