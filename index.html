@@ -8,20 +8,23 @@
     <meta name="description" content="歐巴傳播是台北首選頂級傳播公司，提供KTV歡唱、汽車旅館派對及一個人叫傳播專屬陪伴服務。價格透明不加價，30分鐘快速派發，立即撥打 0926-656666 或加 LINE 預約。">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://obaoba0808.github.io/FH/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://obaoba0808.github.io/FH/">
+    <link rel="alternate" hreflang="x-default" href="https://obaoba0808.github.io/FH/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obaoba0808.github.io/FH/">
     <meta property="og:title" content="歐巴傳播 | 台北頂級傳播公司 | 傳播妹、KTV歡唱、派對首選">
     <meta property="og:description" content="歐巴傳播是台北首選頂級傳播公司，提供KTV歡唱、汽車旅館派對及一對一陪伴服務。價格透明，30分鐘快速派發。">
-    <meta property="og:image" content="https://obaoba0808.github.io/FH/images/android-chrome-512x512.png">
+    <meta property="og:image" content="https://obaoba0808.github.io/FH/images/og-image.jpg">
     <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="歐巴傳播">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="歐巴傳播 | 台北頂級傳播公司">
     <meta name="twitter:description" content="台北首選傳播公司，KTV歡唱、派對陪伴，價格透明不加價。">
-    <meta name="twitter:image" content="https://obaoba0808.github.io/FH/images/android-chrome-512x512.png">
+    <meta name="twitter:image" content="https://obaoba0808.github.io/FH/images/og-image.jpg">
     
     <!-- 1. GEO 優化：Schema 結構化資料 (LocalBusiness + FAQPage) -->
     <script type="application/ld+json">
@@ -35,6 +38,10 @@
           "description": "台北最頂級傳播公司，提供優質傳播妹、傳播小姐桌面服務與派對陪伴。",
           "url": "https://obaoba0808.github.io/FH/",
           "telephone": "+886-926-656666",
+            "image": "https://obaoba0808.github.io/FH/images/og-image.jpg",
+            "address": {"@type": "PostalAddress", "addressLocality": "Taipei", "addressRegion": "Taiwan", "addressCountry": "TW"},
+            "geo": {"@type": "GeoCoordinates", "latitude": 25.0478, "longitude": 121.5319},
+            "openingHours": "Mo-Su 00:00-24:00",
           "priceRange": "$$",
           "areaServed": {
             "@type": "City",
@@ -43,6 +50,10 @@
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+886-926-656666",
+            "image": "https://obaoba0808.github.io/FH/images/og-image.jpg",
+            "address": {"@type": "PostalAddress", "addressLocality": "Taipei", "addressRegion": "Taiwan", "addressCountry": "TW"},
+            "geo": {"@type": "GeoCoordinates", "latitude": 25.0478, "longitude": 121.5319},
+            "openingHours": "Mo-Su 00:00-24:00",
             "contactType": "customer service",
             "availableLanguage": "Traditional Chinese"
           }
@@ -103,10 +114,10 @@
     <!-- JS Libraries -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://code.iconify.design">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
 
     <style>
         /* Base Styles & Noise Texture */
@@ -321,7 +332,7 @@
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center pt-20 px-4 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="images/hero-index.jpg" loading="lazy" alt="台北夜生活KTV傳播派對" class="w-full h-full object-cover opacity-40 mix-blend-luminosity">
+            <img src="images/hero-index.jpg" loading="eager" fetchpriority="high" alt="台北夜生活KTV傳播派對" class="w-full h-full object-cover opacity-40 mix-blend-luminosity">
             <div class="absolute inset-0 bg-gradient-to-b from-midnight/80 via-bgEnd/70 to-midnight"></div>
         </div>
 
@@ -364,7 +375,7 @@
                 
                 <!-- Box 1: Large Feature -->
                 <div class="glass-panel rounded-3xl md:col-span-2 md:row-span-2 relative group overflow-hidden gsap-fade-up">
-                    <img src="images/content-index.jpg" loading="lazy" alt="KTV歡唱傳播妹陪唱派對" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-700 group-hover:scale-105" loading="lazy">
+                    <img src="images/content-index.jpg" loading="lazy" alt="KTV歡唱傳播妹陪唱派對" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-700 group-hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent"></div>
                     <div class="relative h-full flex flex-col justify-end p-8 z-10">
                         <iconify-icon icon="ph:microphone-stage-duotone" class="text-5xl text-electricPurple mb-4 drop-shadow-[0_0_10px_rgba(123,44,255,1)]"></iconify-icon>
@@ -470,7 +481,7 @@
     <video
         class="w-full h-[250px] object-cover"
         controls
-        preload="metadata"
+        preload="none" poster="images/highlight-1-poster.jpg"
     >
         <source src="images/highlight-1.mp4" type="video/mp4">
         您的瀏覽器不支援影片播放
@@ -481,7 +492,7 @@
     <video
         class="w-full h-[250px] object-cover"
         controls
-        preload="metadata"
+        preload="none" poster="images/highlight-2-poster.jpg"
     >
         <source src="images/highlight-2.mp4" type="video/mp4">
         您的瀏覽器不支援影片播放
@@ -492,7 +503,7 @@
     <video
         class="w-full h-[250px] object-cover"
         controls
-        preload="metadata"
+        preload="none" poster="images/highlight-4-poster.jpg"
     >
         <source src="images/highlight-4.mp4" type="video/mp4">
         您的瀏覽器不支援影片播放
@@ -537,6 +548,19 @@
                         補充說明：每位公關的接受度不同，若您有特殊尺度或特定互動的需求，請務必事前透過 LINE 官方帳號，由專業客服為您客製化推薦適合的人選與方案。
                     </p>
                 </article>
+                <article class="glass-panel p-6 rounded-2xl gsap-fade-up" style="transition-delay: 0.2s;">
+                    <h3 class="text-xl font-bold text-neonPink mb-3 flex items-center gap-2">
+                        <iconify-icon icon="ph:hand-coins-fill"></iconify-icon>
+                        叫傳播多少錢？
+                    </h3>
+                    <p class="text-gray-200 font-medium text-sm leading-relaxed mb-2">
+                        <strong class="text-white">歐巴傳播採全透明計費制。</strong>依據小姐等級（公關、保三、VIP）與服務時數計算，絕無隱藏費用或事後加價。
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        補充說明：支援現金、轉帳等多種支付方式；到達現場確認小姐與等級後才開始計時，消費得安心。詳細行情請參考<a href="https://obaoba0808.github.io/FH/how_much.html" class="text-neonPink hover:underline">《叫傳播多少錢？2024台北傳播妹收費行情大公開》</a>。
+                    </p>
+                </article>
+
             </div>
         </div>
     </section>
@@ -569,8 +593,26 @@
 
 <!-- CTA & Footer -->
 
-<footer class="border-t border-white/10 mt-12 pt-8 pb-8 text-center text-sm text-gray-500">
-    <p>&copy; 2024-2026 歐巴傳播 OPPA ENT. All rights reserved.</p>
+<footer class="border-t border-white/10 mt-12 pt-10 pb-10 text-sm text-gray-400">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-neonPink font-bold text-base mb-4">歐巴傳播 OPPA ENT. ｜ 台北頂級傳播公司</p>
+        <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6 text-gray-300">
+            <a href="https://obaoba0808.github.io/FH/news.html" class="hover:text-neonPink transition-colors">情報特搜站</a>
+            <a href="https://obaoba0808.github.io/FH/how_much.html" class="hover:text-neonPink transition-colors">收費行情</a>
+            <a href="https://obaoba0808.github.io/FH/safety_privacy.html" class="hover:text-neonPink transition-colors">安全隱私</a>
+            <a href="https://obaoba0808.github.io/FH/recruitment.html" class="hover:text-neonPink transition-colors">加入我們</a>
+            <a href="https://obaoba0808.github.io/FH/KTV_party.html" class="hover:text-neonPink transition-colors">KTV派對</a>
+            <a href="https://obaoba0808.github.io/FH/first-time-2026.html" class="hover:text-neonPink transition-colors">新手攻略</a>
+            <a href="https://obaoba0808.github.io/FH/companion-levels-2026.html" class="hover:text-neonPink transition-colors">女伴等級</a>
+            <a href="https://obaoba0808.github.io/FH/taipei_agency_guide.html" class="hover:text-neonPink transition-colors">挑選公司</a>
+        </nav>
+        <p class="text-xs text-gray-500 mb-3">相關網站：
+            <a href="https://obaoba0808.github.io/Yulin-Design/" class="hover:text-neonPink transition-colors" rel="noopener">侑霖室內設計</a> ・
+            <a href="https://obaoba0808.github.io/Sweet-Burst-Fruits/" class="hover:text-neonPink transition-colors" rel="noopener">爆甜水果行</a> ・
+            <a href="https://golightly.fun/" class="hover:text-neonPink transition-colors" rel="noopener">均在路上</a>
+        </p>
+        <p class="text-xs text-gray-500">&copy; 2024-2026 歐巴傳播 OPPA ENT. All rights reserved.</p>
+    </div>
 </footer>
 
 
