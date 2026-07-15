@@ -35,68 +35,7 @@
     </script>
     
     <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Article",
-                "headline": "第一次叫傳播要注意什麼？2026台北傳播新手完整攻略",
-                "description": "第一次叫傳播不知道怎麼開始？2026最新台北傳播完整攻略，從預約流程、價格行情、禮儀須知到安全提醒，讓你第一次就叫得安心又開心！",
-                "image": "https://obaoba0808.github.io/FH/images/hero-first-time-2026.webp",
-                "datePublished": "2026-06-24",
-                "dateModified": "2026-07-15",
-                "author": {"@type": "Organization", "name": "歐巴傳播"},
-                "publisher": {"@type": "Organization", "name": "歐巴傳播", "logo": {"@type": "ImageObject", "url": "https://obaoba0808.github.io/FH/images/android-chrome-512x512.png"}}
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "第一次叫傳播會不會很貴？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "傳播收費其實比你想像中親民！以台北市區來說，一小時大約 2,500-3,500 元，一小時半約 3,500-4,500 元，兩小時約 4,500-5,500 元。第一次叫建議先選一小時或半小時試水溫，不用一次砸大錢。"
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "一個人叫傳播會不會尷尬？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "完全不會！其實很多客人都是一個人來的。傳播妹都受過專業訓練，很會帶氣氛、聊天話題也很豐富，你只要放鬆享受就好。如果真的緊張，可以選KTV包廂，有唱歌喝酒當緩衝，氣氛會更自然。"
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "要怎麼判斷傳播店靠不靠譜？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "判斷傳播店是否靠譜，可以看這幾點：(1) 有實體店面或固定營業場所 (2) 官網或社群媒體有完整介紹 (3) 線上評價真實可查 (4) 預約時會詳細說明收費方式 (5) 不會強迫推銷或隱藏費用。歐巴傳播在業界經營多年，口碑良好，是台北傳播的推薦首選。"
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "叫傳播可以指定傳播妹嗎？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "當然可以！現在大部分傳播店都有線上選妹服務，你可以看照片、身高體重、特色標籤來挑選喜歡的傳播妹。如果沒有特別偏好，也可以請店家推薦，他們會根據你的需求（例如：喜歡可愛型/成熟型/聊天型）來安排合適的人選。"
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "叫傳播有哪些地方需要注意？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "叫傳播最重要的就是互相尊重！(1) 不要動手動腳，保持禮貌距離 (2) 酒量不好的話適可而止 (3) 不要強迫傳播妹做不舒服的事 (4) 準時結束，超時要補鐘 (5) 保管好個人財物。只要彼此尊重，就能度過愉快的一晚。"
-                        }
-                    }
-                ]
-            }
-        ]
-    }
-    </script>
+    
     
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -108,6 +47,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
     <link href="dist/output.css" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+
+    <style>
+        body { background-color: #0D0616; color: #F5F3FF; overflow-x: hidden; }
+        .glass-panel { background: rgba(123, 44, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 175, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); }
+        .text-gradient { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-neon { background: linear-gradient(45deg, #7B2CFF, #FF2DAF); position: relative; z-index: 1; overflow: hidden; }
+        .btn-neon::after { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, #FF2DAF, #7B2CFF, #6A5CFF, #FF2DAF); z-index: -1; filter: blur(10px); background-size: 400%; animation: glowing 20s linear infinite; opacity: 0; transition: opacity 0.3s; }
+        .btn-neon:hover::after { opacity: 1; }
+        @keyframes glowing { 0% { background-position: 0 0; } 50% { background-position: 400% 0; } 100% { background-position: 0 0; } }
+        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #F5F3FF; }
+        .article-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #FF2DAF; }
+        .article-content p { color: #D1D5DB; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.125rem; }
+        .article-content ul { list-style: none; padding-left: 0; margin-bottom: 1.5rem; }
+        .article-content ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #D1D5DB; }
+        .article-content ul li::before { content: '✦'; position: absolute; left: 0; color: #7B2CFF; font-weight: bold; }
+        .article-content strong { color: #fff; font-weight: bold; box-shadow: inset 0 -10px 0 rgba(123, 44, 255, 0.4); }
+        .step-card { background: rgba(123,44,255,0.06); border: 1px solid rgba(123,44,255,0.25); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1rem; }
+        .tip-box { background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 1rem; padding: 1.5rem; margin: 1.5rem 0; }
+        .warn-box { background: rgba(255,45,175,0.08); border: 1px solid rgba(255,45,175,0.3); border-radius: 1rem; padding: 1.5rem; margin: 1.5rem 0; }
+        .price-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .price-table th { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); color: white; padding: 1rem; text-align: left; font-weight: 600; }
+        .price-table td { padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); color: #D1D5DB; }
+        .price-table tr:hover { background: rgba(123,44,255,0.05); }
+        .num-badge { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 0.5rem; }
+    </style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -164,31 +130,6 @@
   ]
 }
 </script>
-
-    <style>
-        body { background-color: #0D0616; color: #F5F3FF; overflow-x: hidden; }
-        .glass-panel { background: rgba(123, 44, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 175, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); }
-        .text-gradient { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .btn-neon { background: linear-gradient(45deg, #7B2CFF, #FF2DAF); position: relative; z-index: 1; overflow: hidden; }
-        .btn-neon::after { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, #FF2DAF, #7B2CFF, #6A5CFF, #FF2DAF); z-index: -1; filter: blur(10px); background-size: 400%; animation: glowing 20s linear infinite; opacity: 0; transition: opacity 0.3s; }
-        .btn-neon:hover::after { opacity: 1; }
-        @keyframes glowing { 0% { background-position: 0 0; } 50% { background-position: 400% 0; } 100% { background-position: 0 0; } }
-        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #F5F3FF; }
-        .article-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #FF2DAF; }
-        .article-content p { color: #D1D5DB; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.125rem; }
-        .article-content ul { list-style: none; padding-left: 0; margin-bottom: 1.5rem; }
-        .article-content ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #D1D5DB; }
-        .article-content ul li::before { content: '✦'; position: absolute; left: 0; color: #7B2CFF; font-weight: bold; }
-        .article-content strong { color: #fff; font-weight: bold; box-shadow: inset 0 -10px 0 rgba(123, 44, 255, 0.4); }
-        .step-card { background: rgba(123,44,255,0.06); border: 1px solid rgba(123,44,255,0.25); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1rem; }
-        .tip-box { background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 1rem; padding: 1.5rem; margin: 1.5rem 0; }
-        .warn-box { background: rgba(255,45,175,0.08); border: 1px solid rgba(255,45,175,0.3); border-radius: 1rem; padding: 1.5rem; margin: 1.5rem 0; }
-        .price-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
-        .price-table th { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); color: white; padding: 1rem; text-align: left; font-weight: 600; }
-        .price-table td { padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); color: #D1D5DB; }
-        .price-table tr:hover { background: rgba(123,44,255,0.05); }
-        .num-badge { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 0.5rem; }
-    </style>
 </head>
 <body class="antialiased selection:bg-neonPink selection:text-white">
 
@@ -435,8 +376,6 @@
             <p class="!mb-0">我們在台北經營多年，堅持「公開透明、誠信經營」。所有費用預約時就講清楚，不會有隱藏費用或強迫推銷。傳播妹都是經過專業訓練、健康檢查合格的正規人員。如果你在台北想找靠譜的傳播店，歐巴傳播絕對是你的首選！</p>
         </div>
 
-        <h2><span class="num-badge">7</span>新手最常問的5個問題（FAQ）</h2>
-        
         <h3>Q1：第一次叫傳播會不會很貴？</h3>
         <p><strong>Ans：</strong>其實傳播收費比你想像中親民！以台北市區來說，一小時大約 2,500-3,500 元，一小時半約 3,500-4,500 元，兩小時約 4,500-5,500 元。第一次叫建議先選「一小時」或「30分鐘」試水溫，不用一次砸大錢。另外，平日白天或下午的價格通常比晚上便宜，時間彈性的話可以省一筆！</p>
         
@@ -474,7 +413,67 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-white/10 mt-12 pt-10 pb-10 text-sm text-gray-400">
+    <div class="faq-section">
+  <h2 class="section-title">常見問題 FAQ</h2>
+  <div class="faq-list">
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">2026 年叫傳播和之前有什麼不同？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">整體流程不變，但各公司數位化程度提升，現在多可透過 LINE 快速預約。歐巴傳播提供 24 小時 LINE 預約服務（@938nzmjr）。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">2026 年傳播行情價格是多少？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">2026 年鐘點費行情：公關 NT$1,200-1,500/小時，保三 NT$1,500-2,000/小時，VIP NT$2,000-2,500/小時。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">2026 年有哪些新興場所適合叫傳播？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">除了傳統 KTV、Motel，外派私人派對、露天酒吧、私人招待所越來越受歡迎，公司調度也更為便利。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">2026 年如何避免遇到詐騙？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">凡是要求先匯款、使用非官方帳號、或透過非正規管道預付費用者，極可能為詐騙。堅守「到場滿意才計費」原則。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">2026 年傳播業的發展趨勢是什麼？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">數位化預約、服務品質提升、等級制度透明化是趨勢。消費者意識提升，倒逼業界走向更正規化的服務模式。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">2026 年第一次體驗有什麼建議？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">從小型場合（2-3 小時 KTV）開始，選擇公關等級，保持輕鬆心態。第一次的目標是體驗流程，建立熟悉感。</p>
+</details>
+
+  </div>
+</div>
+
+<footer class="border-t border-white/10 mt-12 pt-10 pb-10 text-sm text-gray-400">
     <div class="max-w-5xl mx-auto px-6 text-center">
         <p class="text-neonPink font-bold text-base mb-4">歐巴傳播 OPPA ENT. ｜ 台北頂級傳播公司</p>
         <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6 text-gray-300">
@@ -496,39 +495,6 @@
     </div>
 </footer>
 
-
-
-<h2>2026 年新手入門 FAQ</h2>
-
-<details>
-  <summary>2026 年叫傳播和之前有什麼不同？</summary>
-  <p>整體流程不變，但各公司數位化程度提升，現在多可透過 LINE 快速預約。歐巴傳播提供 24 小時 LINE 預約服務（@938nzmjr）。</p>
-</details>
-
-<details>
-  <summary>2026 年傳播行情價格是多少？</summary>
-  <p>2026 年鐘點費行情：公關 NT$1,200-1,500/小時，保三 NT$1,500-2,000/小時，VIP NT$2,000-2,500/小時。</p>
-</details>
-
-<details>
-  <summary>2026 年有哪些新興場所適合叫傳播？</summary>
-  <p>除了傳統 KTV、Motel，外派私人派對、露天酒吧、私人招待所越來越受歡迎，公司調度也更為便利。</p>
-</details>
-
-<details>
-  <summary>2026 年如何避免遇到詐騙？</summary>
-  <p>凡是要求先匯款、使用非官方帳號、或透過非正規管道預付費用者，極可能為詐騙。堅守「到場滿意才計費」原則。</p>
-</details>
-
-<details>
-  <summary>2026 年傳播業的發展趨勢是什麼？</summary>
-  <p>數位化預約、服務品質提升、等級制度透明化是趨勢。消費者意識提升，倒逼業界走向更正規化的服務模式。</p>
-</details>
-
-<details>
-  <summary>2026 年第一次體驗有什麼建議？</summary>
-  <p>從小型場合（2-3 小時 KTV）開始，選擇公關等級，保持輕鬆心態。第一次的目標是體驗流程，建立熟悉感。</p>
-</details>
 
 
 </body>

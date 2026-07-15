@@ -36,21 +36,7 @@
       "author": {"@type": "Organization", "name": "歐巴傳播"}
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question","name":"叫傳播可以打槍換人嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。歐巴傳播實施「到場不滿意，無條件換人」制度。只要到場後發現本人與照片差距過大，無需任何理由，直接向公司反映，公司立即安排更換。"}},
-        {"@type": "Question","name":"打槍換人需要付錢嗎？","acceptedAnswer":{"@type":"Answer","text":"在正式坐下開始計時前，享有一次免費換人額度。換人期間不收任何費用，直到新女伴到場並坐下才開始計時。"}},
-        {"@type": "Question","name":"怎麼跟公司說要換人？用什麼理由比較好？","acceptedAnswer":{"@type":"Answer","text":"直接說「這位跟照片差太多，想換一位」即可，不需要過度解釋。也可以說「感覺不太對」「聊不起來」，公司完全理解，不會有任何刁難。"}},
-        {"@type": "Question","name":"可以一直換人換到滿意為止嗎？","acceptedAnswer":{"@type":"Answer","text":"原則上到場後有一次免費換人機會。若更換後仍不滿意，可再向公司反映，公司視情況協調。通常換到第二位就能找到適合的人，業界少見需要換到第三位的案例。"}},
-        {"@type": "Question","name":"換人時要當場說嗎？還是先離開再通知公司？","acceptedAnswer":{"@type":"Answer","text":"建議在現場直接告知公司後勤窗口，不需要勉強自己坐完全程。告知後，公司會通知女伴離場，再安排新人到場，過程通常15-30分鐘。"}},
-        {"@type": "Question","name":"女生會不會因此不高興或報復？","acceptedAnswer":{"@type":"Answer","text":"不會。專業的傳播小姐了解「不是每位客人都是適合自己的客人」這個道理，被打槍在業界是正常現象，不會有任何情緒反應或報復行為。"}},
-        {"@type": "Question","name":"照片差距多大的情況才能換人？","acceptedAnswer":{"@type":"Answer","text":"「差距」的定義完全由客人主觀判斷。只要你認為不符合預期，無需提供任何照片對比，直接說想換人即可。這是客人的基本權利。"}}
-      ]
-    }
-    </script>
+    
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -61,6 +47,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
     <link href="dist/output.css" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+
+    <style>
+        body { background-color: #0D0616; color: #F5F3FF; overflow-x: hidden; }
+        .glass-panel { background: rgba(123, 44, 255, 0.03); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 175, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); }
+        .text-gradient { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-neon { background: linear-gradient(45deg, #7B2CFF, #FF2DAF); position: relative; z-index: 1; overflow: hidden; }
+        .btn-neon::after { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, #FF2DAF, #7B2CFF, #6A5CFF, #FF2DAF); z-index: -1; filter: blur(10px); background-size: 400%; animation: glowing 20s linear infinite; opacity: 0; transition: opacity 0.3s; }
+        .btn-neon:hover::after { opacity: 1; }
+        @keyframes glowing { 0% { background-position: 0 0; } 50% { background-position: 400% 0; } 100% { background-position: 0 0; } }
+        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #F5F3FF; }
+        .article-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #FF2DAF; }
+        .article-content p { color: #D1D5DB; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.125rem; }
+        .article-content ul { list-style: none; padding-left: 0; margin-bottom: 1.5rem; }
+        .article-content ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #D1D5DB; }
+        .article-content ul li::before { content: '✦'; position: absolute; left: 0; color: #7B2CFF; font-weight: bold; }
+        .article-content strong { color: #fff; font-weight: bold; box-shadow: inset 0 -10px 0 rgba(123, 44, 255, 0.4); }
+        .step-card { background: rgba(123,44,255,0.08); border: 1px solid rgba(123,44,255,0.2); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .step-number { width: 36px; height: 36px; background: linear-gradient(135deg,#7B2CFF,#FF2DAF); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.125rem; flex-shrink: 0; }
+        .tip-box { background: rgba(6,199,85,0.08); border: 1px solid rgba(6,199,85,0.25); border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+        .warning-box { background: rgba(255,200,0,0.06); border: 1px solid rgba(255,200,0,0.2); border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+    </style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,31 +124,8 @@
       }
     }
   ]
-,
-  "dateModified": "2026-07-15"
 }
 </script>
-
-    <style>
-        body { background-color: #0D0616; color: #F5F3FF; overflow-x: hidden; }
-        .glass-panel { background: rgba(123, 44, 255, 0.03); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 175, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); }
-        .text-gradient { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .btn-neon { background: linear-gradient(45deg, #7B2CFF, #FF2DAF); position: relative; z-index: 1; overflow: hidden; }
-        .btn-neon::after { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, #FF2DAF, #7B2CFF, #6A5CFF, #FF2DAF); z-index: -1; filter: blur(10px); background-size: 400%; animation: glowing 20s linear infinite; opacity: 0; transition: opacity 0.3s; }
-        .btn-neon:hover::after { opacity: 1; }
-        @keyframes glowing { 0% { background-position: 0 0; } 50% { background-position: 400% 0; } 100% { background-position: 0 0; } }
-        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #F5F3FF; }
-        .article-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #FF2DAF; }
-        .article-content p { color: #D1D5DB; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.125rem; }
-        .article-content ul { list-style: none; padding-left: 0; margin-bottom: 1.5rem; }
-        .article-content ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #D1D5DB; }
-        .article-content ul li::before { content: '✦'; position: absolute; left: 0; color: #7B2CFF; font-weight: bold; }
-        .article-content strong { color: #fff; font-weight: bold; box-shadow: inset 0 -10px 0 rgba(123, 44, 255, 0.4); }
-        .step-card { background: rgba(123,44,255,0.08); border: 1px solid rgba(123,44,255,0.2); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem; }
-        .step-number { width: 36px; height: 36px; background: linear-gradient(135deg,#7B2CFF,#FF2DAF); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.125rem; flex-shrink: 0; }
-        .tip-box { background: rgba(6,199,85,0.08); border: 1px solid rgba(6,199,85,0.25); border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
-        .warning-box { background: rgba(255,200,0,0.06); border: 1px solid rgba(255,200,0,0.2); border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
-    </style>
 </head>
 <body class="antialiased selection:bg-neonPink selection:text-white relative">
 
@@ -432,7 +418,67 @@
 
 
 
-    <footer class="border-t border-white/10 mt-12 pt-10 pb-10 text-sm text-gray-400">
+    <div class="faq-section">
+  <h2 class="section-title">常見問題 FAQ</h2>
+  <div class="faq-list">
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">什麼情況下可以打槍（拒絕公關）？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">任何您對公關外型、氣質不滿意，或到場後感到不舒服的情況，都可以禮貌打槍。這是消費者的正當權利，公司不會因此收費。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">打槍需要理由嗎？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">不需要理由。您可以簡單說「這次先謝謝您」，不需要多做解釋或道歉。公關理解這是消費者權利。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">打槍後多久可以再安排新人？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">通常 15-30 分鐘可安排替換。尖峰時段或偏遠地區可能稍久，公司會盡快調度。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">頻繁打槍會被列入黑名單嗎？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">正常次數的打槍是權利，公司不會因此拒絕服務。但若短時間連續打槍多次，公司可能柔性勸導。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">如何減少打槍機率？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">預約時清楚說明場合與期待、選擇符合場合的公關等級、也可請公司提供參考照片再確認。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">打槍時該怎麼說？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">禮貌告知「感謝您特地過來，這次可能不太適合，請見諒」，保持尊重與友善，不要當場批評外貌。</p>
+</details>
+
+  </div>
+</div>
+
+<footer class="border-t border-white/10 mt-12 pt-10 pb-10 text-sm text-gray-400">
     <div class="max-w-5xl mx-auto px-6 text-center">
         <p class="text-neonPink font-bold text-base mb-4">歐巴傳播 OPPA ENT. ｜ 台北頂級傳播公司</p>
         <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6 text-gray-300">
@@ -454,39 +500,6 @@
     </div>
 </footer>
 
-
-
-<h2>打槍換人攻略 FAQ</h2>
-
-<details>
-  <summary>什麼情況下可以打槍（拒絕公關）？</summary>
-  <p>任何您對公關外型、氣質不滿意，或到場後感到不舒服的情況，都可以禮貌打槍。這是消費者的正當權利，公司不會因此收費。</p>
-</details>
-
-<details>
-  <summary>打槍需要理由嗎？</summary>
-  <p>不需要理由。您可以簡單說「這次先謝謝您」，不需要多做解釋或道歉。公關理解這是消費者權利。</p>
-</details>
-
-<details>
-  <summary>打槍後多久可以再安排新人？</summary>
-  <p>通常 15-30 分鐘可安排替換。尖峰時段或偏遠地區可能稍久，公司會盡快調度。</p>
-</details>
-
-<details>
-  <summary>頻繁打槍會被列入黑名單嗎？</summary>
-  <p>正常次數的打槍是權利，公司不會因此拒絕服務。但若短時間連續打槍多次，公司可能柔性勸導。</p>
-</details>
-
-<details>
-  <summary>如何減少打槍機率？</summary>
-  <p>預約時清楚說明場合與期待、選擇符合場合的公關等級、也可請公司提供參考照片再確認。</p>
-</details>
-
-<details>
-  <summary>打槍時該怎麼說？</summary>
-  <p>禮貌告知「感謝您特地過來，這次可能不太適合，請見諒」，保持尊重與友善，不要當場批評外貌。</p>
-</details>
 
 
 </body>

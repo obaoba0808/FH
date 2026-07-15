@@ -35,54 +35,42 @@
       gtag('js', new Date());
       gtag('config', 'G-S7KQGHSD2R');
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Article",
-          "@id": "https://obaoba0808.github.io/FH/how_much.html#article",
-          "headline": "叫傳播多少錢？台北傳播妹收費行情大公開",
-          "description": "拒絕當冤大頭！全面解析公關、保三、VIP等級的具體計費標準。",
-          "datePublished": "2024-01-01",
-          "dateModified": "2026-07-15",
-          "author": {
-            "@type": "Organization",
-            "name": "歐巴傳播"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "歐巴傳播",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://obaoba0808.github.io/FH/images/android-chrome-512x512.png"
-            }
-          }
-        },
-        {
-          {
-          {
-          {
-          {
-          "@type": "FAQPage",
-          "@id": "https://obaoba0808.github.io/FH/how_much.html#faq",
-          "mainEntity": [
-            {"@type": "Question", "name": "叫傳播多少錢？", "acceptedAnswer": {"@type": "Answer", "text": "公關等級約 NT$1,200 – 1,400/小時，保三等級約 NT$1,500 – 1,900/小時，VIP 等級 NT$2,000 以上。實際價格以預約當下有空班的女孩與公司報價為準。"}},
-            {"@type": "Question", "name": "車馬費怎麼算？", "acceptedAnswer": {"@type": "Answer", "text": "市區（台北市、新北市核心區）一般不收車馬費；跨縣市或偏遠地區可能酌收 NT$300 – NT$800，預約時會先告知，不會到場才追加。"}},
-            {"@type": "Question", "name": "不滿意可以打槍換人嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以。在公關坐下確認服務前，若長相或氣質不符合期待，可直接要求更換，不收取任何費用。這是正規傳播公司保障消費者權益的基本機制。"}},
-            {"@type": "Question", "name": "傳播跟酒店的價格差多少？", "acceptedAnswer": {"@type": "Answer", "text": "一場四小時的酒店聚會，帳單輕鬆落在 NT$20,000 – 40,000（含框費、包廂費、酒水費等）。傳播同樣四小時、兩位公關的費用約 NT$9,600 – 14,400，節省幅度達 40% – 60%。"}},
-            {"@type": "Question", "name": "有沒有隱藏費用或加價項目？", "acceptedAnswer": {"@type": "Answer", "text": "正規公司如歐巴傳播，預約時完整告知所有費用項目（鐘點費與車馬費），絕無開桌費、經紀費、清潔費等隱藏項目。建議選擇透明報價的正規公司，避免落入低價陷阱。"}},
-            {"@type": "Question", "name": "2026 年行情是否有變動？", "acceptedAnswer": {"@type": "Answer", "text": "受基本工資調漲影響，2026 年行情較 2025 年微幅上漲約 5% – 8%。即便如此，傳播整體費用仍比傳統酒店低了近一半，是目前台北夜生活CP值最高的選擇。"}}
-          ]
-        }
-      ]
-    }
-    </script>
+    
 
     <!-- Google Fonts & CDNs -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
     <link href="dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://code.iconify.design"><script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+
+
+    <!-- Tailwind Config -->
+
+    <style>
+        body { background-color: #0D0616; color: #F5F3FF; overflow-x: hidden; }
+        .glass-panel { background: rgba(123, 44, 255, 0.03); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 175, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); }
+        .text-glow { text-shadow: 0 0 10px rgba(123, 44, 255, 0.8); }
+        .text-gradient { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-neon { background: linear-gradient(45deg, #7B2CFF, #FF2DAF); position: relative; z-index: 1; overflow: hidden; }
+        .btn-neon::after { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, #FF2DAF, #7B2CFF, #6A5CFF, #FF2DAF); z-index: -1; filter: blur(10px); background-size: 400%; animation: glowing 20s linear infinite; opacity: 0; transition: opacity 0.3s; }
+        .btn-neon:hover::after { opacity: 1; }
+        @keyframes glowing { 0% { background-position: 0 0; } 50% { background-position: 400% 0; } 100% { background-position: 0 0; } }
+        
+        /* Article specific styling */
+        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #F5F3FF; }
+        .article-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #FF2DAF; }
+        .article-content p { color: #D1D5DB; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.125rem; }
+        .article-content ul { list-style: none; padding-left: 0; margin-bottom: 1.5rem; }
+        .article-content ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #D1D5DB; }
+        .article-content ul li::before { content: '✦'; position: absolute; left: 0; color: #7B2CFF; font-weight: bold; }
+        .article-content strong { color: #fff; font-weight: bold; box-shadow: inset 0 -10px 0 rgba(123, 44, 255, 0.4); }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,35 +127,7 @@
   ]
 }
 </script>
-
-
-    <!-- Tailwind Config -->
-
-    <style>
-        body { background-color: #0D0616; color: #F5F3FF; overflow-x: hidden; }
-        .glass-panel { background: rgba(123, 44, 255, 0.03); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 175, 0.15); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); }
-        .text-glow { text-shadow: 0 0 10px rgba(123, 44, 255, 0.8); }
-        .text-gradient { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .btn-neon { background: linear-gradient(45deg, #7B2CFF, #FF2DAF); position: relative; z-index: 1; overflow: hidden; }
-        .btn-neon::after { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, #FF2DAF, #7B2CFF, #6A5CFF, #FF2DAF); z-index: -1; filter: blur(10px); background-size: 400%; animation: glowing 20s linear infinite; opacity: 0; transition: opacity 0.3s; }
-        .btn-neon:hover::after { opacity: 1; }
-        @keyframes glowing { 0% { background-position: 0 0; } 50% { background-position: 400% 0; } 100% { background-position: 0 0; } }
-        
-        /* Article specific styling */
-        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #F5F3FF; }
-        .article-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #FF2DAF; }
-        .article-content p { color: #D1D5DB; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.125rem; }
-        .article-content ul { list-style: none; padding-left: 0; margin-bottom: 1.5rem; }
-        .article-content ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #D1D5DB; }
-        .article-content ul li::before { content: '✦'; position: absolute; left: 0; color: #7B2CFF; font-weight: bold; }
-        .article-content strong { color: #fff; font-weight: bold; box-shadow: inset 0 -10px 0 rgba(123, 44, 255, 0.4); }
-    </style>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    
-    </head>
+</head>
 <body class="antialiased selection:bg-neonPink selection:text-white relative">
 
     <!-- Navbar 導覽列 (支援手機版佈局 + 下拉選單) -->
@@ -407,39 +367,6 @@
     <!-- ========================================== -->
 
     
-<h2>收費行情 FAQ</h2>
-
-<details>
-  <summary>傳播鐘點費多少錢？</summary>
-  <p>公關（General）等級 NT$1,200-1,500/小時，保三等級 NT$1,500-2,000/小時，VIP/Model 等級 NT$2,000-2,500/小時。</p>
-</details>
-
-<details>
-  <summary>為什麼傳播比酒店便宜？</summary>
-  <p>傳播不需要負擔酒店店面的租金、水電、公關宿舍等固定成本，因此收費較為彈性。消費者也能省下包廂費（部分酒店含公關坐檯費）。</p>
-</details>
-
-<details>
-  <summary>傳播的額外費用有哪些？</summary>
-  <p>您的額外費用包括：包廂費或場所消費（KTV/Motel/餐廳）、跨縣市外派可能加收車馬費、以及您自願給的小費。</p>
-</details>
-
-<details>
-  <summary>傳播收費是用什麼方式計算？</summary>
-  <p>以時計費（每小時為單位），採「到場滿意才開始計時」原則。不滿意可免費打槍換人，開始計時後依實際時段收費。</p>
-</details>
-
-<details>
-  <summary>為什麼不同公司價格差很多？</summary>
-  <p>公關素質、等級制度完整度、公司服務品質與保障機制都會影響定價。過低的價格可能代表公關素質參差不齊或公司缺乏保障機制。</p>
-</details>
-
-<details>
-  <summary>可以議價嗎？</summary>
-  <p>歐巴傳播的收費為固定鐘點制，無議價空間。但您可以選擇符合預算的等級與時段，彈性控制總費用。</p>
-</details>
-
-
 <!-- Global CTA -->
     <section class="py-12 px-6 relative z-10 max-w-4xl mx-auto mb-12">
         <div class="glass-panel rounded-3xl p-8 md:p-12 text-center">
@@ -477,7 +404,67 @@
 
 
 
-    <footer class="border-t border-white/10 mt-12 pt-10 pb-10 text-sm text-gray-400">
+    <div class="faq-section">
+  <h2 class="section-title">常見問題 FAQ</h2>
+  <div class="faq-list">
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">傳播鐘點費多少錢？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">公關（General）等級 NT$1,200-1,500/小時，保三等級 NT$1,500-2,000/小時，VIP/Model 等級 NT$2,000-2,500/小時。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">為什麼傳播比酒店便宜？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">傳播不需要負擔酒店店面的租金、水電、公關宿舍等固定成本，因此收費較為彈性。消費者也能省下包廂費（部分酒店含公關坐檯費）。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">傳播的額外費用有哪些？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">您的額外費用包括：包廂費或場所消費（KTV/Motel/餐廳）、跨縣市外派可能加收車馬費、以及您自願給的小費。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">傳播收費是用什麼方式計算？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">以時計費（每小時為單位），採「到場滿意才開始計時」原則。不滿意可免費打槍換人，開始計時後依實際時段收費。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">為什麼不同公司價格差很多？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">公關素質、等級制度完整度、公司服務品質與保障機制都會影響定價。過低的價格可能代表公關素質參差不齊或公司缺乏保障機制。</p>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-q">
+    <span class="faq-q-mark">Q</span>
+    <span class="faq-q-text">可以議價嗎？</span>
+    <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </summary>
+  <p class="faq-a">歐巴傳播的收費為固定鐘點制，無議價空間。但您可以選擇符合預算的等級與時段，彈性控制總費用。</p>
+</details>
+
+  </div>
+</div>
+
+<footer class="border-t border-white/10 mt-12 pt-10 pb-10 text-sm text-gray-400">
     <div class="max-w-5xl mx-auto px-6 text-center">
         <p class="text-neonPink font-bold text-base mb-4">歐巴傳播 OPPA ENT. ｜ 台北頂級傳播公司</p>
         <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6 text-gray-300">
