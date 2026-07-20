@@ -2,7 +2,7 @@
 # https://obaoba0808.github.io/FH/
 
 User-agent: *
-Allow: /FH/
+Allow: /
 
 # Sitemap location
 Sitemap: https://obaoba0808.github.io/FH/sitemap.xml
