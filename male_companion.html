@@ -140,7 +140,7 @@
                 <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl drop-shadow-[0_0_8px_rgba(255,45,175,0.8)] group-hover:rotate-12 transition-transform"></iconify-icon>
                 <span class="font-display text-xl md:text-2xl tracking-widest text-textWhite font-bold">歐巴傳播</span>
             </a>
-            <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105 order-2 md:order-3">預約 <span class="hidden sm:inline">0926-656666</span></a>
+            <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105 order-2 md:order-3" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">預約 <span class="hidden sm:inline">0926-656666</span></a>
             <div class="w-full md:w-auto flex justify-center space-x-6 md:space-x-8 items-center text-sm font-medium order-3 md:order-2 mt-3 md:mt-0 pt-3 md:pt-0 border-t border-white/10 md:border-none relative">
                 <a href="/FH/index.html" class="hover:text-neonPink transition-colors">回首頁</a>
                 <div class="relative group">
@@ -288,7 +288,11 @@
         <ul>
             <li>選小包廂，1-2 位男伴最剛好，不會冷場</li>
             <li>先點好酒水，男伴入座就能開始帶唱、划拳</li>
-            <li>更多玩法見 <a href="KTV_party.html" class="text-neonPink hover:underline">KTV 派對終極攻略</a></li>
+            <li>更多玩法見 <a href="compare-girls.html" class="hover:text-neonPink transition-colors">傳播妹vs酒店</a>
+            <a href="business-guide.html" class="hover:text-neonPink transition-colors">商務公關</a>
+            <a href="legality-guide.html" class="hover:text-neonPink transition-colors">合法性解析</a>
+            <a href="booking-guide.html" class="hover:text-neonPink transition-colors">預約流程</a>
+            <a href="KTV_party.html" class="text-neonPink hover:underline">KTV 派對終極攻略</a></li>
         </ul>
 
         <h3>🚗 汽車旅館（隱私最高）</h3>
@@ -370,10 +374,10 @@
             <h3 class="text-2xl font-bold mb-4">想體驗男傳播？立即預約</h3>
             <p class="text-gray-300 mb-6">歐巴傳播 24 小時服務，LINE 諮詢秒回。女生叫傳播也安心，正派經營、不收訂金、隱私保障。</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://line.me/ti/p/@938nzmjr" target="_blank" class="btn-neon px-8 py-3 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2">
+                <a href="https://line.me/ti/p/@938nzmjr" target="_blank" class="btn-neon px-8 py-3 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'LINE'});">
                     <iconify-icon icon="ph:chat-circle-text-fill"></iconify-icon> LINE 預約 @938nzmjr
                 </a>
-                <a href="tel:+886926656666" class="px-8 py-3 rounded-full font-bold text-lg border-2 border-neonPink text-neonPink hover:bg-neonPink hover:text-white transition-all inline-flex items-center justify-center gap-2">
+                <a href="tel:+886926656666" class="px-8 py-3 rounded-full font-bold text-lg border-2 border-neonPink text-neonPink hover:bg-neonPink hover:text-white transition-all inline-flex items-center justify-center gap-2" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">
                     <iconify-icon icon="ph:phone-fill"></iconify-icon> 0926-656666
                 </a>
             </div>
