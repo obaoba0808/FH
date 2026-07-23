@@ -201,9 +201,7 @@
                 <a href="tel:0926656666" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">
                     📞 立即預約 0926-656-666
                 </a>
-                <a href="https://line.me/ti/p/@938nzmjr" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition shadow-lg" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'LINE'});">
-                    LINE 預約
-                </a>
+                <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
             </div>
         </div>
     </header>
@@ -292,10 +290,10 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-green-50 rounded-xl p-6">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-3">
+                        <div class="w-12 h-12 bg-[#06C755] rounded-lg flex items-center justify-center mr-3">
                             <span class="text-white text-2xl">💬</span>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-800">LINE 預約</h3>
+                        <h3 class="text-2xl font-bold text-gray-800">LINE 立即預約</h3>
                     </div>
                     
                     <div class="mb-4">
@@ -494,15 +492,52 @@
                 <a href="tel:0926656666" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">
                     📞 立即預約 0926-656-666
                 </a>
-                <a href="https://line.me/ti/p/@938nzmjr" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition shadow-lg" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'LINE'});">
-                    LINE 預約
-                </a>
+                <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
             </div>
         </section>
     </main>
     
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    
+
+<!-- 預約最簡便：LINE -->
+<section class="py-16 px-6 relative z-10">
+    <div class="max-w-3xl mx-auto">
+        <div class="glass-panel rounded-3xl p-8 md:p-10 border border-[#06C755]/30">
+            <h3 class="text-2xl font-black text-center mb-2">
+                <span class="text-[#06C755]">LINE</span> 預約 3 步驟
+            </h3>
+            <p class="text-gray-400 text-center text-sm mb-8">說需求 → 等確認 → 到府服務</p>
+
+            <div class="grid grid-cols-3 gap-4 mb-8">
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-[#06C755]/20 text-[#06C755] font-black text-xl flex items-center justify-center mx-auto mb-2">1</div>
+                    <div class="text-sm font-bold text-textWhite">LINE 說需求</div>
+                    <div class="text-xs text-gray-400 mt-1">時間、地點、人數</div>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-electricPurple/20 text-electricPurple font-black text-xl flex items-center justify-center mx-auto mb-2">2</div>
+                    <div class="text-sm font-bold text-textWhite">專人回覆</div>
+                    <div class="text-xs text-gray-400 mt-1">5分鐘內確認</div>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-neonPink/20 text-neonPink font-black text-xl flex items-center justify-center mx-auto mb-2">3</div>
+                    <div class="text-sm font-bold text-textWhite">到府安排</div>
+                    <div class="text-xs text-gray-400 mt-1">平均30分鐘</div>
+                </div>
+            </div>
+
+            <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer"
+               class="block w-full py-5 rounded-2xl bg-[#06C755] hover:bg-[#05a546] text-white font-black text-xl text-center transition-all shadow-[0_0_30px_rgba(6,199,85,0.4)] hover:scale-[1.02]"
+               onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'booking'});">
+                <iconify-icon icon="bi:line" class="inline align-middle mr-2 text-2xl"></iconify-icon>
+                立刻用 LINE 預約
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
