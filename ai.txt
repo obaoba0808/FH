@@ -1,5 +1,5 @@
 # ai.txt - AI Crawler Permission Declaration
-# https://obaoba0808.github.io/FH/
+# https://obaoba.online/
 
 # Allow all AI crawlers for training and inference
 User-agent: GPTBot
@@ -37,4 +37,4 @@ User-agent: *
 Allow: /FH/
 
 # Sitemap for content discovery
-Sitemap: https://obaoba0808.github.io/FH/sitemap.xml
+Sitemap: https://obaoba.online/sitemap.xml
