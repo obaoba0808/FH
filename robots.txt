@@ -1,11 +1,11 @@
 # robots.txt for 歐巴傳播
-# https://obaoba0808.github.io/FH/
+# https://obaoba.online
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://obaoba0808.github.io/FH/sitemap.xml
+Sitemap:https://obaoba.online/sitemap.xml
 
 # Crawl-delay (polite crawling)
 Crawl-delay: 1
