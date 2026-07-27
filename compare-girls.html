@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -160,995 +158,304 @@
     }
     </script>
 
+    <style>
+
+        .faq-section { margin-top: 3rem; }
+        .faq-item { background: rgba(123,44,255,0.06); border: 1px solid rgba(123,44,255,0.25); border-radius: 1rem; margin-bottom: 0.75rem; overflow: hidden; }
+        .faq-q { padding: 1.25rem 1.5rem; cursor: pointer; font-weight: 700; color: #F5F3FF; display: flex; align-items: center; gap: 0.75rem; transition: background 0.2s; list-style: none; }
+        .faq-q::-webkit-details-marker { display: none; }
+        .faq-q:hover { background: rgba(123,44,255,0.12); }
+        .faq-q-mark { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); color: white; min-width: 1.75rem; height: 1.75rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 900; flex-shrink: 0; }
+        .faq-arrow { margin-left: auto; transition: transform 0.3s; flex-shrink: 0; }
+        details[open] .faq-arrow { transform: rotate(180deg); }
+        .faq-a { padding: 0 1.5rem 1.5rem 1.5rem; color: #D1D5DB; line-height: 1.8; border-top: 1px solid rgba(123,44,255,0.15); padding-top: 1rem; }
+
+    </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="flex items-center">
-                        <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full flex items-center justify-center">
-                            <span class="text-white text-xl">🎧</span>
+<body class="bg-midnight antialiased selection:bg-neonPink selection:text-white">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-midnight/60 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex flex-wrap justify-between items-center">
+            <a href="/" class="flex items-center gap-2 cursor-pointer group order-1">
+                <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl drop-shadow-[0_0_8px_rgba(255,45,175,0.8)] group-hover:rotate-12 transition-transform"></iconify-icon>
+                <span class="font-display text-xl md:text-2xl tracking-widest text-textWhite font-bold">歐巴傳播</span>
+            </a>
+            <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105 order-2 md:order-3" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">預約 <span class="hidden sm:inline">0926-656666</span></a>
+            <div class="w-full md:w-auto flex justify-center space-x-6 md:space-x-8 items-center text-sm font-medium order-3 md:order-2 mt-3 md:mt-0 pt-3 md:pt-0 border-t border-white/10 md:border-none relative">
+                <a href="/" class="hover:text-neonPink transition-colors">回首頁</a>
+                <div class="relative group">
+                    <button class="hover:text-neonPink transition-colors flex items-center gap-1">情報特搜 <iconify-icon icon="ph:caret-down-bold"></iconify-icon></button>
+                    <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full mt-2 w-[85vw] md:w-[450px] bg-midnight/95 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 max-h-[60vh] overflow-y-auto text-left">
+                        <div class="p-2 flex flex-col">
+                            <a href="how_much.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 叫傳播多少錢？台北傳播妹收費行情大公開</a>
+                            <a href="safety_privacy.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 叫傳播安全嗎？隱私保護與防詐騙完整指南</a>
+                            <a href="recruitment.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 傳播小姐打工兼職？歐巴傳播招募公關專員</a>
+                            <a href="KTV_recommendations.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 台北夜生活特搜：最適合叫傳播的KTV推薦</a>
+                            <a href="shoot_switch_personnel.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 遇到照騙怎麼辦？了解「打槍換人」制度</a>
+                            <a href="one_by_one.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 一個人叫傳播會不會很尷尬？單身客專屬玩法解密</a>
+                            <a href="special_industries.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 八大行業大解密：酒店與傳播到底差在哪？</a>
+                            <a href="suitable_female.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 公關、保三、VIP等級怎麼分？教你挑選最適合的女伴</a>
+                            <a href="motel_safe.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 汽車旅館叫傳播安全嗎？私密空間派對注意事項</a>
+                            <a href="KTV_party.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> KTV派對怎麼玩最嗨？傳播妹帶動氣氛的隱藏招式</a>
+                            <a href="interaction_scale.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 傳播小姐可以摸嗎？行內人教你拿捏互動尺度</a>
+                            <a href="can-touch-guide.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 傳播妹可以摸嗎？2026最新互動尺度全解析</a>
+                            <a href="first_time_called.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 第一次叫傳播？新手必看的8大避坑指南</a>
+                            <a href="first-time-2026.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 2026最新！第一次叫傳播完整攻略</a>
+                            <a href="business_dinner.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 商務飯局叫什麼樣的女孩？飯局場合選擇指南</a>
+                            <a href="shoot_guide.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 打槍換人怎麼開口？完整步驟與話術解析</a>
+                            <a href="is_this_right_for_you.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors flex items-start gap-2 border-b border-white/5"><span class="text-neonPink mt-0.5">✦</span> 傳播小姐打工適合我嗎？入行前8項評估</a>
+                            <a href="male_companion.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 男傳播是什麼？女生叫傳播的完整攻略（2026）</a>
+                            <a href="taipei_agency_guide.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-neonPink hover:bg-white/10 rounded-xl transition-colors flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 台北傳播公司怎麼挑？2026新手避坑的5個關鍵秘诀！</a>
+                            <a href="tipping-guide-2026.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 叫傳播要給小費嗎？2026台北傳播小費紅包行情全解析！</a>
                         </div>
-                        <span class="ml-3 text-xl font-bold text-gray-800">歐巴傳播</span>
-                    </a>
+                    </div>
                 </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            新手指南 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="first_time_called.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">第一次叫傳播怎麼辦？</a>
-                            <a href="first-time-2026.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">2026 新手完整攻略</a>
-                            <a href="compare-girls.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 font-semibold text-purple-600">傳播妹 vs 酒店小姐比較</a>
-                            <a href="one_by_one.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">一節一節叫是什麼？</a>
-                            <a href="KTV_party.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">KTV 派對玩法攻略</a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            收費行情 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="how_much.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">2026 收費完整解析</a>
-                            <a href="companion-levels-2026.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">公關等級與價格對照</a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            服務場合 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="KTV_recommendations.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">KTV 場所推薦</a>
-                            <a href="motel_safe.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">Motel 安全指南</a>
-                            <a href="business_dinner.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">飯局妹場合攻略</a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            安全與隱私 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="safety_privacy.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">安全與隱私完整指南</a>
-                            <a href="can-touch-guide.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">互動尺度說明</a>
-                            <a href="interaction_scale.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">互動分級制度</a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            求職專區 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="recruitment.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">應徵傳播妹完整攻略</a>
-                            <a href="is_this_right_for_you.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">這份工作適合你嗎？</a>
-                            <a href="shoot_guide.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">打槍換人完全攻略</a>
-                        </div>
-                    </div>
-                    
-                    <a href="news.html" class="text-gray-700 hover:text-purple-600 font-medium">情報站</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden bg-white border-t">
-            <div class="px-4 py-2 space-y-2">
-                <select onchange="window.location.href=this.value" class="w-full p-2 border rounded">
-                    <option value="">新手指南</option>
-                    <option value="first_time_called.html">第一次叫傳播怎麼辦？</option>
-                    <option value="first-time-2026.html">2026 新手完整攻略</option>
-                    <option value="compare-girls.html" selected>傳播妹 vs 酒店小姐比較</option>
-                    <option value="one_by_one.html">一節一節叫是什麼？</option>
-                    <option value="KTV_party.html">KTV 派對玩法攻略</option>
-                </select>
-                <select onchange="window.location.href=this.value" class="w-full p-2 border rounded">
-                    <option value="">收費行情</option>
-                    <option value="how_much.html">2026 收費完整解析</option>
-                    <option value="companion-levels-2026.html">公關等級與價格對照</option>
-                </select>
-                <select onchange="window.location.href=this.value" class="w-full p-2 border rounded">
-                    <option value="">服務場合</option>
-                    <option value="KTV_recommendations.html">KTV 場所推薦</option>
-                    <option value="motel_safe.html">Motel 安全指南</option>
-                    <option value="business_dinner.html">飯局妹場合攻略</option>
-                </select>
-                <select onchange="window.location.href=this.value" class="w-full p-2 border rounded">
-                    <option value="">安全與隱私</option>
-                    <option value="safety_privacy.html">安全與隱私完整指南</option>
-                    <option value="can-touch-guide.html">互動尺度說明</option>
-                    <option value="interaction_scale.html">互動分級制度</option>
-                </select>
-                <select onchange="window.location.href=this.value" class="w-full p-2 border rounded">
-                    <option value="">求職專區</option>
-                    <option value="recruitment.html">應徵傳播妹完整攻略</option>
-                    <option value="is_this_right_for_you.html">這份工作適合你嗎？</option>
-                    <option value="shoot_guide.html">打槍換人完全攻略</option>
-                </select>
-                <a href="news.html" class="block p-2 text-gray-700 hover:bg-purple-50">情報站</a>
             </div>
         </div>
     </nav>
-    
-    <!-- Breadcrumb -->
-    <div class="bg-gray-100 py-3">
-        <div class="max-w-7xl mx-auto px-4">
-            <nav class="text-sm text-gray-600">
-                <a href="index.html" class="hover:text-purple-600">首頁</a>
-                <span class="mx-2">›</span>
-                <a href="#guide" class="hover:text-purple-600">新手指南</a>
-                <span class="mx-2">›</span>
-                <span class="text-purple-600 font-medium">傳播妹 vs 酒店小姐比較</span>
-            </nav>
+
+    <!-- Hero -->
+    <header class="relative pt-32 pb-20 px-6 z-10 text-center border-b border-white/10">
+        <div class="absolute inset-0 z-0">
+            <img src="images/card-hotel-vs.webp" alt="傳播妹與酒店小姐比較圖" loading="eager" fetchpriority="high" class="w-full h-full object-cover opacity-20 mix-blend-luminosity"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight to-transparent"></div>
         </div>
-    </div>
-    
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">傳播妹 vs 酒店小姐<br>差別在哪？2026 最新比較指南</h1>
-            <p class="text-xl md:text-2xl opacity-90 mb-8">從服務內容、收費方式、場合限制到安全隱私<br>一次搞懂兩者差異，幫你選擇最適合的方案</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="tel:0926656666" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">
-                    📞 立即諮詢 0926-656-666
-                </a>
-                <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
-            </div>
+        <div class="relative z-10 max-w-4xl mx-auto mt-12">
+            <span class="bg-electricPurple text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 inline-block">新手必讀</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">傳播妹跟酒店小姐有什麼差？<br><span class="text-gradient">30 秒核心差異一覽</span></h1>
+            <p class="text-gray-400 text-lg">By 歐巴傳播  ·  8 分鐘 閱讀</p>
         </div>
     </header>
-    
-    <main class="max-w-7xl mx-auto px-4 py-12">
-        <!-- Quick Summary -->
-        <section class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">
-                傳播妹跟酒店小姐有什麼差？30 秒核心差異一覽
-            </h2>
-            
-            <!-- Answer-First Lead -->
-            <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 mb-6 border-l-4 border-purple-500">
-                <p class="text-gray-700 leading-relaxed">
-                    想快速判斷哪種適合你？<strong class="text-purple-600">傳播妹</strong>和<strong class="text-pink-600">酒店小姐</strong>的核心差異在於：
-                    <span class="font-semibold">① 場合彈性</span>（傳播妹外派到府，酒店小姐只能到店）、
-                    <span class="font-semibold">② 收費透明度</span>（傳播妹按時計費無隱藏，酒店含檯費、少爺費動輒破萬）、
-                    <span class="font-semibold">③ 隱私程度</span>（傳播妹可選私人場所，酒店人員複雜有被撞見風險）。
-                    以下表格用 7 大維度幫你 30 秒看懂差異，判斷哪種更符合你的需求。
-                </p>
-            </div>
-            
-            <div class="overflow-x-auto">
-                <table class="w-full text-left">
-                    <thead>
-                        <tr class="border-b-2 border-purple-200">
-                            <th class="py-4 px-6 text-gray-600 font-semibold">比較項目</th>
-                            <th class="py-4 px-6 text-purple-600 font-semibold">🎤 傳播妹</th>
-                            <th class="py-4 px-6 text-pink-600 font-semibold">💋 酒店小姐</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-gray-700">
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">服務場所</td>
-                            <td class="py-4 px-6 text-purple-600 font-semibold">✅ 外派到府<br>KTV、夜店、飯店、私人場所</td>
-                            <td class="py-4 px-6 text-gray-600">❌ 固定酒店場所<br>無法外派</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">收費方式</td>
-                            <td class="py-4 px-6 text-purple-600 font-semibold">✅ 按時計費透明<br>1000-2500元/小時</td>
-                            <td class="py-4 px-6 text-gray-600">❌ 檯費+少爺費+隱藏消費<br>5000-15000元起跳</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">機動性</td>
-                            <td class="py-4 px-6 text-purple-600 font-semibold">✅ 高度機動<br>可臨時預約，1小時內到場</td>
-                            <td class="py-4 px-6 text-gray-600">❌ 需親自到場<br>無法指定時間地點</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">隱私保護</td>
-                            <td class="py-4 px-6 text-purple-600 font-semibold">✅ 可選私密場所<br>無監視器疑慮</td>
-                            <td class="py-4 px-6 text-gray-600">⚠️ 酒店人員複雜<br>有被撞見風險</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">服務內容</td>
-                            <td class="py-4 px-6">唱歌、跳舞、聊天、商務應酬<br>派對炒熱氣氛、飯局陪伴</td>
-                            <td class="py-4 px-6">包廂陪伴、喝酒聊天<br>互動遊戲、桌面服務</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">適合對象</td>
-                            <td class="py-4 px-6 text-purple-600 font-semibold">✅ 新手友善<br>商務應酬、私人派對、預算控制</td>
-                            <td class="py-4 px-6 text-gray-600">⚠️ 需有經驗<br>喜歡酒店氛圍、預算彈性</td>
-                        </tr>
-                        <tr class="hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">提前看照</td>
-                            <td class="py-4 px-6 text-purple-600 font-semibold">✅ 可提供真實照片挑選</td>
-                            <td class="py-4 px-6 text-gray-600">❌ 到場才能看到本人</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <div class="mt-8 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6">
-                <p class="text-lg text-gray-700">
-                    <span class="font-bold text-purple-600">結論：</span>
-                    如果你重視<span class="font-semibold text-purple-600">預算控制、隱私保護、場合彈性</span>，傳播妹是更好的選擇。
-                    如果你喜歡<span class="font-semibold text-pink-600">固定場所、華麗包廂、互動較親密</span>，酒店小姐可能適合你。
-                </p>
-            </div>
-        </section>
-        
-        <!-- Detailed Comparison -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">
-                傳播妹 vs 酒店小姐七大面向深度比較，哪個適合你？
-            </h2>
-            
-            <!-- Answer-First Lead -->
-            <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 mb-8 border-l-4 border-purple-500">
-                <p class="text-gray-700 leading-relaxed">
-                    從以下<strong>七大面向</strong>來看，傳播妹與酒店小姐各有優勢：
-                    <span class="font-semibold">①場合與機動性</span>（傳播妹完勝，可外派到任何場所）、
-                    <span class="font-semibold">②收費與預算</span>（傳播妹透明可控，酒店隱藏費用多）、
-                    <span class="font-semibold">③服務內容</span>（傳播妹多元，酒店偏包廂互動）、
-                    <span class="font-semibold">④隱私與安全</span>（傳播妹保護更周全）、
-                    <span class="font-semibold">⑤適合對象</span>（新手推薦傳播妹，有經驗者適合酒店）、
-                    <span class="font-semibold">⑥預約流程</span>（傳播妹更便利）、
-                    <span class="font-semibold">⑦地區覆蓋</span>（傳播妹全台服務，酒店僅限北中南三大都會）。
-                    看完這七大面向，你就能判斷哪種更適合自己的場合與需求。
-                </p>
-            </div>
-            
-            <!-- 1. 場合與機動性 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3">1</span>
-                    場合與機動性：傳播妹完勝
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-purple-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-purple-600 mb-3">🎤 傳播妹</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="text-green-500 mr-2">✓</span>
-                                <span><strong>外派到府</strong>：可到任何場所（KTV、夜店、飯店、私人招待所）</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-500 mr-2">✓</span>
-                                <span><strong>場合多元</strong>：唱歌聚會、商務應酬、生日派對、尾牙春酒</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-500 mr-2">✓</span>
-                                <span><strong>機動性高</strong>：臨時預約，最快1小時內到場</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-500 mr-2">✓</span>
-                                <span><strong>熟悉環境</strong>：選你常去的KTV，降低緊張感</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-pink-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-pink-600 mb-3">💋 酒店小姐</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="text-red-500 mr-2">✗</span>
-                                <span><strong>固定場所</strong>：只能在指定酒店消費</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-red-500 mr-2">✗</span>
-                                <span><strong>無法外派</strong>：不能帶到私人場合或飯局</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-red-500 mr-2">✗</span>
-                                <span><strong>時間受限</strong>：需配合酒店營業時間</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-yellow-500 mr-2">△</span>
-                                <span><strong>環境陌生</strong>：首次到訪需適應場所</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="mt-6 bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                    <p class="text-gray-700">
-                        <span class="font-bold text-green-600">✅ 傳播妹適合：</span>
-                        商務應酬、私人派對、生日聚會、KTV唱歌、飯局陪伴等場合彈性需求
-                    </p>
-                </div>
-            </div>
-            
-            <!-- 2. 收費與預算 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3">2</span>
-                    收費與預算：傳播妹更透明可控
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-purple-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-purple-600 mb-3">🎤 傳播妹收費結構</h4>
-                        <div class="bg-white rounded-lg p-4 mb-4">
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-purple-600 mb-2">1000-2500元/小時</div>
-                                <div class="text-sm text-gray-600">按時計費，價格透明</div>
-                            </div>
-                        </div>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>✓ 無隱藏費用（無檯費、少爺費）</li>
-                            <li>✓ 消費總額可預估</li>
-                            <li>✓ 無強迫續攤壓力</li>
-                            <li>✓ 可先詢價再決定</li>
-                        </ul>
-                        <div class="mt-4 text-center">
-                            <div class="text-lg font-semibold text-gray-700">3小時總花費約</div>
-                            <div class="text-2xl font-bold text-purple-600">3000-7500元</div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-pink-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-pink-600 mb-3">💋 酒店小姐收費結構</h4>
-                        <div class="bg-white rounded-lg p-4 mb-4">
-                            <div class="space-y-2 text-sm">
-                                <div class="flex justify-between">
-                                    <span>檯費（小姐）</span>
-                                    <span class="font-semibold">2500-6000元</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span>包廂費</span>
-                                    <span class="font-semibold">1000-3000元</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span>少爺服務費</span>
-                                    <span class="font-semibold">500-1500元</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span>酒水/水果盤</span>
-                                    <span class="font-semibold">1000-3000元</span>
-                                </div>
-                                <div class="border-t pt-2 flex justify-between font-bold">
-                                    <span>總計</span>
-                                    <span class="text-pink-600">5000-15000元起跳</span>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="space-y-2 text-gray-700 text-sm">
-                            <li>⚠️ 隱藏費用多（容易被灌單）</li>
-                            <li>⚠️ 總額難以預估</li>
-                            <li>⚠️ 有續攤壓力</li>
-                            <li>⚠️ 結帳可能超出預算</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
-                    <p class="text-gray-700">
-                        <span class="font-bold text-yellow-600">⚠️ 新手注意：</span>
-                        酒店消費最容易踩雷的就是「帳單爆表」。很多新手以為只花幾千塊，結帳卻破萬。建議新手先從傳播妹開始，預算完全可控。
-                    </p>
-                </div>
-            </div>
-            
-            <!-- 3. 服務內容 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3">3</span>
-                    服務內容：各有特色
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-purple-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-purple-600 mb-4">🎤 傳播妹服務項目</h4>
-                        <div class="grid grid-cols-2 gap-3 text-sm">
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🎤</div>
-                                <div class="font-semibold">唱歌陪伴</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">💃</div>
-                                <div class="font-semibold">熱場跳舞</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">💬</div>
-                                <div class="font-semibold">聊天談心</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🍺</div>
-                                <div class="font-semibold">喝酒助興</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🤝</div>
-                                <div class="font-semibold">商務應酬</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🎂</div>
-                                <div class="font-semibold">生日派對</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🎉</div>
-                                <div class="font-semibold">尾牙春酒</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🍽️</div>
-                                <div class="font-semibold">飯局陪伴</div>
-                            </div>
-                        </div>
-                        <p class="mt-4 text-sm text-gray-600 text-center">強調陪伴、氣氛營造、社交功能</p>
-                    </div>
-                    
-                    <div class="bg-pink-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-pink-600 mb-4">💋 酒店小姐服務項目</h4>
-                        <div class="grid grid-cols-2 gap-3 text-sm">
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🎤</div>
-                                <div class="font-semibold">包廂陪伴</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🍺</div>
-                                <div class="font-semibold">喝酒聊天</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">🎲</div>
-                                <div class="font-semibold">互動遊戲</div>
-                            </div>
-                            <div class="bg-white rounded-lg p-3 text-center">
-                                <div class="text-2xl mb-1">✨</div>
-                                <div class="font-semibold">桌面服務</div>
-                            </div>
-                        </div>
-                        <p class="mt-4 text-sm text-gray-600 text-center">強調包廂內互動、個人服務</p>
-                    </div>
-                </div>
-                
-                <div class="mt-6 bg-red-50 border-l-4 border-red-500 p-4 rounded">
-                    <p class="text-gray-700">
-                        <span class="font-bold text-red-600">🚫 重要提醒：</span>
-                        無論傳播妹或酒店小姐，皆不提供色情服務。任何涉及性交易的行為皆違法，請自重並遵守法律規範。
-                    </p>
-                </div>
-            </div>
-            
-            <!-- 4. 隱私與安全 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3">4</span>
-                    隱私與安全：傳播妹保護更周全
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-purple-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-purple-600 mb-3">🎤 傳播妹隱私優勢</h4>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="text-green-500 mr-2 text-xl">✓</span>
-                                <span><strong>私密場所</strong>：可選私人KTV包廂、飯店、招待所</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-500 mr-2 text-xl">✓</span>
-                                <span><strong>無監視器疑慮</strong>：場所由你選擇，掌控度高</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-500 mr-2 text-xl">✓</span>
-                                <span><strong>進出低調</strong>：不易被熟人撞見</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-500 mr-2 text-xl">✓</span>
-                                <span><strong>時間彈性</strong>：可選離峰時段，避開人潮</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-pink-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-pink-600 mb-3">💋 酒店隱私風險</h4>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="text-red-500 mr-2 text-xl">✗</span>
-                                <span><strong>人員複雜</strong>：酒店進出人多，有被撞見風險</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-red-500 mr-2 text-xl">✗</span>
-                                <span><strong>監視器疑慮</strong>：部分場所有監控（雖不拍包廂內）</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-yellow-500 mr-2 text-xl">△</span>
-                                <span><strong>停車暴露</strong>：車子停在酒店門口易被識別</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-yellow-500 mr-2 text-xl">△</span>
-                                <span><strong>營業時間</strong>：只能選酒店營業時段</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-                    <p class="text-gray-700">
-                        <span class="font-bold text-blue-600">💡 隱私小撇步：</span>
-                        如選擇酒店，建議挑選有獨立出入口、停車場較隱密的店家。如選傳播妹，可預訂私人包廂或廂或飯店，隱私保護更完善。
-                    </p>
-                </div>
-            </div>
-            
-            <!-- 5. 適合對象 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3">5</span>
-                    適合對象：你是哪一種？
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-purple-600 mb-4">✅ 適合選傳播妹的人</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">1</span>
-                                <span><strong>第一次嘗試</strong>，不想踩雷的新手</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">2</span>
-                                <span><strong>預算有限</strong>，想要費用可控</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">3</span>
-                                <span><strong>重視隱私</strong>，不想被撞見</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">4</span>
-                                <span><strong>商務應酬</strong>，需要飯局或場合陪伴</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">5</span>
-                                <span><strong>私人派對</strong>，生日、尾牙、朋友聚會</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">6</span>
-                                <span><strong>時間彈性</strong>，需要臨時預約</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-pink-600 mb-4">✅ 適合選酒店小姐的人</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">1</span>
-                                <span><strong>有經驗</strong>，熟悉酒店生態</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">2</span>
-                                <span><strong>預算彈性</strong>，不在意隱藏消費</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">3</span>
-                                <span><strong>喜歡酒店氛圍</strong>，華麗包廂享受</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">4</span>
-                                <span><strong>固定場所</strong>，不想另找地點</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">5</span>
-                                <span><strong>互動偏好</strong>，喜歡較親密互動</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 text-sm">6</span>
-                                <span><strong>夜生活老手</span>，懂的避坑技巧</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 6. 預約流程 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3">6</span>
-                    預約流程：傳播妹更便利
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-purple-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-purple-600 mb-4">🎤 傳播妹預約流程</h4>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">1</span>
-                                <div>
-                                    <div class="font-semibold">LINE 或電話聯繫</div>
-                                    <div class="text-sm text-gray-600">告知時間、地點、人數需求</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">2</span>
-                                <div>
-                                    <div class="font-semibold">提供照片挑選</div>
-                                    <div class="text-sm text-gray-600">可提前看真實照片，選喜歡的類型</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">3</span>
-                                <div>
-                                    <div class="font-semibold">確認價格與服務</div>
-                                    <div class="text-sm text-gray-600">透明報價，無隱藏費用</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">4</span>
-                                <div>
-                                    <div class="font-semibold">指定時間到場</div>
-                                    <div class="text-sm text-gray-600">最快1小時內到達你指定的場所</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">5</span>
-                                <div>
-                                    <div class="font-semibold">滿意再消費</div>
-                                    <div class="text-sm text-gray-600">不滿意可打槍換人（依公司規定）</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-pink-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-pink-600 mb-4">💋 酒店消費流程</h4>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">1</span>
-                                <div>
-                                    <div class="font-semibold">親自到酒店</div>
-                                    <div class="text-sm text-gray-600">需前往指定場所</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">2</span>
-                                <div>
-                                    <div class="font-semibold">服務生帶位</div>
-                                    <div class="text-sm text-gray-600">進入包廂，安排小姐</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">3</span>
-                                <div>
-                                    <div class="font-semibold">現場看到小姐</div>
-                                    <div class="text-sm text-gray-600">到場才能看到本人，無法提前挑選</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">4</span>
-                                <div>
-                                    <div class="font-semibold">開始消費</div>
-                                    <div class="text-sm text-gray-600">檯費、酒水、包廂費等陸續產生</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <span class="w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center mr-3 font-bold">5</span>
-                                <div>
-                                    <div class="font-semibold">結帳離場</div>
-                                    <div class="text-sm text-gray-600">可能超出預期金額</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 7. 地區覆蓋 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3">7</span>
-                    地區覆蓋：傳播妹服務範圍更廣
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-purple-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-purple-600 mb-3">🎤 傳播妹服務地區</h4>
-                        <div class="grid grid-cols-3 gap-2 text-center text-sm">
-                            <div class="bg-white rounded-lg p-2 font-semibold">台北</div>
-                            <div class="bg-white rounded-lg p-2 font-semibold">新北</div>
-                            <div class="bg-white rounded-lg p-2 font-semibold">桃園</div>
-                            <div class="bg-white rounded-lg p-2 font-semibold">新竹</div>
-                            <div class="bg-white rounded-lg p-2 font-semibold">台中</div>
-                            <div class="bg-white rounded-lg p-2 font-semibold">彰化</div>
-                            <div class="bg-white rounded-lg p-2 font-semibold">台南</div>
-                            <div class="bg-white rounded-lg p-2 font-semibold">高雄</div>
-                            <div class="bg-white rounded-lg p-2 font-semibold">屏東</div>
-                        </div>
-                        <p class="mt-4 text-sm text-gray-600 text-center">全台外派服務，偏遠地區需加車馬費</p>
-                    </div>
-                    
-                    <div class="bg-pink-50 rounded-xl p-6">
-                        <h4 class="text-xl font-bold text-pink-600 mb-3">💋 酒店服務地區</h4>
-                        <div class="grid grid-cols-3 gap-2 text-center text-sm">
-                            <div class="bg-white rounded-lg p-2">台北</div>
-                            <div class="bg-white rounded-lg p-2">台中</div>
-                            <div class="bg-white rounded-lg p-2">高雄</div>
-                        </div>
-                        <p class="mt-4 text-sm text-gray-600 text-center">限固定場所，需親自前往</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- CTA Section -->
-        <section class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-2xl shadow-xl p-8 text-white text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">想試試看傳播妹服務？</h2>
-            <p class="text-xl opacity-90 mb-6">第一次也不用擔心，我們會全程協助你<br>從預約到場合安排，一次到位</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="tel:0926656666" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">
-                    📞 立即諮詢 0926-656-666
-                </a>
-                <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
-            </div>
-        </section>
-        
-        <!-- FAQ Section -->
-        <section class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
-                <span class="text-4xl mr-3">❓</span>
-                常見問題 FAQ
-            </h2>
-            
-            <div class="space-y-4 faq-section">
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            傳播妹和酒店小姐最大的差別是什麼？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        最大差別在「場合」和「機動性」。傳播妹可以外派到KTV、夜店、私人派對等各種場合，機動性高；酒店小姐則固定在酒店場所服務，無法外派。傳播妹強調陪伴和氣氛營造，酒店小姐則更著重包廂內的互動服務。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            傳播妹收費和酒店小姐收費哪個比較貴？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        一般來說酒店小姐收費較高，因為包含場所費用、檯費、少爺服務費等隱藏成本，總花費通常在5000-15000元起跳。傳播妹收費較透明，按時計費，每小時1000-2500元不等，無額外場所費用，總體花費較可控。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            第一次想嘗試，選傳播妹還是酒店小姐比較好？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        建議新手先從傳播妹開始。原因：①收費透明，不會被灌單；②可選熟悉場所（如常去的KTV），降低緊張感；③機動性高，可提前看照挑選；④無強迫消費壓力。酒店環境較複雜，新手容易踩雷或超出預算。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            傳播妹和酒店小姐的服務內容有什麼不同？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        傳播妹服務：唱歌陪伴、熱場跳舞、聊天談心、喝酒助興、商務應酬充場面、生日派對炒熱氣氛。酒店小姐服務：包廂內陪伴、喝酒聊天、互動遊戲、桌面服務。兩者皆不提供色情服務，但酒店小姐互動通常較親密。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            叫傳播妹和去酒店玩，哪個隱私保護比較好？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        傳播妹隱私保護較佳。原因：①可選私密場所（私人KTV包廂、飯店等）；②無攝影監控疑慮；③進出地點較不明顯。酒店場所人員進出複雜，有被熟人撞見風險，且部分場所有安裝監視器（雖依法不得拍攝包廂內）。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            傳播妹可以帶去飯局或商務聚會嗎？酒店小姐可以嗎？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        傳播妹可以，酒店小姐不行。傳播妹專門提供外派服務，可陪同出席飯局、商務聚會、尾牙春酒等場合，協助炒熱氣氛、社交應酬。酒店小姐受限於場所，無法離開酒店提供外派服務。這是兩者最關鍵的差異之一。
-                    </p>
-                </details>
-            </div>
-        </section>
-        
-        <!-- Related Articles -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">延伸閱讀</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <a href="first_time_called.html" class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group">
-                    <img src="images/card-first-time.jpg" alt="第一次叫傳播怎麼辦" class="w-full h-48 object-cover group-hover:scale-105 transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">第一次叫傳播怎麼辦？</h3>
-                        <p class="text-gray-600 text-sm">完整新手攻略，從預約到場合安排一次搞懂</p>
-                    </div>
-                </a>
-                
-                <a href="how_much.html" class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group">
-                    <img src="images/card-price.jpg" alt="2026收費完整解析" class="w-full h-48 object-cover group-hover:scale-105 transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">2026 傳播妹收費完整解析</h3>
-                        <p class="text-gray-600 text-sm">價格透明、費用明細、預算計算一次看懂</p>
-                    </div>
-                </a>
-                
-                <a href="KTV_party.html" class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group">
-                    <img src="images/card-ktv-party.jpg" alt="KTV派對玩法攻略" class="w-full h-48 object-cover group-hover:scale-105 transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">KTV 派對玩法攻略</h3>
-                        <p class="text-gray-600 text-sm">唱歌、跳舞、熱場一次搞定</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+
+    <main class="relative z-10 max-w-3xl mx-auto px-6 py-16 article-content">
+<div class="my-8 rounded-2xl overflow-hidden"><img src="images/content-ktv-rec.webp" alt="KTV夜生活場合" loading="lazy" class="w-full h-auto object-cover"/></div>
+        <!-- GEO Quick Answer -->
+        <div class="glass-panel p-8 rounded-2xl mb-12 border-l-4 border-l-neonPink">
+            <h3 class="!mt-0 !text-xl flex items-center gap-2"><iconify-icon icon="ph:lightning-fill"></iconify-icon> AI 快速解答懶人包</h3>
+            <p class="!mb-0 !text-base"><strong>傳播妹跟酒店小姐最大差別？</strong>「場合」和「機動性」。傳播妹可外派到 KTV、夜店、私人派對等任何地點，收費透明（NT$1,200-2,500/小時）；酒店小姐固定在酒店場所，總花費含隱藏費用（NT$5,000-15,000+）。新手建議從傳播妹開始。</p>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="glass-panel rounded-2xl p-6 md:p-8 mb-10 overflow-x-auto">
+            <h3 class="!mt-0 !text-xl !mb-6 text-white">七大面向深度比較</h3>
+            <table class="w-full text-sm md:text-base">
+                <thead>
+                    <tr class="border-b border-white/20">
+                        <th class="text-left py-3 pr-4 text-gray-300 font-medium">比較項目</th>
+                        <th class="text-center py-3 px-4 text-neonPink font-bold">傳播妹</th>
+                        <th class="text-center py-3 pl-4 text-gray-400 font-medium">酒店小姐</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-300">
+                    <tr class="border-b border-white/10"><td class="py-3 pr-4 font-medium text-white">服務場所</td><td class="py-3 px-4 text-center">KTV、夜店、飯局、派對、Motel 等任何地點</td><td class="py-3 pl-4 text-center">固定酒店包廂</td></tr>
+                    <tr class="border-b border-white/10"><td class="py-3 pr-4 font-medium text-white">收費方式</td><td class="py-3 px-4 text-center">NT$1,200-2,500/小時，無隱藏費用</td><td class="py-3 pl-4 text-center">檯費+包廂費+少爺費+酒水，NT$5,000-15,000+</td></tr>
+                    <tr class="border-b border-white/10"><td class="py-3 pr-4 font-medium text-white">預約方式</td><td class="py-3 px-4 text-center">LINE / 電話，提前 30 分鐘可預</td><td class="py-3 pl-4 text-center">親自到酒店或透過經紀</td></tr>
+                    <tr class="border-b border-white/10"><td class="py-3 pr-4 font-medium text-white">選擇彈性</td><td class="py-3 px-4 text-center">到場前可看照片指定，不滿意可換人</td><td class="py-3 pl-4 text-center">到酒店看檯，選擇受限</td></tr>
+                    <tr class="border-b border-white/10"><td class="py-3 pr-4 font-medium text-white">場合適合度</td><td class="py-3 px-4 text-center">商務、派對、KTV、飯局、尾牙春酒</td><td class="py-3 pl-4 text-center">純夜生活，固定場所</td></tr>
+                    <tr class="border-b border-white/10"><td class="py-3 pr-4 font-medium text-white">隱私保護</td><td class="py-3 px-4 text-center">自選場所，隱私性高</td><td class="py-3 pl-4 text-center">酒店監控，隱私較低</td></tr>
+                    <tr><td class="py-3 pr-4 font-medium text-white">適合新手</td><td class="py-3 px-4 text-center text-neonPink font-bold">✅ 非常適合</td><td class="py-3 pl-4 text-center">⚠️ 較複雜</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>傳播妹 vs 酒店小姐：價格比較</h2>
+        <p>兩者最大差異之一是<strong class="text-white">收費結構的透明度</strong>：</p>
+        <div class="step-card">
+            <p class="!mb-2"><strong>🔥 傳播妹收費（歐巴傳播）</strong></p>
+            <ul class="!mb-0">
+                <li>公關（General）等級：NT$1,200-1,500/小時</li>
+                <li>保三等級：NT$1,500-2,000/小時</li>
+                <li>VIP/Model 等級：NT$2,000-2,500/小時</li>
+                <li><strong class="text-neonPink">無隱藏費用</strong>，到場滿意才計時</li>
+            </ul>
+        </div>
+        <div class="step-card" style="border-color: rgba(255,45,175,0.25); background: rgba(255,45,175,0.06);">
+            <p class="!mb-2"><strong>🏨 酒店小姐收費（參考行情）</strong></p>
+            <ul class="!mb-0">
+                <li>檯費：NT$1,500-3,000/節（15分鐘）</li>
+                <li>包廂費：NT$1,000-3,000/小時</li>
+                <li>少爺服務費：NT$500-1,000</li>
+                <li>酒水：額外計費，經常超支</li>
+                <li><strong class="text-gray-300">總花費輕易破萬</strong>，隱藏成本高</li>
+            </ul>
+        </div>
+
+        <h2>哪個適合你？依需求推薦</h2>
+        <p>選擇哪種服務，取決於你的<strong class="text-white">場合需求、預算和經驗程度</strong>：</p>
+        <ul>
+            <li><strong>商務飯局、客戶應酬</strong> → 傳播妹（場合彈性、專業形象）</li>
+            <li><strong>KTV 唱歌派對</strong> → 傳播妹（氣氛帶動強、場所熟悉）</li>
+            <li><strong>生日慶祝、私人派對</strong> → 傳播妹（彈性安排、到場快）</li>
+            <li><strong>純酒店夜生活體驗</strong> → 酒店小姐（華麗包廂氛圍）</li>
+            <li><strong>新手第一次</strong> → 傳播妹（收費透明、可看照片選擇）</li>
+        </ul>
+
+        <h2>新手選傳播妹的 5 大理由</h2>
+        <ul>
+            <li><strong>收費透明：</strong>預約時確認最終價格，不會被灌單</li>
+            <li><strong>可看照片：</strong>到場前提供女孩照片，不滿意可換人</li>
+            <li><strong>場合自由：</strong>在自己熟悉的地點（如常去的 KTV）更自在</li>
+            <li><strong>無壓力：</strong>無包廂最低消費，少爺服務費等隱藏項目</li>
+            <li><strong>LINE 預約：</strong>在家就能完成預約，不需要親自到複雜場所</li>
+        </ul>
+
     </main>
-    
-    <!-- Footer -->
-    
 
-<!-- 為什麼選擇歐巴傳播 -->
-<section class="py-16 px-6 relative z-10">
-    <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-black mb-3">
-            為什麼選擇<span class="text-gradient">歐巴傳播</span>？
-        </h2>
-        <p class="text-gray-400 mb-10">4個讓客戶回頭的理由</p>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-            <div class="glass-panel rounded-2xl p-6 text-center hover:border-[#06C755]/50 transition-colors">
-                <iconify-icon icon="ph:clock-countdown-fill" class="text-4xl text-[#06C755] mb-3"></iconify-icon>
-                <div class="text-2xl font-black text-textWhite">30分鐘</div>
-                <div class="text-xs text-gray-400 mt-1">快速到府調度</div>
-            </div>
-            <div class="glass-panel rounded-2xl p-6 text-center hover:border-[#06C755]/50 transition-colors">
-                <iconify-icon icon="ph:shield-check-fill" class="text-4xl text-electricPurple mb-3"></iconify-icon>
-                <div class="text-2xl font-black text-textWhite">100%</div>
-                <div class="text-xs text-gray-400 mt-1">隱私保密保障</div>
-            </div>
-            <div class="glass-panel rounded-2xl p-6 text-center hover:border-[#06C755]/50 transition-colors">
-                <iconify-icon icon="ph:arrows-clockwise-fill" class="text-4xl text-neonPink mb-3"></iconify-icon>
-                <div class="text-2xl font-black text-textWhite">打槍換人</div>
-                <div class="text-xs text-gray-400 mt-1">不滿意免費換</div>
-            </div>
-            <div class="glass-panel rounded-2xl p-6 text-center hover:border-[#06C755]/50 transition-colors">
-                <iconify-icon icon="ph:star-fill" class="text-4xl text-yellow-400 mb-3"></iconify-icon>
-                <div class="text-2xl font-black text-textWhite">98%</div>
-                <div class="text-xs text-gray-400 mt-1">客戶滿意回頭</div>
+    <!-- 新手專區：LINE 匿名諮詢 -->
+            <!-- FAQ -->
+        <div class="faq-section">
+            <h2 class="section-title">常見問題 FAQ</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q1</span>
+                        <span class="faq-q-text">傳播妹和酒店小姐有什麼差別？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>最大差別在「場合」和「機動性」。傳播妹可以外派到KTV、夜店、私人派對等各種場合，機動性高；酒店小姐則固定在酒店場所服務，無法外派。傳播妹強調陪伴和氣氛營造，酒店小姐則更著重包廂內的互動服務。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q2</span>
+                        <span class="faq-q-text">傳播妹和酒店哪個比較便宜？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>傳播妹通常比較便宜。傳播妹按時計費，每小時 NT$1,200-2,500，無額外隱藏費用；酒店小姐收費包含檯費、包廂費、少爺服務費、酒水等，總花費通常在 NT$5,000-15,000 起跳，隱藏成本高且容易超出預算。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q3</span>
+                        <span class="faq-q-text">傳播妹可以在酒店以外的地方服務嗎？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>可以。傳播妹的特色就是外派服務，可以到KTV、夜店、私人派對、飯店、招待所、尾牙春酒場合等任何地點。酒店小姐則受限於場所，只能在酒店包廂內服務，無法外派。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q4</span>
+                        <span class="faq-q-text">傳播妹和酒店誰的品質比較好？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>兩者無法直接比較「誰比較好」，而是適合不同需求。傳播妹強調場合陪伴、氣氛營造，可提前看照挑選；酒店小姐包廂互動較親密，適合喜歡酒店氛圍的人。品質感受因人而異，新手建議先從傳播妹開始熟悉。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q5</span>
+                        <span class="faq-q-text">傳播妹適合什麼場合？酒店適合什麼場合？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>傳播妹適合：商務應酬、KTV唱歌、私人派對、生日聚會、尾牙春酒、飯局陪伴等場合彈性需求。酒店適合：喜歡華麗包廂氛圍、固定場所消費、夜生活老手、預算彈性且不在意隱藏費用的人。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q6</span>
+                        <span class="faq-q-text">第一次去該選傳播妹還是酒店？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>建議新手先從傳播妹開始。原因：①收費透明，不會被灌單；②可選熟悉場所（如常去的KTV），降低緊張感；③可提前看照挑選，不滿意可換人；④無強迫消費壓力。酒店環境較複雜，新手容易踩雷或超出預算。</p>
+                    </div>
+                </details>
             </div>
         </div>
 
-        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer"
-           class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-[#06C755] hover:bg-[#05a546] text-white font-black text-xl transition-all shadow-[0_0_30px_rgba(6,199,85,0.4)] hover:scale-[1.03]"
-           onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'choose_us'});">
-            <iconify-icon icon="bi:line" class="text-2xl"></iconify-icon>
-            用 LINE 預約，享保障
-        </a>
-    </div>
-</section>
+<section class="py-16 px-6 relative z-10">
+        <div class="max-w-3xl mx-auto">
+            <div class="glass-panel rounded-3xl p-8 md:p-10 border border-electricPurple/30 text-center">
+                <div class="w-16 h-16 rounded-full bg-electricPurple/20 flex items-center justify-center mx-auto mb-6">
+                    <iconify-icon icon="ph:user-circle-question-fill" class="text-4xl text-electricPurple"></iconify-icon>
+                </div>
+                <h3 class="text-2xl md:text-3xl font-black mb-3">
+                    還有疑問？<br><span class="text-electricPurple">LINE 先問，不尷尬</span>
+                </h3>
+                <p class="text-gray-400 mb-8 text-sm md:text-base">
+                    可以先化名詢問行程、收費、注意事項。<br>
+                    專人回覆，不需要當場決定。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
+                    <a href="tel:+886926656666"
+                       class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border border-white/20 hover:bg-white/10 text-white font-bold text-lg transition-colors"
+                       onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'first_timer'});">
+                        <iconify-icon icon="ph:phone-fill" class="text-neonPink text-xl"></iconify-icon>
+                        致電 0926-656666
+                    </a>
+                </div>
+                <p class="mt-4 text-xs text-gray-500 flex items-center justify-center gap-1">
+                    <iconify-icon icon="ph:lock-simple-fill" class="text-xs"></iconify-icon>
+                    所有對話絕對保密，不留存任何紀錄
+                </p>
+            </div>
+        </div>
+    </section>
 
-<footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+    <!-- Footer -->
+    <footer class="bg-[#07030f] border-t border-white/10 py-16 mt-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">歐巴傳播</h3>
-                    <p class="text-gray-400 text-sm">台北夜生活娛樂服務<br>傳播妹、飯局妹、派對陪伴</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <iconify-icon icon="mdi:crown" class="text-neonPink text-2xl"></iconify-icon>
+                        <span class="font-display text-xl tracking-widest font-bold">歐巴傳播</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">台北夜生活娛樂服務領導品牌。傳播妹、飯局妹、派對陪伴，正派經營，價格透明。</p>
                     <div class="mt-4 space-y-2">
-                        <p class="text-sm">📞 0926-656-666</p>
-                        <p class="text-sm">LINE: @938nzmjr</p>
+                        <p class="text-sm text-gray-400 flex items-center gap-2"><iconify-icon icon="ph:phone-fill" class="text-neonPink"></iconify-icon> 0926-656-666</p>
+                        <p class="text-sm text-gray-400 flex items-center gap-2"><iconify-icon icon="bi:line" class="text-green-400"></iconify-icon> @938nzmjr</p>
                     </div>
                 </div>
-                
                 <div>
-                    <h4 class="font-bold mb-4">新手指南</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="first_time_called.html" class="hover:text-purple-400">第一次叫傳播怎麼辦？</a></li>
-                        <li><a href="compare-girls.html" class="hover:text-purple-400">傳播妹 vs 酒店小姐比較</a></li>
-                        <li><a href="business-guide.html" class="hover:text-purple-400">商務公關推薦攻略</a></li>
-                        <li><a href="legality-guide.html" class="hover:text-purple-400">傳播妹合法嗎？</a></li>
-                        <li><a href="booking-guide.html" class="hover:text-purple-400">預約流程完整攻略</a></li>
-                        <li><a href="first-time-2026.html" class="hover:text-purple-400">2026 新手完整攻略</a></li>
-                        <li><a href="compare-girls.html" class="hover:text-purple-400 font-semibold text-purple-400">傳播妹 vs 酒店小姐比較</a></li>
-                        <li><a href="one_by_one.html" class="hover:text-purple-400">一節一節叫是什麼？</a></li>
-                        <li><a href="KTV_party.html" class="hover:text-purple-400">KTV 派對玩法攻略</a></li>
+                    <h4 class="font-bold text-white mb-4">新手指南</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="first_time_called.html" class="hover:text-neonPink transition-colors">第一次叫傳播？新手必看</a></li>
+                        <li><a href="compare-girls.html" class="hover:text-neonPink transition-colors">傳播妹 vs 酒店小姐</a></li>
+                        <li><a href="booking-guide.html" class="hover:text-neonPink transition-colors">預約流程完整攻略</a></li>
+                        <li><a href="how_much.html" class="hover:text-neonPink transition-colors">2026 收費行情大公開</a></li>
+                        <li><a href="business-guide.html" class="hover:text-neonPink transition-colors">商務公關推薦攻略</a></li>
+                        <li><a href="legality-guide.html" class="hover:text-neonPink transition-colors">傳播妹合法嗎？</a></li>
                     </ul>
                 </div>
-                
                 <div>
-                    <h4 class="font-bold mb-4">收費與服務</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="how_much.html" class="hover:text-purple-400">2026 收費完整解析</a></li>
-                        <li><a href="companion-levels-2026.html" class="hover:text-purple-400">公關等級與價格對照</a></li>
-                        <li><a href="KTV_recommendations.html" class="hover:text-purple-400">KTV 場所推薦</a></li>
-                        <li><a href="business_dinner.html" class="hover:text-purple-400">飯局妹場合攻略</a></li>
+                    <h4 class="font-bold text-white mb-4">場合攻略</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="KTV_recommendations.html" class="hover:text-neonPink transition-colors">台北 KTV 場所推薦</a></li>
+                        <li><a href="motel_safe.html" class="hover:text-neonPink transition-colors">Motel 安全指南</a></li>
+                        <li><a href="business_dinner.html" class="hover:text-neonPink transition-colors">飯局妹場合攻略</a></li>
+                        <li><a href="one_by_one.html" class="hover:text-neonPink transition-colors">單身客專屬玩法</a></li>
+                        <li><a href="KTV_party.html" class="hover:text-neonPink transition-colors">KTV 派對玩法</a></li>
                     </ul>
                 </div>
-                
                 <div>
-                    <h4 class="font-bold mb-4">安全與求職</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="safety_privacy.html" class="hover:text-purple-400">安全與隱私完整指南</a></li>
-                        <li><a href="can-touch-guide.html" class="hover:text-purple-400">互動尺度說明</a></li>
-                        <li><a href="recruitment.html" class="hover:text-purple-400">應徵傳播妹完整攻略</a></li>
-                        <li><a href="is_this_right_for_you.html" class="hover:text-purple-400">這份工作適合你嗎？</a></li>
-                        <li><a href="shoot_guide.html" class="hover:text-purple-400">打槍換人完全攻略</a></li>
+                    <h4 class="font-bold text-white mb-4">服務與安全</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="safety_privacy.html" class="hover:text-neonPink transition-colors">安全與隱私完整指南</a></li>
+                        <li><a href="can-touch-guide.html" class="hover:text-neonPink transition-colors">互動尺度說明</a></li>
+                        <li><a href="shoot_guide.html" class="hover:text-neonPink transition-colors">打槍換人完全攻略</a></li>
+                        <li><a href="companion-levels-2026.html" class="hover:text-neonPink transition-colors">公關等級與價格對照</a></li>
+                        <li><a href="faq-all-in-one.html" class="hover:text-neonPink transition-colors">常見問題 FAQ</a></li>
+                        <li><a href="about-oppa.html" class="hover:text-neonPink transition-colors">關於歐巴傳播</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
                 <p>&copy; 2024-2026 歐巴傳播 All Rights Reserved</p>
-                <p class="mt-2">本站內容僅供參考，不涉及任何非法服務</p>
+                <p class="mt-2 text-xs">本站內容僅供參考，不涉及任何非法服務</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Scripts -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
-    
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // FAQ accordion styling
-        const faqItems = document.querySelectorAll('.faq-section details');
-        faqItems.forEach(item => {
-            item.addEventListener('toggle', () => {
-                const arrow = item.querySelector('.faq-arrow');
-                if (item.open) {
-                    arrow.style.transform = 'rotate(180deg)';
-                } else {
-                    arrow.style.transform = 'rotate(0deg)';
-                }
-            });
-        });
-        
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>

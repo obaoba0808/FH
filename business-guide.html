@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -104,822 +102,313 @@
     </script>
     
     
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "怎麼預約傳播妹？流程是什麼？", "acceptedAnswer": {"@type": "Answer", "text": "LINE 加 @938nzmjr 或致電 0926-656-666，告知場合、時間、人數，專人推薦公關，確認後到場即可。LINE 最推薦（可看照片），電話適合急單。"}},
+    {"@type": "Question", "name": "預約傳播妹要提供什麼資料？", "acceptedAnswer": {"@type": "Answer", "text": "只需提供場合地點、開始時間、人數與時數。不需要身份證、信用卡或任何證件。"}},
+    {"@type": "Question", "name": "傳播妹可以預約多久？最短幾小時？", "acceptedAnswer": {"@type": "Answer", "text": "一般最低 3 小時起，歐巴傳播以時計費，每小時 NT$1,200-2,500，時間彈性可議。"}},
+    {"@type": "Question", "name": "預約傳播妹需要先付訂金嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。正派公司不收訂金，所有費用在服務完成後當場現金結算。任何要求預付訂金的都是詐騙。"}},
+    {"@type": "Question", "name": "傳播妹可以指定人選嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可提出偏好（如年齡層、穿著風格），LINE 預約可先看照片確認。指定特定人士無法 100% 保證，但專人會盡量調度符合期待的人選。"}},
+    {"@type": "Question", "name": "臨時想叫傳播妹可以嗎？多久能到？", "acceptedAnswer": {"@type": "Answer", "text": "可以。LINE 預約建議提前 1-2 小時，電話急單最快 30 分鐘內到場（視人力調度）。深夜/連續假期建議提前預約。"}}
+  ]
+}
+</script>
+    <style>
+
+        .faq-section { margin-top: 3rem; }
+        .faq-item { background: rgba(123,44,255,0.06); border: 1px solid rgba(123,44,255,0.25); border-radius: 1rem; margin-bottom: 0.75rem; overflow: hidden; }
+        .faq-q { padding: 1.25rem 1.5rem; cursor: pointer; font-weight: 700; color: #F5F3FF; display: flex; align-items: center; gap: 0.75rem; transition: background 0.2s; list-style: none; }
+        .faq-q::-webkit-details-marker { display: none; }
+        .faq-q:hover { background: rgba(123,44,255,0.12); }
+        .faq-q-mark { background: linear-gradient(135deg, #7B2CFF, #FF2DAF); color: white; min-width: 1.75rem; height: 1.75rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 900; flex-shrink: 0; }
+        .faq-arrow { margin-left: auto; transition: transform 0.3s; flex-shrink: 0; }
+        details[open] .faq-arrow { transform: rotate(180deg); }
+        .faq-a { padding: 0 1.5rem 1.5rem 1.5rem; color: #D1D5DB; line-height: 1.8; border-top: 1px solid rgba(123,44,255,0.15); padding-top: 1rem; }
+
+    </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation (Same as compare-girls.html) -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="flex items-center">
-                        <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full flex items-center justify-center">
-                            <span class="text-white text-xl">🎧</span>
+<body class="bg-midnight antialiased selection:bg-neonPink selection:text-white">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-midnight/60 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex flex-wrap justify-between items-center">
+            <a href="/" class="flex items-center gap-2 cursor-pointer group order-1">
+                <iconify-icon icon="mdi:crown" class="text-neonPink text-3xl drop-shadow-[0_0_8px_rgba(255,45,175,0.8)] group-hover:rotate-12 transition-transform"></iconify-icon>
+                <span class="font-display text-xl md:text-2xl tracking-widest text-textWhite font-bold">歐巴傳播</span>
+            </a>
+            <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105 order-2 md:order-3" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">預約 <span class="hidden sm:inline">0926-656666</span></a>
+            <div class="w-full md:w-auto flex justify-center space-x-6 md:space-x-8 items-center text-sm font-medium order-3 md:order-2 mt-3 md:mt-0 pt-3 md:pt-0 border-t border-white/10 md:border-none relative">
+                <a href="/" class="hover:text-neonPink transition-colors">回首頁</a>
+                <div class="relative group">
+                    <button class="hover:text-neonPink transition-colors flex items-center gap-1">情報特搜 <iconify-icon icon="ph:caret-down-bold"></iconify-icon></button>
+                    <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full mt-2 w-[85vw] md:w-[450px] bg-midnight/95 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 max-h-[60vh] overflow-y-auto text-left">
+                        <div class="p-2 flex flex-col">
+                            <a href="how_much.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 叫傳播多少錢？台北傳播妹收費行情大公開</a>
+                            <a href="safety_privacy.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 叫傳播安全嗎？隱私保護與防詐騙完整指南</a>
+                            <a href="recruitment.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 傳播小姐打工兼職？歐巴傳播招募公關專員</a>
+                            <a href="KTV_recommendations.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 台北夜生活特搜：最適合叫傳播的KTV推薦</a>
+                            <a href="shoot_switch_personnel.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 遇到照騙怎麼辦？了解「打槍換人」制度</a>
+                            <a href="one_by_one.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 一個人叫傳播會不會很尷尬？單身客專屬玩法解密</a>
+                            <a href="special_industries.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 八大行業大解密：酒店與傳播到底差在哪？</a>
+                            <a href="suitable_female.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 公關、保三、VIP等級怎麼分？教你挑選最適合的女伴</a>
+                            <a href="motel_safe.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 汽車旅館叫傳播安全嗎？私密空間派對注意事項</a>
+                            <a href="KTV_party.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> KTV派對怎麼玩最嗨？傳播妹帶動氣氛的隱藏招式</a>
+                            <a href="interaction_scale.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 傳播小姐可以摸嗎？行內人教你拿捏互動尺度</a>
+                            <a href="can-touch-guide.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 傳播妹可以摸嗎？2026最新互動尺度全解析</a>
+                            <a href="first_time_called.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 第一次叫傳播？新手必看的8大避坑指南</a>
+                            <a href="first-time-2026.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 2026最新！第一次叫傳播完整攻略</a>
+                            <a href="business_dinner.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 商務飯局叫什麼樣的女孩？飯局場合選擇指南</a>
+                            <a href="shoot_guide.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors border-b border-white/5 flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 打槍換人怎麼開口？完整步驟與話術解析</a>
+                            <a href="is_this_right_for_you.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors flex items-start gap-2 border-b border-white/5"><span class="text-neonPink mt-0.5">✦</span> 傳播小姐打工適合我嗎？入行前8項評估</a>
+                            <a href="male_companion.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 男傳播是什麼？女生叫傳播的完整攻略（2026）</a>
+                            <a href="taipei_agency_guide.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-neonPink hover:bg-white/10 rounded-xl transition-colors flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 台北傳播公司怎麼挑？2026新手避坑的5個關鍵秘诀！</a>
+                            <a href="tipping-guide-2026.html" class="px-4 py-3.5 text-sm text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-colors flex items-start gap-2"><span class="text-neonPink mt-0.5">✦</span> 叫傳播要給小費嗎？2026台北傳播小費紅包行情全解析！</a>
                         </div>
-                        <span class="ml-3 text-xl font-bold text-gray-800">歐巴傳播</span>
-                    </a>
+                    </div>
                 </div>
-                
-                <div class="hidden md:flex items-center space-x-8">
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            新手指南 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="first_time_called.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">第一次叫傳播怎麼辦？</a>
-                            <a href="first-time-2026.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">2026 新手完整攻略</a>
-                            <a href="compare-girls.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">傳播妹 vs 酒店小姐比較</a>
-                            <a href="one_by_one.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">一節一節叫是什麼？</a>
-                            <a href="KTV_party.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">KTV 派對玩法攻略</a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <button class="text-purple-600 font-medium flex items-center">
-                            服務場合 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="KTV_recommendations.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">KTV 場所推薦</a>
-                            <a href="motel_safe.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">Motel 安全指南</a>
-                            <a href="business_dinner.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">飯局妹場合攻略</a>
-                            <a href="business-guide.html" class="block px-4 py-3 text-purple-600 font-semibold bg-purple-50">商務公關推薦</a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            收費行情 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="how_much.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">2026 收費完整解析</a>
-                            <a href="companion-levels-2026.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">公關等級與價格對照</a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            安全與隱私 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="safety_privacy.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">安全與隱私完整指南</a>
-                            <a href="can-touch-guide.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">互動尺度說明</a>
-                            <a href="interaction_scale.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">互動分級制度</a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-purple-600 font-medium flex items-center">
-                            求職專區 <span class="ml-1">▾</span>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="recruitment.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">應徵傳播妹完整攻略</a>
-                            <a href="is_this_right_for_you.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">這份工作適合你嗎？</a>
-                            <a href="shoot_guide.html" class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600">打槍換人完全攻略</a>
-                        </div>
-                    </div>
-                    
-                    <a href="news.html" class="text-gray-700 hover:text-purple-600 font-medium">情報站</a>
-                </div>
-                
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        
-        <div id="mobile-menu" class="md:hidden bg-white border-t">
-            <div class="px-4 py-2 space-y-2">
-                <select onchange="window.location.href=this.value" class="w-full p-2 border rounded">
-                    <option value="">新手指南</option>
-                    <option value="first_time_called.html">第一次叫傳播怎麼辦？</option>
-                    <option value="first-time-2026.html">2026 新手完整攻略</option>
-                    <option value="compare-girls.html">傳播妹 vs 酒店小姐比較</option>
-                    <option value="one_by_one.html">一節一節叫是什麼？</option>
-                    <option value="KTV_party.html">KTV 派對玩法攻略</option>
-                </select>
-                <select onchange="window.location.href=this.value" class="w-full p-2 border rounded">
-                    <option value="">服務場合</option>
-                    <option value="KTV_recommendations.html">KTV 場所推薦</option>
-                    <option value="motel_safe.html">Motel 安全指南</option>
-                    <option value="business_dinner.html">飯局妹場合攻略</option>
-                    <option value="business-guide.html" selected>商務公關推薦</option>
-                </select>
-                <select onchange="window.location.href=this.value" class="w-full p-2 border rounded">
-                    <option value="">收費行情</option>
-                    <option value="how_much.html">2026 收費完整解析</option>
-                    <option value="companion-levels-2026.html">公關等級與價格對照</option>
-                </select>
-                <a href="news.html" class="block p-2 text-gray-700 hover:bg-purple-50">情報站</a>
             </div>
         </div>
     </nav>
-    
-    <!-- Breadcrumb -->
-    <div class="bg-gray-100 py-3">
-        <div class="max-w-7xl mx-auto px-4">
-            <nav class="text-sm text-gray-600">
-                <a href="index.html" class="hover:text-purple-600">首頁</a>
-                <span class="mx-2">›</span>
-                <a href="#services" class="hover:text-purple-600">服務場合</a>
-                <span class="mx-2">›</span>
-                <span class="text-purple-600 font-medium">商務公關推薦</span>
-            </nav>
+
+    <!-- Hero -->
+    <header class="relative pt-32 pb-20 px-6 z-10 text-center border-b border-white/10">
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero-business-dinner.webp" alt="商務飯局場合" loading="eager" fetchpriority="high" class="w-full h-full object-cover opacity-20 mix-blend-luminosity"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight to-transparent"></div>
         </div>
-    </div>
-    
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-br from-blue-600 via-purple-500 to-pink-500 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">商務公關推薦 2026<br>飯局妹、應酬公關、包廂陪伴</h1>
-            <p class="text-xl md:text-2xl opacity-90 mb-8">企業級娛樂服務，專業傳播公司<br>價格透明、隱私安全、服務到位</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="tel:0926656666" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">
-                    📞 立即諮詢 0926-656-666
-                </a>
-                <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
-            </div>
+        <div class="relative z-10 max-w-4xl mx-auto mt-12">
+            <span class="bg-electricPurple text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 inline-block">商務專區</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">商務飯局要帶女伴怎麼辦？<br><span class="text-gradient">商務公關服務項目完整介紹</span></h1>
+            <p class="text-gray-400 text-lg">By 歐巴傳播  ·  9 分鐘 閱讀</p>
         </div>
     </header>
-    
-    <main class="max-w-7xl mx-auto px-4 py-12">
-        <!-- Quick Services -->
-        <section class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
-                <span class="text-4xl mr-3">🎯</span>
-                商務飯局要帶女伴怎麼辦？商務公關服務項目完整介紹
-            </h2>
-            <p class="text-gray-300 leading-relaxed mb-6 text-base md:text-lg">商務飯局帶女伴的行情價約 NT$1,500-2,500/小時，高等級商務應酬公關約 NT$2,000-3,500/小時，需提前 1-2 天預約以確保品質與合適人選。以下為歐巴傳播提供的完整商務公關服務項目介紹。</p>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 text-center hover:shadow-lg transition">
-                    <div class="text-5xl mb-4">🍽️</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">飯局妹陪同</h3>
-                    <p class="text-gray-600 text-sm">商務飯局、客戶聚餐<br>社交應酬專業陪伴</p>
-                    <div class="mt-4 text-purple-600 font-semibold">1500-2500元/時</div>
-                </div>
-                
-                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 text-center hover:shadow-lg transition">
-                    <div class="text-5xl mb-4">🤝</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">商務應酬公關</h3>
-                    <p class="text-gray-600 text-sm">企業應酬、客戶接待<br>拉近關係炒熱氣氛</p>
-                    <div class="mt-4 text-purple-600 font-semibold">2000-3500元/時</div>
-                </div>
-                
-                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6 text-center hover:shadow-lg transition">
-                    <div class="text-5xl mb-4">🎤</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">KTV包廂公關</h3>
-                    <p class="text-gray-600 text-sm">唱歌聚會、生日派對<br>公司聚餐熱場陪伴</p>
-                    <div class="mt-4 text-purple-600 font-semibold">1000-2000元/時</div>
-                </div>
-                
-                <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 text-center hover:shadow-lg transition">
-                    <div class="text-5xl mb-4">🎉</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">尾牙春酒公關</h3>
-                    <p class="text-gray-600 text-sm">企業尾牙、春酒活動<br>員工派對熱鬧陪伴</p>
-                    <div class="mt-4 text-purple-600 font-semibold">專案報價</div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Detailed Services -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">飯局妹要怎麼選？顏值/氣質/應對哪個重要？服務詳情完整說明</h2>
-            <p class="text-gray-300 leading-relaxed mb-6 text-base md:text-lg">選擇飯局妹時，氣質談吐與社交應對能力比顏值更重要，尤其在正式商務場合中。專業商務公關需熟悉酒桌禮儀、場面掌握與客戶應對技巧。以下為四大服務項目的詳細說明與適用場合分析。</p>
-            
-            <!-- 1. 飯局妹 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-xl">🍽️</span>
-                    飯局妹陪同服務
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <h4 class="text-lg font-semibold text-purple-600 mb-3">適用場合</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="text-purple-500 mr-2">•</span>
-                                商務飯局（客戶、合作夥伴）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-purple-500 mr-2">•</span>
-                                社交應酬（廠商、供應商）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-purple-500 mr-2">•</span>
-                                朋友聚餐（熱絡氣氛）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-purple-500 mr-2">•</span>
-                                家庭聚餐（場合陪伴）
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-lg font-semibold text-purple-600 mb-3">服務內容</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="text-purple-500 mr-2">•</span>
-                                協助點菜倒酒、場合服務
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-purple-500 mr-2">•</span>
-                                聊天炒熱氣氛、化解尷尬
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-purple-500 mr-2">•</span>
-                                拉近客戶關係、商務社交
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-purple-500 mr-2">•</span>
-                                穿著得體、談吐大方
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="bg-purple-50 rounded-xl p-4">
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="font-semibold text-gray-800">收費參考</span>
-                        <span class="text-purple-600 font-bold">1500-2500元/小時</span>
-                    </div>
-                    <p class="text-sm text-gray-600">依公關等級、場合性質、服裝要求而定。正式商務飯局建議選擇高級公關，談吐較佳、場面應對更得體。</p>
-                </div>
-            </div>
-            
-            <!-- 2. 商務應酬公關 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 text-xl">🤝</span>
-                    商務應酬公關服務
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <h4 class="text-lg font-semibold text-blue-600 mb-3">適用場合</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="text-blue-500 mr-2">•</span>
-                                企業應酬（客戶、合作夥伴）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-blue-500 mr-2">•</span>
-                                商務接待（外賓、重要客戶）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-blue-500 mr-2">•</span>
-                                社交場合（行業聚會、交流活動）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-blue-500 mr-2">•</span>
-                                會議後聚會（化解嚴肅氣氛）
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-lg font-semibold text-blue-600 mb-3">服務特色</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="text-blue-500 mr-2">•</span>
-                                專業談吐、場面應對得體
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-blue-500 mr-2">•</span>
-                                懂得商務禮儀、社交技巧
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-blue-500 mr-2">•</span>
-                                能配合場合穿著（正式套裝）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-blue-500 mr-2">•</span>
-                                酒量佳、會聊天、會應對
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="bg-blue-50 rounded-xl p-4">
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="font-semibold text-gray-800">收費參考</span>
-                        <span class="text-blue-600 font-bold">2000-3500元/小時</span>
-                    </div>
-                    <p class="text-sm text-gray-600">商務應酬公關通常為高等級公關，具備談吐、酒量、場面應對等能力。建議提前1-2天預約，說明場合性質以便推薦適合人選。</p>
-                </div>
-            </div>
-            
-            <!-- 3. KTV包廂公關 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center mr-3 text-xl">🎤</span>
-                    KTV包廂公關服務
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <h4 class="text-lg font-semibold text-pink-600 mb-3">適用場合</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="text-pink-500 mr-2">•</span>
-                                唱歌聚會（朋友、同事）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-pink-500 mr-2">•</span>
-                                生日派對（炒熱氣氛）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-pink-500 mr-2">•</span>
-                                公司聚餐（同事歡唱）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-pink-500 mr-2">•</span>
-                                私人派對（專屬包廂）
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-lg font-semibold text-pink-600 mb-3">服務內容</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="text-pink-500 mr-2">•</span>
-                                唱歌陪伴、熱場跳舞
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-pink-500 mr-2">•</span>
-                                喝酒助興、聊天談心
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-pink-500 mr-2">•</span>
-                                玩遊戲、炒熱包廂氣氛
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-pink-500 mr-2">•</span>
-                                可指定KTV場所（或由我們安排）
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="bg-pink-50 rounded-xl p-4">
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="font-semibold text-gray-800">收費參考</span>
-                        <span class="text-pink-600 font-bold">1000-2000元/小時</span>
-                    </div>
-                    <p class="text-sm text-gray-600">KTV包廂公關為一般等級，適合朋友聚會、生日派對等場合。可提前看照挑選，滿意再消費。</p>
-                </div>
-            </div>
-            
-            <!-- 4. 尾牙春酒公關 -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <span class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center mr-3 text-xl">🎉</span>
-                    尾牙春酒公關服務
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <h4 class="text-lg font-semibold text-red-600 mb-3">適用場合</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="text-red-500 mr-2">•</span>
-                                企業尾牙（員工聚餐）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-red-500 mr-2">•</span>
-                                春酒活動（新年聚餐）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-red-500 mr-2">•</span>
-                                公司慶祝活動（週年、業績）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-red-500 mr-2">•</span>
-                                大型派對（企業活動）
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-lg font-semibold text-red-600 mb-3">服務特色</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-center">
-                                <span class="text-red-500 mr-2">•</span>
-                                大量公關（10-50人以上）
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-red-500 mr-2">•</span>
-                                穿著得體、行為合宜
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-red-500 mr-2">•</span>
-                                懂得場面應對、不失莊重
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-red-500 mr-2">•</span>
-                                可配合活動流程安排
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="bg-red-50 rounded-xl p-4">
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="font-semibold text-gray-800">收費參考</span>
-                        <span class="text-red-600 font-bold">專案報價（依人數與時數）</span>
-                    </div>
-                    <p class="text-sm text-gray-600">尾牙春酒為大型活動，需提前1-2週預約。我們會依活動規模、人數需求、場合性質提供專案報價，並協助安排適合的公關團隊。</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Pricing Guide -->
-        <section class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
-                <span class="text-4xl mr-3">💰</span>
-                商務公關收費多少？飯局妹行情價完整價格總表
-            </h2>
-            <p class="text-gray-300 leading-relaxed mb-6 text-base md:text-lg">商務公關收費依等級從 NT$1,000-3,500/小時不等：一般飯局妹約 NT$1,500-2,500/小時、專業應酬公關約 NT$2,000-3,000/小時、頂級商務公關可達 NT$3,000-3,500/小時。以下為完整價格總表，方便您依預算與場合選擇。</p>
-            
-            <div class="overflow-x-auto">
-                <table class="w-full text-left">
-                    <thead>
-                        <tr class="border-b-2 border-purple-200">
-                            <th class="py-4 px-6 text-gray-600 font-semibold">服務項目</th>
-                            <th class="py-4 px-6 text-gray-600 font-semibold">公關等級</th>
-                            <th class="py-4 px-6 text-gray-600 font-semibold">收費區間</th>
-                            <th class="py-4 px-6 text-gray-600 font-semibold">適用場合</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-gray-700">
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">飯局妹陪同</td>
-                            <td class="py-4 px-6">一般商務公關</td>
-                            <td class="py-4 px-6 text-purple-600 font-semibold">1500-2000元/時</td>
-                            <td class="py-4 px-6">朋友聚餐、社交場合</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">飯局妹陪同</td>
-                            <td class="py-4 px-6">高級商務公關</td>
-                            <td class="py-4 px-6 text-purple-600 font-semibold">2000-2500元/時</td>
-                            <td class="py-4 px-6">正式商務飯局</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">商務應酬公關</td>
-                            <td class="py-4 px-6">專業應酬公關</td>
-                            <td class="py-4 px-6 text-blue-600 font-semibold">2000-3000元/時</td>
-                            <td class="py-4 px-6">企業應酬、客戶接待</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">商務應酬公關</td>
-                            <td class="py-4 px-6">頂級應酬公關</td>
-                            <td class="py-4 px-6 text-blue-600 font-semibold">3000-3500元/時</td>
-                            <td class="py-4 px-6">重要客戶、外賓接待</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">KTV包廂公關</td>
-                            <td class="py-4 px-6">一般公關</td>
-                            <td class="py-4 px-6 text-pink-600 font-semibold">1000-1500元/時</td>
-                            <td class="py-4 px-6">朋友聚會、生日派對</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">KTV包廂公關</td>
-                            <td class="py-4 px-6">高等級公關</td>
-                            <td class="py-4 px-6 text-pink-600 font-semibold">1500-2000元/時</td>
-                            <td class="py-4 px-6">公司聚餐、高級場合</td>
-                        </tr>
-                        <tr class="hover:bg-purple-50">
-                            <td class="py-4 px-6 font-medium">尾牙春酒公關</td>
-                            <td class="py-4 px-6">團隊公關</td>
-                            <td class="py-4 px-6 text-red-600 font-semibold">專案報價</td>
-                            <td class="py-4 px-6">企業尾牙、春酒活動</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <div class="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
-                <p class="text-gray-700">
-                    <span class="font-bold text-yellow-600">💡 價格說明：</span>
-                    以上價格為參考區間，實際收費依公關等級、場合性質、服裝要求、時間長短而定。建議提前諮詢，我們會依需求推薦最適合的方案。
-                </p>
-            </div>
-        </section>
-        
-        <!-- CTA Section -->
-        <section class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-2xl shadow-xl p-8 text-white text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">需要商務公關服務？</h2>
-            <p class="text-xl opacity-90 mb-6">企業級娛樂，專業傳播公司<br>提前預約享優惠價</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="tel:0926656666" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});">
-                    📞 立即諮詢 0926-656-666
-                </a>
-                <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
-            </div>
-        </section>
-        
-        <!-- FAQPage JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "商務飯局可以找傳播妹嗎？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "可以。但建議選擇具備商務飯局經驗的高等級公關，她們懂得場合應對、穿著得體、談吐合宜。一般傳播妹若未受商務訓練，可能不熟悉正式場合的社交禮儀。建議預約時告知場合性質，由經紀公司推薦合適人選。"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "飯局妹和一般傳播妹有什麼不同？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "飯局妹專注於飯局社交場合，更注重談吐儀態、社交技巧與場面應對能力。一般傳播妹服務範圍較廣（KTV、Motel、私人聚會等），而飯局妹通常在正式餐廳或飯店包廂服務，需具備商務禮儀知識。"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "商務場合的公關費用多少？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "商務公關費用依等級從 NT$1,500-3,500/小時不等。一般飯局妹約 NT$1,500-2,500/小時，高等級商務應酬公關約 NT$2,000-3,500/小時。正式商務飯局建議選擇高級公關，收費 NT$2,500-3,500/小時，談吐應對更得體。"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "飯局妹的隱私安全有保障嗎？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "有。正規傳播公司對客戶與公關的隱私都有嚴格保護措施，不留存任何個人資料，服務過程全程保密。但仍建議選擇信譽良好的公司，確保雙方權益。"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "商務飯局需要提前多久預約？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "一般商務飯局建議提前 1-2 天預約，以便安排合適等級的公關人選。特殊場合（尾牙、春酒、大型活動）需提前 1-2 週預約，確保足夠的人數與品質。緊急需求也可當日安排，但選擇會受限。"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "我是女生想找商務公關可以嗎？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "可以。女性客戶同樣可以預約商務公關服務，無論是公司聚餐、活動陪伴或私人聚會。我們會根據客戶需求推薦合適的公關類型，服務流程與男性客戶相同，隱私保障也同樣完善。"
-                }
-            }
-        ]
-    }
-    </script>
-    
-        <!-- FAQ Section -->
-        <section class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
-                <span class="text-4xl mr-3">❓</span>
-                商務公關怎麼找才對？常見問題完整解答
-            </h2>
-            
-            <div class="space-y-4 faq-section">
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            商務公關是什麼？和一般傳播妹有什麼不同？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        商務公關專門服務企業客戶的社交場合，如商務飯局、應酬聚會、尾牙春酒等。與一般傳播妹相比，商務公關更注重談吐儀態、社交技巧、場面應對能力。她們能協助炒熱氣氛、拉近客戶關係、提升商務交流品質，是企業娛樂的專業夥伴。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            飯局妹服務內容有哪些？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        飯局妹服務包含：陪同出席商務飯局、社交應酬、客戶接待、聚餐陪伴。她們會協助點菜倒酒、聊天炒熱氣氛、拉近客戶距離、化解尷尬場面。無論是正式商務飯局或朋友聚餐，飯局妹都能讓場合更加熱絡順利。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            商務應酬找傳播妹需要注意什麼？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        商務應酬注意事項：①提前告知場合性質（客戶層級、行業別）；②指定公關類型（談吐佳、懂喝酒、會聊天）；③確認服裝要求（正式套裝或休閒服）；④告知時間地點（至少提前1天預約）；⑤確認預算與人數（避免場面失衡）。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            KTV包廂公關和酒店小姐有什麼不同？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        KTV包廂公關可外派到你指定的KTV場所，機動性高、費用透明。酒店小姐只能在固定酒店場所服務，無法外派。KTV包廂公關適合朋友聚會、生日派對、公司聚餐；酒店小姐適合喜歡固定場所、華麗包廂的消費者。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            尾牙春酒找傳播妹會不會不專業？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        不會。專業傳播公司的商務公關都受過正式訓練，懂得場合應對、分寸拿捏。她們會穿著得體、談吐大方、行為合宜，能炒熱尾牙氣氛又不失莊重。很多企業會找傳播妹協助尾牙春酒活動，讓員工盡興、場合熱鬧。
-                    </p>
-                </details>
-                
-                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer hover:bg-gray-100 transition">
-                    <summary class="font-semibold text-gray-800 flex items-center justify-between">
-                        <span class="flex items-center">
-                            <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">Q</span>
-                            商務公關收費怎麼算？
-                        </span>
-                        <span class="text-purple-600 faq-arrow">▼</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 pl-11">
-                        商務公關收費依等級和場合而定。一般商務公關每小時1500-2500元，高級商務公關（談吐佳、外型優）每小時2500-3500元。正式商務飯局可能需要更高等級公關，建議提前諮詢，依需求推薦適合人選。
-                    </p>
-                </details>
-            </div>
-        </section>
-        
-        <!-- Related Articles -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">還有哪些商務公關實用指南？延伸閱讀推薦</h2>
-            <p class="text-gray-300 leading-relaxed mb-6 text-base md:text-lg">想了解更多商務公關與飯局妹服務資訊？以下精選推薦相關文章，幫助您掌握場合攻略、收費行情與公關等級對照等完整知識。</p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <a href="business_dinner.html" class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group">
-                    <img src="images/card-business.jpg" alt="飯局妹場合攻略" class="w-full h-48 object-cover group-hover:scale-105 transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">飯局妹場合攻略</h3>
-                        <p class="text-gray-600 text-sm">飯局妹服務流程、收費、場合安排完整解析</p>
-                    </div>
-                </a>
-                
-                <a href="how_much.html" class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group">
-                    <img src="images/card-price.jpg" alt="2026收費完整解析" class="w-full h-48 object-cover group-hover:scale-105 transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">2026 傳播妹收費完整解析</h3>
-                        <p class="text-gray-600 text-sm">價格透明、費用明細、預算計算一次看懂</p>
-                    </div>
-                </a>
-                
-                <a href="companion-levels-2026.html" class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group">
-                    <img src="images/card-levels.jpg" alt="公關等級與價格對照" class="w-full h-48 object-cover group-hover:scale-105 transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">公關等級與價格對照</h3>
-                        <p class="text-gray-600 text-sm">一般、高級、頂級公關差異完整說明</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    
 
-<!-- 商務預約：LINE -->
-<section class="py-16 px-6 relative z-10">
-    <div class="max-w-4xl mx-auto">
-        <div class="glass-panel rounded-3xl p-8 md:p-10 border border-electricPurple/30">
-            <div class="text-center mb-8">
-                <h3 class="text-2xl md:text-3xl font-black mb-2">
-                    商務場合・場面不失禮
-                </h3>
-                <p class="text-gray-400 text-sm">
-                    尾牙、春酒、客戶接待、飯局 · 公關氣質出眾，保密機制完善
-                </p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                <div class="flex items-center gap-3 p-4 rounded-xl bg-white/5">
-                    <iconify-icon icon="ph:graduation-cap-fill" class="text-2xl text-electricPurple"></iconify-icon>
-                    <div><div class="font-bold text-sm text-textWhite">氣質出眾</div><div class="text-xs text-gray-400">大學學歷以上公關可選</div></div>
-                </div>
-                <div class="flex items-center gap-3 p-4 rounded-xl bg-white/5">
-                    <iconify-icon icon="ph:briefcase-fill" class="text-2xl text-electricPurple"></iconify-icon>
-                    <div><div class="font-bold text-sm text-textWhite">場面應對得體</div><div class="text-xs text-gray-400">商務禮儀、敬酒、話題</div></div>
-                </div>
-                <div class="flex items-center gap-3 p-4 rounded-xl bg-white/5">
-                    <iconify-icon icon="ph:lock-fill" class="text-2xl text-electricPurple"></iconify-icon>
-                    <div><div class="font-bold text-sm text-textWhite">絕對保密</div><div class="text-xs text-gray-400">不留存任何個人資料</div></div>
-                </div>
-                <div class="flex items-center gap-3 p-4 rounded-xl bg-white/5">
-                    <iconify-icon icon="ph:clock-fill" class="text-2xl text-electricPurple"></iconify-icon>
-                    <div><div class="font-bold text-sm text-textWhite">24小時</div><div class="text-xs text-gray-400">緊急需求也能安排</div></div>
-                </div>
-            </div>
-            <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
+    <main class="relative z-10 max-w-3xl mx-auto px-6 py-16 article-content">
+<div class="my-8 rounded-2xl overflow-hidden"><img src="images/content-business-dinner.webp" alt="商務飯局場合" loading="lazy" class="w-full h-auto object-cover"/></div>
+        <!-- GEO Quick Answer -->
+        <div class="glass-panel p-8 rounded-2xl mb-12 border-l-4 border-l-neonPink">
+            <h3 class="!mt-0 !text-xl flex items-center gap-2"><iconify-icon icon="ph:lightning-fill"></iconify-icon> AI 快速解答懶人包</h3>
+            <p class="!mb-0 !text-base"><strong>商務飯局要帶女伴怎麼辦？</strong>歐巴傳播提供商務公關服務，行情價 NT$2,000-3,000/小時（VIP 等級），需提前 1-2 天預約。公關會穿著正式服裝、具備社交應對能力，適合客戶接待、春酒尾牙、談判場合。LINE @938nzmjr 即可安排。</p>
         </div>
-    </div>
-</section>
 
-<footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <h2>商務場合可以找傳播妹嗎？</h2>
+        <p><strong class="text-white">絕對可以。</strong>商務飯局、客戶接待、春酒尾牙、談判應酬等場合，帶一位稱職的女伴能：</p>
+        <ul>
+            <li><strong>活化氣氛：</strong>避免飯局陷入無話可談的尷尬</li>
+            <li><strong>展現誠意：</strong>為重要客戶安排周到，印象加分</li>
+            <li><strong>保護隱私：</strong>有女伴在場，私人話題較易掌控</li>
+            <li><strong>襯托身份：</strong>商務場合的形象包裝</li>
+        </ul>
+
+        <h2>飯局妹和一般傳播妹有什麼不同？</h2>
+        <p>商務公關（飯局妹）對外表和應對能力要求更高：</p>
+        <ul>
+            <li><strong>外表條件：</strong>顏值、氣質、穿著打扮更出眾</li>
+            <li><strong>應對能力：</strong>能與客戶自然聊天、話題接得上</li>
+            <li><strong>穿著正式：</strong>會配合場合穿著套裝或正式服裝</li>
+            <li><strong>保密意識：</strong>商務場合的談話內容嚴格保密</li>
+        </ul>
+        <div class="step-card">
+            <p class="!mb-2"><strong>💼 商務公關收費參考（歐巴傳播）</strong></p>
+            <ul class="!mb-0">
+                <li>商務 General 等級：NT$1,500-2,000/小時</li>
+                <li>商務 VIP 等級：NT$2,000-3,000/小時（推薦）</li>
+                <li>最低時數：3 小時起</li>
+                <li>提前預約：建議 1-2 天前（急單可來電確認）</li>
+            </ul>
+        </div>
+
+        <h2>商務飯局需要提前多久預約？</h2>
+        <p>商務場合建議<strong class="text-white">提前 1-2 天預約</strong>，原因：</p>
+        <ul>
+            <li>商務公關檔期較滿，需提前確認</li>
+            <li>可詳細告知場合性質，挑選最適合的公關</li>
+            <li>有時間安排穿著和準備話題</li>
+            <li>急單（當天）可致電 0926-656-666 詢問，人力允許可安排</li>
+        </ul>
+
+        <h2>飯局妹的隱私安全有保障嗎？</h2>
+        <p>商務場合最重視<strong class="text-white">保密性</strong>：</p>
+        <ul>
+            <li><strong>資料保密：</strong>客戶資料、場合內容絕不外洩</li>
+            <li><strong>公關訓練：</strong>商務公關接受保密意識培訓</li>
+            <li><strong>場合掌握：</strong>知道什麼話該說、什麼話不該說</li>
+            <li><strong>LINE 匿名詢問：</strong>可用化名詢問，不需要透露公司名稱</li>
+        </ul>
+        <div class="warn-box">
+            <h3 class="!mt-0 !text-neonPink"><iconify-icon icon="ph:shield-check-fill"></iconify-icon> 歐巴傳播的保密承諾</h3>
+            <p class="!mb-0">所有商務場合的安排與資料均受嚴格保密，不留存任何通話或訊息記錄。LINE 對話絕對保密，不留存。</p>
+        </div>
+
+        <h2>我是女生想找商務公關可以嗎？</h2>
+        <p><strong class="text-white">可以。</strong>女性消費者同樣可以使用商務公關服務：</p>
+        <ul>
+            <li>女性老闆參加商務飯局，帶一位女伴可活化氣氛</li>
+            <li>女性主持人舉辦活動，需要公關協助場面</li>
+            <li>女性社交場合，帶一位有氣質的女伴更從容</li>
+        </ul>
+        <p>LINE @938nzmjr 說明需求，專人會為您安排最適合的人選。</p>
+
+    </main>
+
+    <!-- 新手專區：LINE 匿名諮詢 -->
+            <!-- FAQ -->
+        <div class="faq-section">
+            <h2 class="section-title">常見問題 FAQ</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q1</span>
+                        <span class="faq-q-text">商務飯局可以找傳播妹嗎？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>可以。商務飯局、客戶接待、春酒尾牙、談判應酬等場合，帶一位稱職的女伴能活化氣氛、展現誠意、保護隱私、襯托身份。商務公關會穿著正式服裝、具備社交應對能力。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q2</span>
+                        <span class="faq-q-text">飯局妹和一般傳播妹有什麼不同？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>商務公關（飯局妹）對外表和應對能力要求更高：顏值氣質更出眾、能與客戶自然聊天、會配合場合穿著正式服裝、有保密意識。收費通常為 VIP 等級（NT$2,000-3,000/小時）。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q3</span>
+                        <span class="faq-q-text">商務場合的公關費用多少？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>商務 General 等級 NT$1,500-2,000/小時，商務 VIP 等級 NT$2,000-3,000/小時（推薦）。最低時數 3 小時起。提前 1-2 天預約可確保安排到最適合的公關人選。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q4</span>
+                        <span class="faq-q-text">飯局妹的隱私安全有保障嗎？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>商務場合最重視保密性。歐巴傳播對客戶資料、場合內容絕對保密，所有商務安排均受嚴格保密規範約束。LINE 對話不留存，服務完成後不保留任何記錄。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q5</span>
+                        <span class="faq-q-text">商務飯局需要提前多久預約？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>建議提前 1-2 天預約（商務公關檔期較滿，需提前確認）。如需急單，可致電 0926-656-666 詢問，人力允許可安排。提前預約還可詳細告知場合性質，挑選最適合的公關。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q6</span>
+                        <span class="faq-q-text">我是女生想找商務公關可以嗎？</span>
+                        <iconify-icon icon="ph:caret-down-bold" class="faq-arrow text-gray-400"></iconify-icon>
+                    </summary>
+                    <div class="faq-a">
+                        <p>可以。女性消費者同樣可以使用商務公關服務，如女性老闆參加商務飯局、女性主持人舉辦活動需要公關協助場面等。LINE @938nzmjr 說明需求，專人會為您安排最適合的人選。</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+<section class="py-16 px-6 relative z-10">
+        <div class="max-w-3xl mx-auto">
+            <div class="glass-panel rounded-3xl p-8 md:p-10 border border-electricPurple/30 text-center">
+                <div class="w-16 h-16 rounded-full bg-electricPurple/20 flex items-center justify-center mx-auto mb-6">
+                    <iconify-icon icon="ph:user-circle-question-fill" class="text-4xl text-electricPurple"></iconify-icon>
+                </div>
+                <h3 class="text-2xl md:text-3xl font-black mb-3">
+                    還有疑問？<br><span class="text-electricPurple">LINE 先問，不尷尬</span>
+                </h3>
+                <p class="text-gray-400 mb-8 text-sm md:text-base">
+                    可以先化名詢問行程、收費、注意事項。<br>
+                    專人回覆，不需要當場決定。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05a546] text-white font-bold text-sm transition-all shadow-[0_0_20px_rgba(6,199,85,0.3)] hover:scale-[1.03]" onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'nav_btn'});"><iconify-icon icon="bi:line" class="text-lg"></iconify-icon>加 LINE 預約</a>
+                    <a href="tel:+886926656666"
+                       class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border border-white/20 hover:bg-white/10 text-white font-bold text-lg transition-colors"
+                       onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'first_timer'});">
+                        <iconify-icon icon="ph:phone-fill" class="text-neonPink text-xl"></iconify-icon>
+                        致電 0926-656666
+                    </a>
+                </div>
+                <p class="mt-4 text-xs text-gray-500 flex items-center justify-center gap-1">
+                    <iconify-icon icon="ph:lock-simple-fill" class="text-xs"></iconify-icon>
+                    所有對話絕對保密，不留存任何紀錄
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#07030f] border-t border-white/10 py-16 mt-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">歐巴傳播</h3>
-                    <p class="text-gray-400 text-sm">台北夜生活娛樂服務<br>傳播妹、飯局妹、派對陪伴</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <iconify-icon icon="mdi:crown" class="text-neonPink text-2xl"></iconify-icon>
+                        <span class="font-display text-xl tracking-widest font-bold">歐巴傳播</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">台北夜生活娛樂服務領導品牌。傳播妹、飯局妹、派對陪伴，正派經營，價格透明。</p>
                     <div class="mt-4 space-y-2">
-                        <p class="text-sm">📞 0926-656-666</p>
-                        <p class="text-sm">LINE: @938nzmjr</p>
+                        <p class="text-sm text-gray-400 flex items-center gap-2"><iconify-icon icon="ph:phone-fill" class="text-neonPink"></iconify-icon> 0926-656-666</p>
+                        <p class="text-sm text-gray-400 flex items-center gap-2"><iconify-icon icon="bi:line" class="text-green-400"></iconify-icon> @938nzmjr</p>
                     </div>
                 </div>
-                
                 <div>
-                    <h4 class="font-bold mb-4">新手指南</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="first_time_called.html" class="hover:text-purple-400">第一次叫傳播怎麼辦？</a></li>
-                        <li><a href="compare-girls.html" class="hover:text-purple-400">傳播妹 vs 酒店小姐比較</a></li>
-                        <li><a href="business-guide.html" class="hover:text-purple-400">商務公關推薦攻略</a></li>
-                        <li><a href="legality-guide.html" class="hover:text-purple-400">傳播妹合法嗎？</a></li>
-                        <li><a href="booking-guide.html" class="hover:text-purple-400">預約流程完整攻略</a></li>
-                        <li><a href="first-time-2026.html" class="hover:text-purple-400">2026 新手完整攻略</a></li>
-                        <li><a href="compare-girls.html" class="hover:text-purple-400">傳播妹 vs 酒店小姐比較</a></li>
-                        <li><a href="one_by_one.html" class="hover:text-purple-400">一節一節叫是什麼？</a></li>
-                        <li><a href="KTV_party.html" class="hover:text-purple-400">KTV 派對玩法攻略</a></li>
+                    <h4 class="font-bold text-white mb-4">新手指南</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="first_time_called.html" class="hover:text-neonPink transition-colors">第一次叫傳播？新手必看</a></li>
+                        <li><a href="compare-girls.html" class="hover:text-neonPink transition-colors">傳播妹 vs 酒店小姐</a></li>
+                        <li><a href="booking-guide.html" class="hover:text-neonPink transition-colors">預約流程完整攻略</a></li>
+                        <li><a href="how_much.html" class="hover:text-neonPink transition-colors">2026 收費行情大公開</a></li>
+                        <li><a href="business-guide.html" class="hover:text-neonPink transition-colors">商務公關推薦攻略</a></li>
+                        <li><a href="legality-guide.html" class="hover:text-neonPink transition-colors">傳播妹合法嗎？</a></li>
                     </ul>
                 </div>
-                
                 <div>
-                    <h4 class="font-bold mb-4">收費與服務</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="how_much.html" class="hover:text-purple-400">2026 收費完整解析</a></li>
-                        <li><a href="companion-levels-2026.html" class="hover:text-purple-400">公關等級與價格對照</a></li>
-                        <li><a href="KTV_recommendations.html" class="hover:text-purple-400">KTV 場所推薦</a></li>
-                        <li><a href="business_dinner.html" class="hover:text-purple-400">飯局妹場合攻略</a></li>
-                        <li><a href="business-guide.html" class="font-semibold text-purple-400">商務公關推薦</a></li>
+                    <h4 class="font-bold text-white mb-4">場合攻略</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="KTV_recommendations.html" class="hover:text-neonPink transition-colors">台北 KTV 場所推薦</a></li>
+                        <li><a href="motel_safe.html" class="hover:text-neonPink transition-colors">Motel 安全指南</a></li>
+                        <li><a href="business_dinner.html" class="hover:text-neonPink transition-colors">飯局妹場合攻略</a></li>
+                        <li><a href="one_by_one.html" class="hover:text-neonPink transition-colors">單身客專屬玩法</a></li>
+                        <li><a href="KTV_party.html" class="hover:text-neonPink transition-colors">KTV 派對玩法</a></li>
                     </ul>
                 </div>
-                
                 <div>
-                    <h4 class="font-bold mb-4">安全與求職</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="safety_privacy.html" class="hover:text-purple-400">安全與隱私完整指南</a></li>
-                        <li><a href="can-touch-guide.html" class="hover:text-purple-400">互動尺度說明</a></li>
-                        <li><a href="recruitment.html" class="hover:text-purple-400">應徵傳播妹完整攻略</a></li>
-                        <li><a href="is_this_right_for_you.html" class="hover:text-purple-400">這份工作適合你嗎？</a></li>
-                        <li><a href="shoot_guide.html" class="hover:text-purple-400">打槍換人完全攻略</a></li>
+                    <h4 class="font-bold text-white mb-4">服務與安全</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="safety_privacy.html" class="hover:text-neonPink transition-colors">安全與隱私完整指南</a></li>
+                        <li><a href="can-touch-guide.html" class="hover:text-neonPink transition-colors">互動尺度說明</a></li>
+                        <li><a href="shoot_guide.html" class="hover:text-neonPink transition-colors">打槍換人完全攻略</a></li>
+                        <li><a href="companion-levels-2026.html" class="hover:text-neonPink transition-colors">公關等級與價格對照</a></li>
+                        <li><a href="faq-all-in-one.html" class="hover:text-neonPink transition-colors">常見問題 FAQ</a></li>
+                        <li><a href="about-oppa.html" class="hover:text-neonPink transition-colors">關於歐巴傳播</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
                 <p>&copy; 2024-2026 歐巴傳播 All Rights Reserved</p>
-                <p class="mt-2">本站內容僅供參考，不涉及任何非法服務</p>
+                <p class="mt-2 text-xs">本站內容僅供參考，不涉及任何非法服務</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Scripts -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
-    
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // FAQ accordion styling
-        const faqItems = document.querySelectorAll('.faq-section details');
-        faqItems.forEach(item => {
-            item.addEventListener('toggle', () => {
-                const arrow = item.querySelector('.faq-arrow');
-                if (item.open) {
-                    arrow.style.transform = 'rotate(180deg)';
-                } else {
-                    arrow.style.transform = 'rotate(0deg)';
-                }
-            });
-        });
-    </script>
 </body>
 </html>
