@@ -38,6 +38,7 @@
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
+      "dateModified": "2026-07-27",
       "itemListElement":[
         {"@type": "ListItem", "position": 1, "name": "叫傳播多少錢？2025台北傳播妹收費行情大公開", "url": "https://obaoba.online/how_much.html"},
         {"@type": "ListItem", "position": 2, "name": "第一次叫傳播？新手必看的5大避坑指南", "url": "https://obaoba.online/first_time_called.html"},
@@ -69,6 +70,63 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://obaoba.online/"}, {"@type": "ListItem", "position": 2, "name": "情報特搜", "item": "https://obaoba.online/news.html"}, {"@type": "ListItem", "position": 3, "name": "情報特搜", "item": "https://obaoba.online/news.html"}]}
 </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "歐巴傳播跟酒店有什麼不同？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "最大差別在「場所」與「計價方式」：酒店需要到特定場所消費，帳單含框費、包廂費、酒水等附加費用，一攤下來輕鬆破萬。傳播則是公關到您指定的場所（餐廳、KTV、Motel等）提供陪伴服務，收費透明，只有鐘點費與車馬費，通常8千-1.5萬就能搞定，CP值遠高於酒店。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "叫傳播需要具備什麼條件？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "只要年滿18歲且在合法消費年齡以上即可預約。我們不限制客戶身份背景，只要您有正當聚會、活動或陪伴需求，歡迎直接聯絡LINE：@938nzmjr或致電0926-656666。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "服務區域包含哪些地方？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "以大台北地區（新北市、台北市）為主，核心市區一般不收車馬費。桃園、新竹、台中及其他縣市可依情況安排，詳細車馬費資訊請在預約時向公司確認。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如何預約歐巴傳播的公關服務？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "可透過LINE（ID：@938nzmjr）或致電0926-656666預約。建議提前告知聚會時間、地點、人數與想要的公關風格，公司會為您媒合最合適的人選。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "不滿意可以打槍換人嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "可以。這是正規傳播公司保障消費者權益的基本機制。在公關確認服務前，若長相或氣質不符合期待，可直接要求更換，不收取任何費用。歐巴傳播堅持讓每位客戶都能有愉快的聚會體驗。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "叫傳播安全嗎？個資會不會外洩？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "找正規公司（如歐巴傳播）非常安全。個資保護措施包含：客戶資料加密儲存、不主動聯絡家人朋友、服務結束後不保留對話紀錄、不公開轉賣個資。公關皆通過身份查核，且採見面確認後再付款，不要求事先匯款大筆金額，有效防範詐騙。"
+                }
+            }
+        ]
+    }
+    </script>
 
 
     <!-- Tailwind Config -->
@@ -137,6 +195,54 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     
+    <style>
+        .faq-section {
+            background: rgba(13, 6, 22, 0.5);
+            border-radius: 24px; padding: 3rem 2rem;
+            border: 1px solid rgba(255, 45, 175, 0.1);
+        }
+        .faq-list { display: flex; flex-direction: column; gap: 12px; }
+        details.faq-item {
+            background: rgba(123, 44, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px; overflow: hidden; transition: all 0.3s ease;
+        }
+        details.faq-item:hover {
+            border-color: rgba(255, 45, 175, 0.3);
+            background: rgba(123, 44, 255, 0.08);
+        }
+        details.faq-item[open] {
+            border-color: rgba(255, 45, 175, 0.4);
+            background: rgba(123, 44, 255, 0.08);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+        summary.faq-q {
+            display: flex; align-items: center; gap: 12px;
+            padding: 20px 24px; cursor: pointer; list-style: none; user-select: none;
+            transition: background 0.3s;
+        }
+        summary.faq-q::-webkit-details-marker { display: none; }
+        summary.faq-q:hover { background: rgba(255, 45, 175, 0.05); }
+        .faq-q-mark {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 32px; height: 32px; border-radius: 10px;
+            background: linear-gradient(135deg, #FF2DAF, #7B2CFF);
+            color: white; font-weight: 900; font-size: 16px; flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(255, 45, 175, 0.3);
+        }
+        .faq-q-text { flex: 1; font-weight: 700; font-size: 1.05rem; color: #F5F3FF; line-height: 1.5; }
+        .faq-arrow {
+            width: 20px; height: 20px; color: #FF2DAF;
+            transition: transform 0.3s ease; flex-shrink: 0;
+        }
+        details[open] .faq-arrow { transform: rotate(180deg); }
+        .faq-a {
+            padding: 0 24px 24px 68px;
+            color: #D4CCE8; line-height: 1.8; font-size: 0.95rem;
+        }
+        .faq-a a { color: #FF2DAF; text-decoration: underline; text-underline-offset: 3px; }
+        .faq-a a:hover { color: #FF60C8; }
+    </style>
     </head>
 <body class="antialiased selection:bg-neonPink selection:text-white relative">
 
@@ -422,6 +528,66 @@
                 <div class="relative z-10 flex items-center gap-2 text-neonPink font-bold text-sm mt-4">閱讀全文 <iconify-icon icon="ph:arrow-right-bold"></iconify-icon></div>
             </a>
 
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="px-6 py-12 relative z-10 max-w-3xl mx-auto">
+        <div class="faq-section">
+            <h2 class="section-title text-3xl md:text-4xl mb-6 flex items-center gap-3">
+                <iconify-icon icon="ph:question-fill" class="text-neonPink"></iconify-icon>
+                關於歐巴傳播・常見問題
+            </h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q</span>
+                        <span class="faq-q-text">歐巴傳播跟酒店有什麼不同？</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </summary>
+                    <p class="faq-a">最大差別在「場所」與「計價方式」：酒店需要到特定場所消費，帳單含框費、包廂費、酒水等附加費用，一攤下來輕鬆破萬。傳播則是公關到您指定的場所（餐廳、KTV、Motel等）提供陪伴服務，收費透明，只有鐘點費與車馬費，通常8千-1.5萬就能搞定，CP值遠高於酒店。</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q</span>
+                        <span class="faq-q-text">叫傳播需要具備什麼條件？</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </summary>
+                    <p class="faq-a">只要年滿18歲且在合法消費年齡以上即可預約。我們不限制客戶身份背景，只要您有正當聚會、活動或陪伴需求，歡迎直接聯絡LINE：@938nzmjr或致電0926-656666。</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q</span>
+                        <span class="faq-q-text">服務區域包含哪些地方？</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </summary>
+                    <p class="faq-a">以大台北地區（新北市、台北市）為主，核心市區一般不收車馬費。桃園、新竹、台中及其他縣市可依情況安排，詳細車馬費資訊請在預約時向公司確認。</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q</span>
+                        <span class="faq-q-text">如何預約歐巴傳播的公關服務？</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </summary>
+                    <p class="faq-a">可透過LINE（ID：@938nzmjr）或致電0926-656666預約。建議提前告知聚會時間、地點、人數與想要的公關風格，公司會為您媒合最合適的人選。</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q</span>
+                        <span class="faq-q-text">不滿意可以打槍換人嗎？</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </summary>
+                    <p class="faq-a">可以。這是正規傳播公司保障消費者權益的基本機制。在公關確認服務前，若長相或氣質不符合期待，可直接要求更換，不收取任何費用。歐巴傳播堅持讓每位客戶都能有愉快的聚會體驗。</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        <span class="faq-q-mark">Q</span>
+                        <span class="faq-q-text">叫傳播安全嗎？個資會不會外洩？</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </summary>
+                    <p class="faq-a">找正規公司（如歐巴傳播）非常安全。個資保護措施包含：客戶資料加密儲存、不主動聯絡家人朋友、服務結束後不保留對話紀錄、不公開轉賣個資。公關皆通過身份查核，且採見面確認後再付款，不要求事先匯款大筆金額，有效防範詐騙。</p>
+                </details>
+            </div>
         </div>
     </section>
 

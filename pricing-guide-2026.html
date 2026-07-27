@@ -41,6 +41,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
     <link href="dist/output.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -59,7 +60,7 @@
             "name": "FH 歐巴傳播"
         },
         "datePublished": "2026-07-24",
-        "dateModified": "2026-07-24"
+        "dateModified": "2026-07-27"
     }
     </script>
 
@@ -160,8 +161,72 @@
             .article-content h3 { font-size: 1.25rem; }
         }
     </style>
+
+    <style>
+        body { background-color: #0D0616; color: #F5F3FF; overflow-x: hidden; }
+        .noise-overlay {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 50; opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .glass-panel {
+            background: rgba(123, 44, 255, 0.03);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 45, 175, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(123, 44, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden; position: relative;
+        }
+        .faq-section {
+            background: rgba(13, 6, 22, 0.5);
+            border-radius: 24px; padding: 3rem 2rem;
+            border: 1px solid rgba(255, 45, 175, 0.1);
+        }
+        .faq-list { display: flex; flex-direction: column; gap: 12px; }
+        details.faq-item {
+            background: rgba(123, 44, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px; overflow: hidden; transition: all 0.3s ease;
+        }
+        details.faq-item:hover {
+            border-color: rgba(255, 45, 175, 0.3);
+            background: rgba(123, 44, 255, 0.08);
+        }
+        details.faq-item[open] {
+            border-color: rgba(255, 45, 175, 0.4);
+            background: rgba(123, 44, 255, 0.08);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+        summary.faq-q {
+            display: flex; align-items: center; gap: 12px;
+            padding: 20px 24px; cursor: pointer; list-style: none; user-select: none;
+            transition: background 0.3s;
+        }
+        summary.faq-q::-webkit-details-marker { display: none; }
+        summary.faq-q:hover { background: rgba(255, 45, 175, 0.05); }
+        .faq-q-mark {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 32px; height: 32px; border-radius: 10px;
+            background: linear-gradient(135deg, #FF2DAF, #7B2CFF);
+            color: white; font-weight: 900; font-size: 16px; flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(255, 45, 175, 0.3);
+        }
+        .faq-q-text { flex: 1; font-weight: 700; font-size: 1.05rem; color: #F5F3FF; line-height: 1.5; }
+        .faq-arrow {
+            width: 20px; height: 20px; color: #FF2DAF;
+            transition: transform 0.3s ease; flex-shrink: 0;
+        }
+        details[open] .faq-arrow { transform: rotate(180deg); }
+        .faq-a {
+            padding: 0 24px 24px 68px;
+            color: #D4CCE8; line-height: 1.8; font-size: 0.95rem;
+        }
+        .faq-a a { color: #FF2DAF; text-decoration: underline; text-underline-offset: 3px; }
+        .faq-a a:hover { color: #FF60C8; }
+    </style>
 </head>
 <body class="antialiased">
+    <div class="noise-overlay"></div>
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-panel">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -340,36 +405,63 @@
             </div>
 
             <!-- FAQ Section -->
-            <h2>常見問題 FAQ</h2>
+            <div class="faq-section">
+                <h2 class="section-title">常見問題 FAQ</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-q">
+                            <span class="faq-q-mark">Q</span>
+                            <span class="faq-q-text">2026年台北傳播收費行情是多少？</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </summary>
+                        <p class="faq-a">台北傳播收費行情：普通級約2500-3500元，精選級約3500-5000元，頂級約5000-8000元以上。實際費用依傳播公司、等級、地點而異，建議事先詢問清楚。</p>
+                    </details>
 
-            <div class="faq-item">
-                <h3>Q1：2026年台北傳播收費行情是多少？</h3>
-                <p>台北傳播收費行情：普通級約2500-3500元，精選級約3500-5000元，頂級約5000-8000元以上。實際費用依傳播公司、等級、地點而異，建議事先詢問清楚。</p>
-            </div>
+                    <details class="faq-item">
+                        <summary class="faq-q">
+                            <span class="faq-q-mark">Q</span>
+                            <span class="faq-q-text">KTV傳播和飯局妹的收費有什麼不同？</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </summary>
+                        <p class="faq-a">KTV傳播以小時計費，適合包廂聚會；飯局妹則以場次計算，適合商務餐敘。兩者服務模式不同，收費標準也不同。飯局妹通常會有交通補貼費用。</p>
+                    </details>
 
-            <div class="faq-item">
-                <h3>Q2：KTV傳播和飯局妹的收費有什麼不同？</h3>
-                <p>KTV傳播以小時計費，適合包廂聚會；飯局妹則以場次計算，適合商務餐敘。兩者服務模式不同，收費標準也不同。飯局妹通常會有交通補貼費用。</p>
-            </div>
+                    <details class="faq-item">
+                        <summary class="faq-q">
+                            <span class="faq-q-mark">Q</span>
+                            <span class="faq-q-text">汽車旅館傳播的行情大概多少？</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </summary>
+                        <p class="faq-a">汽車旅館傳播費用較高，包含小姐服務費加上汽車旅館場地費，整體消費約5000-12000元不等，視選擇的等級、汽車旅館等級和服務內容而定。</p>
+                    </details>
 
-            <div class="faq-item">
-                <h3>Q3：汽車旅館傳播的行情大概多少？</h3>
-                <p>汽車旅館傳播費用較高，包含小姐服務費加上汽車旅館場地費，整體消費約5000-12000元不等，視選擇的等級、汽車旅館等級和服務內容而定。</p>
-            </div>
+                    <details class="faq-item">
+                        <summary class="faq-q">
+                            <span class="faq-q-mark">Q</span>
+                            <span class="faq-q-text">叫傳播除了基本費用還有什麼隱藏費用？</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </summary>
+                        <p class="faq-a">常見額外費用包括：酒水費用、小費、加班費、交通費、場地費等。建議事先跟傳播公司確認所有費用明細，避免結帳時產生糾紛。</p>
+                    </details>
 
-            <div class="faq-item">
-                <h3>Q4：叫傳播除了基本費用還有什麼隱藏費用？</h3>
-                <p>常見額外費用包括：酒水費用、小費、加班費、交通費、場地費等。建議事先跟傳播公司確認所有費用明細，避免結帳時產生糾紛。</p>
-            </div>
+                    <details class="faq-item">
+                        <summary class="faq-q">
+                            <span class="faq-q-mark">Q</span>
+                            <span class="faq-q-text">如何判斷傳播收費是否合理？</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </summary>
+                        <p class="faq-a">選擇有透明收費標準的傳播公司，比較市場行情，避免價格過低或過高。優質傳播公司的收費會在合理區間內，並提供完善的服務保障。</p>
+                    </details>
 
-            <div class="faq-item">
-                <h3>Q5：如何判斷傳播收費是否合理？</h3>
-                <p>選擇有透明收費標準的傳播公司，比較市場行情，避免價格過低或過高。優質傳播公司的收費會在合理區間內，並提供完善的服務保障。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Q6：傳播費用可以用LINE Pay或信用卡支付嗎？</h3>
-                <p>大多數傳播公司以現金交易為主，部分支援行動支付。建議詢問各家傳播公司的付款方式，並準備足夠現金以確保交易順利。</p>
+                    <details class="faq-item">
+                        <summary class="faq-q">
+                            <span class="faq-q-mark">Q</span>
+                            <span class="faq-q-text">傳播費用可以用LINE Pay或信用卡支付嗎？</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </summary>
+                        <p class="faq-a">大多數傳播公司以現金交易為主，部分支援行動支付。建議詢問各家傳播公司的付款方式，並準備足夠現金以確保交易順利。</p>
+                    </details>
+                </div>
             </div>
 
             <h2>結語：了解行情，才能放心消費</h2>
@@ -385,6 +477,41 @@
 
         </article>
     </main>
+
+    <!-- LINE CTA Section -->
+    <section class="py-16 px-6 relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <div class="glass-panel rounded-3xl p-8 md:p-10 border border-[#06C755]/30 relative overflow-hidden">
+                <div class="absolute -top-20 -right-20 w-60 h-60 bg-[#06C755]/10 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-[#06C755]/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 text-center">
+                    <div class="flex flex-wrap justify-center gap-3 mb-6">
+                        <span class="px-3 py-1 rounded-full bg-[#06C755]/20 text-[#06C755] text-xs font-bold border border-[#06C755]/30">
+                            <iconify-icon icon="ph:clock-countdown-fill" class="inline align-middle mr-1"></iconify-icon>平均30分鐘到府
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-electricPurple/20 text-electricPurple text-xs font-bold border border-electricPurple/30">
+                            <iconify-icon icon="ph:shield-check-fill" class="inline align-middle mr-1"></iconify-icon>隱私100%保密
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-neonPink/20 text-neonPink text-xs font-bold border border-neonPink/30">
+                            <iconify-icon icon="ph:users-three-fill" class="inline align-middle mr-1"></iconify-icon>已服務3,000+客戶
+                        </span>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-black mb-3 text-textWhite">
+                        想要今晚安排？<span class="text-[#06C755]">LINE 最快</span>
+                    </h3>
+                    <p class="text-gray-400 mb-8 text-sm md:text-base">
+                        說出你的需求 → 專人確認 → 30分鐘內到府。全程隱私，不留紀錄。
+                    </p>
+                    <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-[#06C755] hover:bg-[#05a546] text-white font-black text-xl md:text-2xl transition-all shadow-[0_0_40px_rgba(6,199,85,0.4)] hover:shadow-[0_0_60px_rgba(6,199,85,0.6)] hover:scale-[1.03] active:scale-[0.98]"
+                       onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'pricing_guide'});">
+                        <iconify-icon icon="bi:line" class="text-2xl"></iconify-icon>
+                        加 LINE 預約
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
