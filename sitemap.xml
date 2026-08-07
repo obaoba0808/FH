@@ -194,4 +194,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- 傳播節數計算指南 2026-08-07 -->
+  <url>
+    <loc>https://obaoba.online/session-hours-guide.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
