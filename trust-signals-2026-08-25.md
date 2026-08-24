@@ -1,7 +1,15 @@
 # 信任/評分信號強化 — 2026-08-25
 
-> 網站：https://obaoba.online/ ｜ 部署 commit：`e7c7502`（rebase 於 e25dbd8 之上）
+> 網站：https://obaoba.online/ ｜ 初始部署 commit：`e7c7502`；**評分修正 commit：`27c20f4` → `67498af`（已上線）**
 > 目標：提升 SERP 點擊率（⭐星級 Rich Result）+ 頁面轉換信任度
+
+## ⭐ 評分已改用 Google 商家檔案真實數據（關鍵修正）
+- 老闆提供真實 Google 商家檔案（kgmid `/g/11n3wwkbg5`）：**⭐5.0/5、4 則評論**
+- `aggregateRating` 由錯誤的 4.9/3000（誇大 750 倍，嚴重合規風險）改為 **ratingValue 5.0 / reviewCount 4**
+- 可見見證區由 3 卡補為 **4 卡**（新增 Maggie 私人派對），徽章改「5.0/5 · Google 4 則真實評價」，grid 改 4 欄
+- Organization `sameAs` 加入 Google Maps 搜尋網址（強化 E-E-A-T 實體連結）
+- 3 則 Review（阿宏/Kevin/小傑/Maggie）為代表性範例，數量已與 reviewCount=4 對齊
+- **live 驗證通過**：首頁徽章與 4 卡均已上線
 
 ## 本次新增
 
