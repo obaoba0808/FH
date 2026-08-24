@@ -28,6 +28,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+ai-train: no
 
 Sitemap: https://obaoba.online/sitemap.xml
 
