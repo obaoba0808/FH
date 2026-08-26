@@ -1,4 +1,0 @@
-  File "C:\Users\FH01\.qclaw\workspace-cwapojim0yfmyvq8\FH-website\_clean_fix.py", line 167
-    new_tq = b'>NT$4,000-8,000元<'
-             ^^^^^^^^^^^^^^^^^^^^
-SyntaxError: bytes can only contain ASCII literal characters

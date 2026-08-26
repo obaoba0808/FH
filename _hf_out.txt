@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "C:\Users\FH01\.qclaw\workspace-cwapojim0yfmyvq8\FH-website\_hex_fix.py", line 206, in <module>
-    for p in ['\xe6\x99\xae\xe9\x80\x9a\xe7\xb4\x9a'.decode('utf-8'),
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?

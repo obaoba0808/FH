@@ -1,4 +1,0 @@
-  File "C:\Users\FH01\.qclaw\workspace-cwapojim0yfmyvq8\FH-website\_fix_main.py", line 112
-    new_banquet = b'>NT$4,000-8,000元</strong>之間'
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-SyntaxError: bytes can only contain ASCII literal characters
