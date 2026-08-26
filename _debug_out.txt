@@ -1,0 +1,9 @@
+len: 52069
+普通級 at: 24071
+context: '26年台北傳播行情：普通級 <strong>2500-3500元</strong>，精選級 <strong>3500-5000元</strong>，頂級 <strong>5000-'
+
+First 50 chars: '<!DOCTYPE html>\n<html lang="zh-TW" class="scroll-s'
+
+Raw bytes len: 61003
+普通級 UTF-8 bytes: b'\xe6\x99\xae\xe9\x80\x9a\xe7\xb4\x9a'
+Found in raw bytes at: 27340

@@ -1,0 +1,42 @@
+File size: 62912
+OK: Renumbered H3-4 (4.->3.)
+H3-2 close at: 29446
+Skipped 16 whitespace bytes
+Inserting new H3 at byte 29515
+Context before: b'          <p>\xe6\xa8\x99\xe6\xba\x96\xe5\x85\xac\xe9\x97\x9c\xe6\x98\xaf\xe5\x8f'
+Next <h3> at byte 30195
+Content between insert point and next H3 (680 bytes):
+b'<p>\xe6\xa8\x99\xe6\xba\x96\xe5\x85\xac\xe9\x97\x9c\xe6\x98\xaf\xe5\x8f\xb0\xe5\x8c\x97\xe5\x82\xb3\xe6\x92\xad\xe5\xb8\x82\xe5\xa0\xb4\xe7\x9a\x84<strong>\xe4\xb8\xbb\xe6\xb5\x81\xe6\xb6\x88\xe8\xb2\xbb\xe5\x8d\x80\xe9\x96\x93</strong>\xef\xbc\x8c\xe4\xb9\x9f\xe6\x98\xaf\xe6\x9c\x80\xe5\xa4\x9a\xe4\xba\xba\xe9\x81\xb8\xe6\x93\x87\xe7\x9a'
+OK: Inserted H3-3 VIP + content
+dateModified: 1
+File written (63513 bytes)
+
+=== FINAL ===
+普通級: 0
+精選級: 0
+基礎公關: 3
+標準公關: 4
+VIP 公關: 0
+頂級公關: 1
+2,400/2小時: 3
+3,600/2小時: 3
+4,000/2小時: 3
+5,000+/2小時: 6
+
+=== H3 TAGS ===
+[27954 len=26] <h3>💡 先說結論</h3>
+[28697 len=67] <h3>1. 基礎公關：NT$2,400/2小時（≈NT$1,200/小時）</h3>
+[29432 len=67] <h3>2. 標準公關：NT$3,600/2小時（≈NT$1,800/小時）</h3>
+[29515 len=65] <h3>2. VIP 公间：NT$4,000/2小時（∈NT$2,000/小時）</h3>
+[30790 len=75] <h3>3. é ç´公關：NT$5,000+/2小時（≈NT$2,500+/小時）</h3>
+[34068 len=27] <h3>基本費用組成</h3>
+[34621 len=30] <h3>各時段行情差異</h3>
+[36393 len=28] <h3>⚠️ 重要提醒</h3>
+[36904 len=77] <h3>Q1：為什麼同一個等級，不同傳播公司報價差很多？</h3>
+[37332 len=59] <h3>Q2：行情價以下的傳播公司可以選嗎？</h3>
+[37687 len=32] <h3>Q3：可以殺價嗎？</h3>
+[38000 len=44] <h3>Q4：小費怎麼給？給多少？</h3>
+[38408 len=92] <h3 class="text-2xl font-bold mb-4">想找價格透明、服務優質的傳播公司？</h3>
+[46429 len=189] <h3 class="text-2xl md:text-3xl font-black mb-3 text-textWhite">
+
+                        想要今晚安排？<

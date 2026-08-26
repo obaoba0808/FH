@@ -1,0 +1,21 @@
+普通級 occurrences: 1
+精選級 occurrences: 1
+2500-3500元 occurrences: 1
+3500-5000元 occurrences: 1
+5000-8000元 occurrences: 1
+
+After replacement:
+普通級 occurrences: 1
+精選級 occurrences: 1
+2500-3500元 occurrences: 1
+3500-5000元 occurrences: 1
+5000-8000元 occurrences: 1
+
+基礎公關 occurrences: 3
+標準公關 occurrences: 4
+VIP 公關 occurrences: 0
+頂級公關 occurrences: 2
+2,400/2小時 occurrences: 1
+3,600/2小時 occurrences: 1
+4,000/2小時 occurrences: 0
+5,000+/2小時 occurrences: 4

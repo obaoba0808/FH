@@ -1,0 +1,68 @@
+=== ALL H3 TAGS (DOTALL) ===
+[27954] <h3>💡 先說結論</h3>
+[28697] <h3>1. 基礎公關：NT$2,400/2小時（≈NT$1,200/小時）</h3>
+[29432] <h3>2. 標準公關：NT$3,600/2小時（≈NT$1,800/小時）</h3>
+[30195] <h3>4. 頂級公關：NT$5,000+/2小時（≈NT$2,500+/小時）</h3>
+[33467] <h3>基本費用組成</h3>
+[34020] <h3>各時段行情差異</h3>
+[35792] <h3>⚠️ 重要提醒</h3>
+[36303] <h3>Q1：為什麼同一個等級，不同傳播公司報價差很多？</h3>
+[36731] <h3>Q2：行情價以下的傳播公司可以選嗎？</h3>
+[37086] <h3>Q3：可以殺價嗎？</h3>
+[37399] <h3>Q4：小費怎麼給？給多少？</h3>
+
+=== H3 with VIP ===
+
+=== Context around VIP at 28156 ===
+Decoded: <p class="mb-0">2026年台北傳播行情【基礎級】 <strong>NT$2,400/2小時</strong>、【標準級】 <strong>NT$3,600/2小時</strong>、【<strong>VIP</strong>】 <strong>NT$4,000/2小時</strong>、【<strong>頂級</strong>】 <strong>NT$5,000+/2小時</strong>。低於這個行情太多要小心有鬼，高於太多可能是被当盆子！</p>
+
+            </div>
+
+
+
+            <h2>2026年台北傳播三種等級收費行情</h2>
+
+            <p>台北傳播公司的收費標準，主要<strong>以等級區分</strong>。等級越高，代表外型條件越好、服務品質越佳，收費自然也越高。以下是2026年最新的行情價格：</p>
+
+
+
+            <h3>1. 基礎公關：NT$2,400/2小時（≈NT$1,200/小時）</h3>
+
+            <p>基礎公關是很多第一次接觸傳播服務的人的首選。這個等級的<strong>價格最親民</strong>，適合：</p>
+
+            <ul>
+
+                <li>學生族群、小資族，預算有限但想體驗傳播服務</li>
+
+                <li>朋友聚會、唱歌局，不需要太高的規格</li>
+
+                <li>純聊天、唱歌為主，不要求太多特殊服務</li>
+
+            </ul>
+
+            <p>基礎公關，外型條件中等，但親和力通常不錯。她們能陪你唱歌、喝酒、聊天，帶動包廂氣氛沒問題。<strong>CP值最高的入門選擇！</strong></p>
+
+
+
+            <h3>2. 標準公關：NT$3,600/2小時（≈NT$1,800/小時）</h3>
+
+            <p>標準公關是台北傳播市場的<strong>主流消費區間</strong>，也是最多人選擇的等級。這個價位的傳播妹通常是：</p>
+
+            <ul>
+
+                <li>外型中上，有一定顏值</li>
+
+                <li>大學生、上班族兼職，或是有一年以上的服務經驗</li>
+
+                <li>會唱歌、會喝酒、會帶遊戲，能炒熱氣氛</li>
+
+            </ul>
+
+            <p>標準公關服務品質穩定，<strong>適合各種場合</strong>：慶生、公司聚會、朋友聯誼、商務應酬都可以撐場面。如果你不確定要選哪個等級，選標準公關就對了！</p>
+
+
+
+            <h3>4. 頂級公關：NT$5,000+/2小時（≈NT$2,500+/小時）</h3>
+
+            <p>頂級是各大傳播公司的<strong>最高規格</strong>，代表最頂尖的外型條件和服務品質。適合�
+Hex: 3c 70 20 63 6c 61 73 73 3d 22 6d 62 2d 30 22 3e 32 30 32 36 e5 b9 b4 e5 8f b0 e5 8c 97 e5 82 b3 e6 92 ad e8 a1 8c e6 83 85 e3 80 90 e5 9f ba e7 a4 8e e7 b4 9a e3 80 91 20 3c 73 74 72 6f 6e 67 3e 4e 54 24 32 2c 34 30 30 2f 32 e5 b0 8f e6 99 82 3c 2f 73 74 72 6f 6e 67 3e e3 80 81 e3 80 90 e6 a8 99 e6 ba 96 e7 b4 9a e3 80 91 20 3c 73 74 72 6f 6e 67 3e 4e 54 24 33 2c 36 30 30 2f 32 e5 b0 8f e6 99 82 3c 2f 73 74 72 6f 6e 67 3e e3 80 81 e3 80 90 3c 73 74 72 6f 6e 67 3e 56 49 50 3c 2f 73 74 72 6f 6e 67 3e e3 80 91 20 3c 73 74 72 6f 6e 67 3e 4e 54 24 34 2c 30 30 30 2f 32 e5 b0 8f e6 99 82 3c 2f 73 74 72 6f 6e 67 3e e3 80 81 e3 80 90 3c 73 74 72 6f 6e 67 3e e9 a0 82 e7 b4 9a 3c 2f 73 74 72 6f 6e 67 3e e3 80 91 20 3c 73 74 72 6f 6e 67 3e 4e 54 24 35 2c 30 30 30 2b 2f 32 e5 b0 8f e6 99 82 3c 2f 73 74 72 6f 6e 67 3e e3 80 82 e4 bd 8e e6 96 bc e9 80 99 e5 80 8b e8 a1 8c e6 83 85 e5 a4 aa e5 a4 9a e8 a6 81 e5 b0 8f e5 bf 83 e6 9c 89 e9 ac bc ef bc 8c e9 ab 98 e6 96 bc e5 a4 aa e5 a4 9a e5 8f af e8 83 bd e6 98 af e8 a2 ab e5 bd 93 e7 9b 86 e5 ad 90 ef bc 81 3c 2f 70 3e 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 2f 64 69 76 3e 0d 0a 0d 0a 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 68 32 3e 32 30 32 36 e5 b9 b4 e5 8f b0 e5 8c 97 e5 82 b3 e6 92 ad e4 b8 89 e7 a8 ae e7 ad 89 e7 b4 9a e6 94 b6 e8 b2 bb e8 a1 8c e6 83 85 3c 2f 68 32 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 70 3e e5 8f b0 e5 8c 97 e5 82 b3 e6 92 ad e5 85 ac e5 8f b8 e7 9a 84 e6 94 b6 e8 b2 bb e6 a8 99 e6 ba 96 ef bc 8c e4 b8 bb e8 a6 81 3c 73 74 72 6f 6e 67 3e e4 bb a5 e7 ad 89 e7 b4 9a e5 8d 80 e5 88 86 3c 2f 73 74 72 6f 6e 67 3e e3 80 82 e7 ad 89 e7 b4 9a e8 b6 8a e9 ab 98 ef bc 8c e4 bb a3 e8 a1 a8 e5 a4 96 e5 9e 8b e6 a2 9d e4 bb b6 e8 b6 8a e5 a5 bd e3 80 81 e6 9c 8d e5 8b 99 e5 93 81 e8 b3 aa e8 b6 8a e4 bd b3 ef bc 8c e6 94 b6 e8 b2 bb e8 87 aa e7 84 b6 e4 b9 9f e8 b6 8a e9 ab 98 e3 80 82 e4 bb a5 e4 b8 8b e6 98 af 32 30 32 36 e5 b9 b4 e6 9c 80 e6 96 b0 e7 9a 84 e8 a1 8c e6 83 85 e5 83 b9 e6 a0 bc ef bc 9a 3c 2f 70 3e 0d 0a 0d 0a 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 68 33 3e 31 2e 20 e5 9f ba e7 a4 8e e5 85 ac e9 97 9c ef bc 9a 4e 54 24 32 2c 34 30 30 2f 32 e5 b0 8f e6 99 82 ef bc 88 e2 89 88 4e 54 24 31 2c 32 30 30 2f e5 b0 8f e6 99 82 ef bc 89 3c 2f 68 33 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 70 3e e5 9f ba e7 a4 8e e5 85 ac e9 97 9c e6 98 af e5 be 88 e5 a4 9a e7 ac ac e4 b8 80 e6 ac a1 e6 8e a5 e8 a7 b8 e5 82 b3 e6 92 ad e6 9c 8d e5 8b 99 e7 9a 84 e4 ba ba e7 9a 84 e9 a6 96 e9 81 b8 e3 80 82 e9 80 99 e5 80 8b e7 ad 89 e7 b4 9a e7 9a 84 3c 73 74 72 6f 6e 67 3e e5 83 b9 e6 a0 bc e6 9c 80 e8 a6 aa e6 b0 91 3c 2f 73 74 72 6f 6e 67 3e ef bc 8c e9 81 a9 e5 90 88 ef bc 9a 3c 2f 70 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 75 6c 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 6c 69 3e e5 ad b8 e7 94 9f e6 97 8f e7 be a4 e3 80 81 e5 b0 8f e8 b3 87 e6 97 8f ef bc 8c e9 a0 90 e7 ae 97 e6 9c 89 e9 99 90 e4 bd 86 e6 83 b3 e9 ab 94 e9 a9 97 e5 82 b3 e6 92 ad e6 9c 8d e5 8b 99 3c 2f 6c 69 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 6c 69 3e e6 9c 8b e5 8f 8b e8 81 9a e6 9c 83 e3 80 81 e5 94 b1 e6 ad 8c e5 b1 80 ef bc 8c e4 b8 8d e9 9c 80 e8 a6 81 e5 a4 aa e9 ab 98 e7 9a 84 e8 a6 8f e6 a0 bc 3c 2f 6c 69 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 6c 69 3e e7 b4 94 e8 81 8a e5 a4 a9 e3 80 81 e5 94 b1 e6 ad 8c e7 82 ba e4 b8 bb ef bc 8c e4 b8 8d e8 a6 81 e6 b1 82 e5 a4 aa e5 a4 9a e7 89 b9 e6 ae 8a e6 9c 8d e5 8b 99 3c 2f 6c 69 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 2f 75 6c 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 70 3e e5 9f ba e7 a4 8e e5 85 ac e9 97 9c ef bc 8c e5 a4 96 e5 9e 8b e6 a2 9d e4 bb b6 e4 b8 ad e7 ad 89 ef bc 8c e4 bd 86 e8 a6 aa e5 92 8c e5 8a 9b e9 80 9a e5 b8 b8 e4 b8 8d e9 8c af e3 80 82 e5 a5 b9 e5 80 91 e8 83 bd e9 99 aa e4 bd a0 e5 94 b1 e6 ad 8c e3 80 81 e5 96 9d e9 85 92 e3 80 81 e8 81 8a e5 a4 a9 ef bc 8c e5 b8 b6 e5 8b 95 e5 8c 85 e5 bb 82 e6 b0 a3 e6 b0 9b e6 b2 92 e5 95 8f e9 a1 8c e3 80 82 3c 73 74 72 6f 6e 67 3e 43 50 e5 80 bc e6 9c 80 e9 ab 98 e7 9a 84 e5 85 a5 e9 96 80 e9 81 b8 e6 93 87 ef bc 81 3c 2f 73 74 72 6f 6e 67 3e 3c 2f 70 3e 0d 0a 0d 0a 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 68 33 3e 32 2e 20 e6 a8 99 e6 ba 96 e5 85 ac e9 97 9c ef bc 9a 4e 54 24 33 2c 36 30 30 2f 32 e5 b0 8f e6 99 82 ef bc 88 e2 89 88 4e 54 24 31 2c 38 30 30 2f e5 b0 8f e6 99 82 ef bc 89 3c 2f 68 33 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 70 3e e6 a8 99 e6 ba 96 e5 85 ac e9 97 9c e6 98 af e5 8f b0 e5 8c 97 e5 82 b3 e6 92 ad e5 b8 82 e5 a0 b4 e7 9a 84 3c 73 74 72 6f 6e 67 3e e4 b8 bb e6 b5 81 e6 b6 88 e8 b2 bb e5 8d 80 e9 96 93 3c 2f 73 74 72 6f 6e 67 3e ef bc 8c e4 b9 9f e6 98 af e6 9c 80 e5 a4 9a e4 ba ba e9 81 b8 e6 93 87 e7 9a 84 e7 ad 89 e7 b4 9a e3 80 82 e9 80 99 e5 80 8b e5 83 b9 e4 bd 8d e7 9a 84 e5 82 b3 e6 92 ad e5 a6 b9 e9 80 9a e5 b8 b8 e6 98 af ef bc 9a 3c 2f 70 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 75 6c 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 6c 69 3e e5 a4 96 e5 9e 8b e4 b8 ad e4 b8 8a ef bc 8c e6 9c 89 e4 b8 80 e5 ae 9a e9 a1 8f e5 80 bc 3c 2f 6c 69 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 6c 69 3e e5 a4 a7 e5 ad b8 e7 94 9f e3 80 81 e4 b8 8a e7 8f ad e6 97 8f e5 85 bc e8 81 b7 ef bc 8c e6 88 96 e6 98 af e6 9c 89 e4 b8 80 e5 b9 b4 e4 bb a5 e4 b8 8a e7 9a 84 e6 9c 8d e5 8b 99 e7 b6 93 e9 a9 97 3c 2f 6c 69 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 6c 69 3e e6 9c 83 e5 94 b1 e6 ad 8c e3 80 81 e6 9c 83 e5 96 9d e9 85 92 e3 80 81 e6 9c 83 e5 b8 b6 e9 81 8a e6 88 b2 ef bc 8c e8 83 bd e7 82 92 e7 86 b1 e6 b0 a3 e6 b0 9b 3c 2f 6c 69 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 2f 75 6c 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 70 3e e6 a8 99 e6 ba 96 e5 85 ac e9 97 9c e6 9c 8d e5 8b 99 e5 93 81 e8 b3 aa e7 a9 a9 e5 ae 9a ef bc 8c 3c 73 74 72 6f 6e 67 3e e9 81 a9 e5 90 88 e5 90 84 e7 a8 ae e5 a0 b4 e5 90 88 3c 2f 73 74 72 6f 6e 67 3e ef bc 9a e6 85 b6 e7 94 9f e3 80 81 e5 85 ac e5 8f b8 e8 81 9a e6 9c 83 e3 80 81 e6 9c 8b e5 8f 8b e8 81 af e8 aa bc e3 80 81 e5 95 86 e5 8b 99 e6 87 89 e9 85 ac e9 83 bd e5 8f af e4 bb a5 e6 92 90 e5 a0 b4 e9 9d a2 e3 80 82 e5 a6 82 e6 9e 9c e4 bd a0 e4 b8 8d e7 a2 ba e5 ae 9a e8 a6 81 e9 81 b8 e5 93 aa e5 80 8b e7 ad 89 e7 b4 9a ef bc 8c e9 81 b8 e6 a8 99 e6 ba 96 e5 85 ac e9 97 9c e5 b0 b1 e5 b0 8d e4 ba 86 ef bc 81 3c 2f 70 3e 0d 0a 0d 0a 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 68 33 3e 34 2e 20 e9 a0 82 e7 b4 9a e5 85 ac e9 97 9c ef bc 9a 4e 54 24 35 2c 30 30 30 2b 2f 32 e5 b0 8f e6 99 82 ef bc 88 e2 89 88 4e 54 24 32 2c 35 30 30 2b 2f e5 b0 8f e6 99 82 ef bc 89 3c 2f 68 33 3e 0d 0a 0d 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 70 3e e9 a0 82 e7 b4 9a e6 98 af e5 90 84 e5 a4 a7 e5 82 b3 e6 92 ad e5 85 ac e5 8f b8 e7 9a 84 3c 73 74 72 6f 6e 67 3e e6 9c 80 e9 ab 98 e8 a6 8f e6 a0 bc 3c 2f 73 74 72 6f 6e 67 3e ef bc 8c e4 bb a3 e8 a1 a8 e6 9c 80 e9 a0 82 e5 b0 96 e7 9a 84 e5 a4 96 e5 9e 8b e6 a2 9d e4 bb b6 e5 92 8c e6 9c 8d e5 8b 99 e5 93 81 e8 b3 aa e3 80 82 e9 81 a9 e5 90 88 ef

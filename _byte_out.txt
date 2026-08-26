@@ -1,0 +1,4 @@
+  File "C:\Users\FH01\.qclaw\workspace-cwapojim0yfmyvq8\FH-website\_fix_byte.py", line 7
+    b'<p class="mb-0">2026\xe5\xb9\xb4\xe5\x8f\xb0\xe5\x8c\x97\xe5\x82\'
+    ^
+SyntaxError: unterminated string literal (detected at line 7)

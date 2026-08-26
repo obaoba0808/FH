@@ -1,0 +1,7 @@
+Hero NOT found, trying partial match
+Traceback (most recent call last):
+2500-3500 at 24435: '年台北傳播行情：普通級 <strong>2500-3500元</strong>，精選級 <strong>3500-5000元</strong>，頂級 <stro'
+  File "C:\Users\FH01\.qclaw\workspace-cwapojim0yfmyvq8\FH-website\_fix_v2.py", line 23, in <module>
+    print('H3:', repr(m))
+UnicodeEncodeError: 'cp950' codec can't encode character '\U0001f4a1' in position 5: illegal multibyte sequence
+H3: 
