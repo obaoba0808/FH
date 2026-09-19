@@ -457,7 +457,7 @@
     <a href="tel:+886926656666" class="flex items-center justify-center gap-2 px-5 py-3 rounded-full font-bold border border-white/20 text-sm hover:border-[#7B2CFF] transition-all" onclick="gtag('event','phone_click',{'event_category':'CTA','event_label':'sticky_bar'});"><iconify-icon icon="ph:phone"></iconify-icon> 致電</a>
 </div>
 <script>
-if(typeof gtag==='undefined'){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-S7KQGHSD2R');}
+if(typeof gtag==='undefined'){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-534539378');}
 function updateCalc(){var l=parseInt(document.getElementById('calc-level').value);var h=parseInt(document.getElementById('calc-hours').value);var c=parseInt(document.getElementById('calc-count').value);var first2=l;var extraH=Math.max(0,h-2);var hourRate=0;if(l==3000)hourRate=1500;else if(l==3600)hourRate=1800;else if(l==4000)hourRate=2000;else hourRate=2500;var total=(first2+(extraH*hourRate))*c;document.getElementById('calc-result').textContent='NT$'+total.toLocaleString();}
 document.getElementById('calc-level').addEventListener('change',updateCalc);
 document.getElementById('calc-hours').addEventListener('change',updateCalc);
