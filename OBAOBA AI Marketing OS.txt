@@ -1,0 +1,889 @@
+這是已分享的 ChatGPT 對話副本，不會加入記憶。
+
+檢舉對話
+https://github.com/msitarzewski/agency-agents?utm_source=chatgpt.com
+
+agency-agents為我的網站https://obaoba.online/
+做整套方案
+
+
+可以。以你要把 Agency Agents 當成「OBAOBA 的 AI 行銷與網站營運團隊」來看，我不建議把整個 agency-agents 原封不動全部裝進去，而是要做一層 OBAOBA 專用 Agent OS。
+
+我查了目前的 agency-agents，它現在已經包含 Engineering、Design、Marketing、Paid Media、Sales、Product、Project Management、Research、Support、Testing、Specialized 等完整部門，而且官方目前也直接支援 OpenClaw 安裝。
+
+OBAOBA AI Marketing OS
+
+目標：
+
+https://obaoba.online/
+→ AI 自動經營
+→ SEO 流量
+→ 內容生產
+→ 社群曝光
+→ 商品／服務推廣
+→ Lead 收集
+→ 銷售轉換
+→ 數據分析
+→ 持續自我優化
+
+核心架構我會設計成：
+
+                         ┌─────────────────────┐
+                         │     OBAOBA HQ       │
+                         │   AI CEO / Orchestrator
+                         └──────────┬──────────┘
+                                    │
+             ┌──────────────────────┼──────────────────────┐
+             │                      │                      │
+             ▼                      ▼                      ▼
+      STRATEGY TEAM          MARKETING TEAM          SALES TEAM
+      商業策略                 行銷增長                 銷售轉換
+             │                      │                      │
+             ▼                      ▼                      ▼
+       PRODUCT TEAM             SEO TEAM              CRM / LEAD
+       商品策略                 SEO流量                 客戶
+             │                      │                      │
+             └──────────────┬───────┴──────────────┬───────┘
+                            │                      │
+                            ▼                      ▼
+                     CONTENT FACTORY         SOCIAL FACTORY
+                     內容生產線               社群生產線
+                            │                      │
+                            └──────────┬───────────┘
+                                       ▼
+                              OBAOBA WEBSITE
+                                       │
+                         ┌─────────────┼─────────────┐
+                         ▼             ▼             ▼
+                       SEO           SOCIAL        SALES
+                         │             │             │
+                         └─────────────┼─────────────┘
+                                       ▼
+                              ANALYTICS / DATA
+                                       │
+                                       ▼
+                              OPTIMIZATION LOOP
+                                       │
+                                       └────→ HQ
+① 第一層：OBAOBA CEO
+
+這是整個系統最重要的 Agent。
+
+OBAOBA-CEO
+
+角色：
+
+AI Business Director / AI CEO
+
+負責：
+
+判斷目前網站最重要的問題
+決定本週工作優先順序
+分派任務
+整合其他 Agent
+審核結果
+判斷是否重新執行
+統一品牌方向
+控制不要讓 Agent 各做各的
+
+它不是負責寫文章的。
+
+它負責：
+
+「今天 OBAOBA 最值得做什麼？」
+
+② Strategy Team
+OBAOBA-STRATEGIST
+
+負責：
+
+商業模式
+市場定位
+客群分析
+競爭分析
+商品策略
+流量策略
+營收策略
+
+輸出：
+
+Strategy Brief
+Market Opportunity
+Target Audience
+Offer Strategy
+Growth Opportunity
+Priority
+OBAOBA-TREND-RESEARCHER
+
+來自 Agency Agents 的 Research / Product 思路。
+
+負責：
+
+Google 趨勢
+搜尋需求
+社群熱門話題
+競爭網站
+新產品
+新關鍵字
+新流量入口
+
+Agency Agents 本身就有 Trend Researcher / Feedback Synthesizer 等角色，可以直接作為這個部門的基礎。
+
+③ SEO Team
+
+這一組對 obaoba.online 非常重要。
+
+OBAOBA-SEO-STRATEGIST
+
+負責：
+
+SEO Strategy
+Keyword Research
+Search Intent
+Topic Cluster
+Keyword Mapping
+Internal Linking
+SERP Analysis
+Content Gap
+OBAOBA-KEYWORD-RESEARCHER
+
+輸入：
+
+網站
+產品
+目標客群
+競爭者
+
+輸出：
+
+Primary Keyword
+Secondary Keywords
+Long-tail Keywords
+Commercial Keywords
+Informational Keywords
+Transactional Keywords
+OBAOBA-SEO-AUDITOR
+
+自動檢查：
+
+Title
+Meta Description
+H1
+H2
+Schema
+Canonical
+Internal Links
+Broken Links
+Image ALT
+Sitemap
+Robots
+Core Web Vitals
+Indexability
+OBAOBA-SEO-CONTENT-PLANNER
+
+把：
+
+Keyword
+↓
+Search Intent
+↓
+Content Cluster
+↓
+文章
+↓
+內鏈
+↓
+Money Page
+
+串起來。
+
+④ Content Factory
+
+這會是 OBAOBA 的核心生產線。
+
+OBAOBA-CONTENT-STRATEGIST
+
+決定：
+
+今天到底要寫什麼？
+
+例如：
+
+SEO Article
+Product Article
+Comparison
+Tutorial
+Listicle
+Review
+Case Study
+Landing Page
+FAQ
+Social Content
+OBAOBA-CONTENT-WRITER
+
+負責：
+
+SEO文章
+商品介紹
+Landing Page
+Blog
+FAQ
+教學
+比較文章
+
+但這個 Agent 不能自己決定發布。
+
+必須經過 QA。
+
+OBAOBA-CONTENT-EDITOR
+
+檢查：
+
+AI 味
+重複內容
+可讀性
+SEO
+CTA
+品牌語氣
+邏輯
+錯字
+資訊可信度
+⑤ Social Media Factory
+
+Agency Agents 原本就有：
+
+Social Media Strategist
+Twitter Engager
+Instagram Curator
+TikTok Strategist
+Reddit Community Builder
+
+等角色。
+
+我會重新包成 OBAOBA：
+
+OBAOBA-SOCIAL-STRATEGIST
+
+負責整體：
+
+Facebook
+Instagram
+Threads
+TikTok
+YouTube
+X
+Reddit
+LINE
+OBAOBA-IG
+
+負責：
+
+Reels
+Carousel
+Caption
+Hashtag
+CTA
+Content Calendar
+OBAOBA-TIKTOK
+
+負責：
+
+Hook
+短影音腳本
+Viral Concept
+CTA
+OBAOBA-YOUTUBE
+
+負責：
+
+Topic
+↓
+Title
+↓
+Thumbnail concept
+↓
+Script
+↓
+Description
+↓
+SEO
+↓
+CTA
+⑥ Paid Media
+
+如果 OBAOBA 未來要投廣告，這組直接接進來。
+
+OBAOBA-PPC-STRATEGIST
+
+負責：
+
+Google Ads
+Meta Ads
+YouTube Ads
+Campaign Structure
+Budget
+Bidding
+Conversion
+
+Agency Agents 已經有 PPC Campaign Strategist、Search Query Analyst、Paid Media Auditor 等角色。
+
+OBAOBA-AD-COPYWRITER
+
+自動產：
+
+Headline
+Primary Text
+CTA
+Creative Angle
+Landing Page Angle
+OBAOBA-AD-AUDITOR
+
+分析：
+
+CTR
+CPC
+CPA
+ROAS
+Conversion Rate
+
+然後提出：
+
+KEEP
+CHANGE
+PAUSE
+SCALE
+TEST
+⑦ Sales Team
+
+這是讓 OBAOBA 從「內容網站」變成「賺錢網站」的關鍵。
+
+OBAOBA-OFFER-STRATEGIST
+
+負責：
+
+我要賣什麼？
+
+例如：
+
+免費內容
+↓
+Lead Magnet
+↓
+低價商品
+↓
+核心商品
+↓
+高價服務
+OBAOBA-LEAD-GENERATOR
+
+負責：
+
+Lead Magnet
+Landing Page
+CTA
+Form
+Email Capture
+LINE CTA
+OBAOBA-SALES-OUTREACH
+
+負責：
+
+潛在客戶
+商業合作
+Affiliate
+B2B
+合作邀約
+
+Agency Agents 目前也有 Sales Outreach、Offer & Lead Gen Strategist 等角色。
+
+⑧ Product Team
+OBAOBA-PRODUCT-STRATEGIST
+
+負責找：
+
+什麼東西值得賣？
+
+例如：
+
+Digital Product
+Affiliate
+Service
+Subscription
+Consulting
+Sponsorship
+OBAOBA-OFFER-BUILDER
+
+把產品包裝成：
+
+Problem
+↓
+Solution
+↓
+Value
+↓
+Offer
+↓
+Bonus
+↓
+CTA
+⑨ Website Team
+
+這裡直接利用 Agency Agents 的 Engineering + Design。
+
+OBAOBA-FRONTEND
+
+負責：
+
+HTML
+CSS
+JS
+UI
+Landing Page
+Mobile
+Performance
+
+Agency Agents 本身就有 Frontend Developer，專門處理現代 Web UI 與 Core Web Vitals。
+
+OBAOBA-UX
+
+負責：
+
+User Journey
+↓
+Page Structure
+↓
+CTA
+↓
+Conversion
+OBAOBA-UI
+
+負責：
+
+Layout
+Typography
+Colors
+Components
+Visual hierarchy
+OBAOBA-BRAND-GUARDIAN
+
+這個我非常建議保留。
+
+所有內容最後都必須符合：
+
+OBAOBA Brand
+Tone
+Visual
+Messaging
+CTA
+
+避免 AI Agent 今天一個風格、明天另一個風格。
+
+⑩ Analytics Team
+OBAOBA-ANALYTICS
+
+每天分析：
+
+Traffic
+Organic
+Keywords
+CTR
+Conversion
+Revenue
+Affiliate
+Leads
+Top Pages
+Worst Pages
+OBAOBA-GROWTH-ANALYST
+
+尋找：
+
+下一個成長機會在哪裡？
+
+例如：
+
+文章 A
+流量 ↑
+Conversion ↓
+        ↓
+增加 CTA
+
+文章 B
+流量 ↓
+排名第 8
+        ↓
+SEO Update
+
+產品 C
+CTR ↑
+CVR ↑
+        ↓
+增加曝光
+⑪ QA Team
+
+這是 Agency Agents 很值得採用的部分。
+
+官方 Strategy 文件強調：
+
+Quality Gates、Agent Handoff、Dev↔QA Loop、Evidence Over Claims、Reality Checker。
+
+所以 OBAOBA 不應該：
+
+AI 寫完
+↓
+直接發布
+
+而是：
+
+CREATE
+ ↓
+REVIEW
+ ↓
+SEO QA
+ ↓
+BRAND QA
+ ↓
+FACT QA
+ ↓
+CONVERSION QA
+ ↓
+FINAL QA
+ ↓
+PUBLISH
+⑫ OBAOBA Reality Checker
+OBAOBA-REALITY-CHECKER
+
+這個 Agent 是「最後一道門」。
+
+檢查：
+
+❌ 錯誤資訊
+❌ 沒有來源
+❌ SEO 過度
+❌ AI 味太重
+❌ CTA 不合理
+❌ 品牌不一致
+❌ Landing Page 不轉換
+❌ 重複內容
+
+只有：
+
+PASS
+
+才能進下一階段。
+
+這完全符合 Agency Agents 的 Reality Checker / evidence-based workflow 設計。
+
+⑬ 最終 OBAOBA Agent 清單
+
+我會先做這 30 Agent，而不是一次裝幾百個。
+
+#	Agent	部門
+01	OBAOBA CEO	HQ
+02	OBAOBA Strategist	Strategy
+03	Trend Researcher	Research
+04	SEO Strategist	SEO
+05	Keyword Researcher	SEO
+06	SEO Auditor	SEO
+07	Content Planner	Content
+08	Content Writer	Content
+09	Content Editor	Content
+10	Social Strategist	Social
+11	Instagram Agent	Social
+12	TikTok Agent	Social
+13	YouTube Agent	Social
+14	PPC Strategist	Ads
+15	Ad Copywriter	Ads
+16	Ad Auditor	Ads
+17	Offer Strategist	Sales
+18	Lead Generator	Sales
+19	Sales Outreach	Sales
+20	Product Strategist	Product
+21	Offer Builder	Product
+22	Frontend Developer	Engineering
+23	UX Architect	Design
+24	UI Designer	Design
+25	Brand Guardian	Brand
+26	Analytics Reporter	Data
+27	Growth Analyst	Growth
+28	Workflow Optimizer	Automation
+29	QA Reviewer	Testing
+30	Reality Checker	Testing
+⑭ 最重要：不要讓 30 個 Agent 各自亂跑
+
+我要幫你做的是：
+
+OBAOBA ORCHESTRATOR
+
+所有任務先進：
+
+OBAOBA CEO
+      ↓
+ORCHESTRATOR
+      ↓
+┌─────┼─────┬─────┬─────┐
+SEO  CONTENT SOCIAL SALES
+└─────┼─────┴─────┴─────┘
+      ↓
+    QA
+      ↓
+REALITY CHECKER
+      ↓
+   APPROVED
+      ↓
+   PUBLISH
+      ↓
+ ANALYTICS
+      ↓
+ OPTIMIZATION
+      ↓
+   CEO
+
+Agency Agents 已經提供 Agents Orchestrator 這類角色，因此不是重新發明概念，而是把它改造成 OBAOBA 的控制中心。
+
+⑮ OBAOBA 自動化任務
+
+最後會形成這幾條 Pipeline。
+
+每日
+06:00
+Trend Research
+
+07:00
+SEO Opportunity
+
+08:00
+Content Opportunity
+
+09:00
+Social Content
+
+12:00
+Performance Check
+
+18:00
+Sales / Lead Check
+
+23:00
+Daily Analytics
+⑯ 每週 Growth Loop
+MON
+Research
+
+TUE
+Content
+
+WED
+SEO
+
+THU
+Social
+
+FRI
+Sales
+
+SAT
+Analytics
+
+SUN
+CEO Review
+
+CEO 每週得到：
+
+OBAOBA WEEKLY BUSINESS REPORT
+
+Traffic:
+Organic:
+
+Top Content:
+
+Top Keyword:
+
+New Leads:
+
+Conversions:
+
+Revenue:
+
+Best Performing Offer:
+
+Worst Performing Page:
+
+SEO Opportunities:
+
+Content Opportunities:
+
+Sales Opportunities:
+
+Next Week Priority:
+1.
+2.
+3.
+⑰ 我會特別加入「Revenue Loop」
+
+這是一般 Agency Agents 最容易缺少的地方。
+
+OBAOBA 不應該只是：
+
+「每天產很多內容。」
+
+而應該是：
+
+SEARCH
+ ↓
+CONTENT
+ ↓
+TRAFFIC
+ ↓
+LANDING PAGE
+ ↓
+LEAD
+ ↓
+OFFER
+ ↓
+SALE
+ ↓
+DATA
+ ↓
+OPTIMIZATION
+ ↓
+MORE TRAFFIC
+
+也就是：
+
+Traffic → Conversion → Revenue → Reinvestment → Traffic
+
+⑱ OBAOBA 的資料標準
+
+每一個 Agent 不可以隨便輸出文字。
+
+統一使用：
+
+TASK_ID
+OBJECTIVE
+INPUT
+RESEARCH
+ACTION
+OUTPUT
+METRICS
+EVIDENCE
+STATUS
+NEXT_ACTION
+
+例如：
+
+TASK_ID:
+SEO-20260923-001
+
+OBJECTIVE:
+找出 OBAOBA 新增 SEO 流量機會
+
+INPUT:
+obaoba.online
+
+RESEARCH:
+...
+
+KEYWORDS:
+...
+
+OPPORTUNITY:
+...
+
+ACTION:
+建立文章
+
+OUTPUT:
+...
+
+METRICS:
+...
+
+EVIDENCE:
+...
+
+STATUS:
+READY_FOR_QA
+
+NEXT_ACTION:
+Content Agent
+
+這樣之後 OpenClaw 才能真正做到多 Agent 協作，而不是一堆 Prompt 堆在一起。
+
+⑲ OpenClaw 部署
+
+這部分剛好非常適合你目前的環境。
+
+Agency Agents 現在官方 README 已經把 OpenClaw 列為支援工具，而且可以指定：
+
+./scripts/install.sh --tool openclaw
+
+也可以只安裝指定 division / agent，而不是全部安裝。
+
+因此你的架構會變成：
+
+Windows
+│
+├── OpenClaw
+│
+├── OBAOBA AI Marketing OS
+│
+│   ├── CEO
+│   ├── Strategy
+│   ├── SEO
+│   ├── Content
+│   ├── Social
+│   ├── Ads
+│   ├── Sales
+│   ├── Product
+│   ├── Design
+│   ├── Engineering
+│   ├── Analytics
+│   └── QA
+│
+└── OBAOBA.ONLINE
+
+而且你之前要求的方向我會維持：
+
+不把 n8n 當核心。
+
+讓 OpenClaw = Agent Runtime + Orchestrator
+
+Agency Agents = Agent 人才庫
+
+OBAOBA AI Marketing OS = 你的企業作業系統
+
+⑳ 最終定位
+
+所以我會把你這套正式定義成：
+
+OBAOBA AI Marketing OS v1.0
+                   OBAOBA CEO
+                       │
+                AI ORCHESTRATOR
+                       │
+       ┌───────────────┼───────────────┐
+       │               │               │
+    GROWTH           CONTENT          SALES
+       │               │               │
+    SEO / ADS       SOCIAL / WEB     LEAD / OFFER
+       │               │               │
+       └───────────────┼───────────────┘
+                       │
+                    QA GATE
+                       │
+                REALITY CHECKER
+                       │
+                    PUBLISH
+                       │
+                  ANALYTICS
+                       │
+                GROWTH OPTIMIZER
+                       │
+                       └──────→ CEO
+
+重點不是「安裝 Agency Agents」。
+
+而是把它改造成：
+
+一間會自己研究、自己產內容、自己做 SEO、自己做社群、自己找客戶、自己分析數據、自己找下一個成長機會的 OBAOBA AI 公司。
+
