@@ -1,0 +1,16 @@
+# OpenClaw runtime / session data (do not commit)
+CEO/*.sqlite
+CEO/*.sqlite-shm
+CEO/*.sqlite-wal
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Node
+node_modules/
