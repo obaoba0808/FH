@@ -1,0 +1,35 @@
+name: Deploy to OBAOBA.online
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'website/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Setup Git
+      run: |
+        git config user.name "OBAOBA Bot"
+        git config user.email "bot@obaoba.online"
+    
+    - name: Push to FH repo
+      env:
+        TOKEN: ${{ secrets.FH_DEPLOY_TOKEN }}
+      run: |
+        git remote add fh https://x-access-token:${TOKEN}@github.com/obaoba0808/FH.git
+        git push fh main:main --force
+    
+    - name: Verify deployment
+      run: |
+        echo "Deployment triggered. Check https://obaoba.online/ in 2-3 minutes."
+        echo "Build status: https://github.com/obaoba0808/FH/actions"
