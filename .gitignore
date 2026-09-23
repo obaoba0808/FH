@@ -57,3 +57,6 @@ node_modules/
 # Local nested clones removed from version control (upstream made these regular dirs)
 website/
 agency-agents-temp/
+
+# dev verify scripts
+verify_p*.py
