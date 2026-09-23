@@ -3,6 +3,46 @@ CEO/*.sqlite
 CEO/*.sqlite-shm
 CEO/*.sqlite-wal
 
+# === Internal OS files: NEVER deploy to public site ===
+memory/
+agents/
+content/
+automation/
+orchestrator/
+tasks/
+agency-agents/
+AGENTS.md
+SOUL.md
+IDENTITY.md
+USER.md
+MEMORY.md
+CEO/
+README-DEPLOY.md
+pages_list.txt
+verify_live_report.json
+*.log
+
+# Dev scripts (internal only)
+add_cta_events.py
+analyze_images.py
+analyze_img_tags.py
+analyze_p1.py
+batch_optimize_all.py
+batch_p1_full.py
+batch_p1_optimize.py
+batch_p3_tracking.py
+batch_tracking_complete.py
+check_geo.py
+download_all.py
+fix_dup_gtag.py
+fix_ga4_loader.py
+fix_p0.py
+install_meta_pixel.py
+install_pixel_remaining.py
+upgrade_events_dual.py
+verify_full_structure.py
+verify_live_tracking.py
+
 # Python
 __pycache__/
 *.pyc

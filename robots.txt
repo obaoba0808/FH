@@ -4,6 +4,20 @@
 User-agent: *
 Allow: /
 
+# === Internal paths: never index (defense in depth) ===
+Disallow: /memory/
+Disallow: /agents/
+Disallow: /content/
+Disallow: /automation/
+Disallow: /orchestrator/
+Disallow: /tasks/
+Disallow: /agency-agents/
+Disallow: /CEO/
+Disallow: /AGENTS.md
+Disallow: /SOUL.md
+Disallow: /IDENTITY.md
+Disallow: /*.py$
+
 # Sitemap location
 Sitemap: https://obaoba.online/sitemap.xml
 
