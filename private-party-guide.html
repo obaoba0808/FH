@@ -117,6 +117,23 @@
   gtag('js', new Date());
   gtag('config', 'G-534539378');
 </script>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1377320045457011');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1377320045457011&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body class="bg-[#0A0015] text-[#E0D6F0] font-sans">
 
@@ -186,7 +203,7 @@
             生日派對、KTV 聚會、公司活動——不同場合的人數配置、預算規劃與氣氛帶動技巧，一篇搞定。
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 30px rgba(6,199,85,0.5);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'hero'});">
+            <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 30px rgba(6,199,85,0.5);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'hero'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";">
                 <iconify-icon icon="line-md:chat" class="text-xl"></iconify-icon> 洽詢包場方案
             </a>
             <a href="#guide" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg border border-white/20 hover:border-[#7B2CFF] hover:text-[#B794FF] transition-all">
@@ -478,7 +495,7 @@
     <section class="text-center space-y-6">
         <h2 class="text-2xl md:text-3xl font-bold">派對策劃，交給專業的來</h2>
         <p class="text-gray-400 max-w-lg mx-auto">告知聚會人數、場合與日期，歐巴傳播 5 分鐘內回覆專屬方案報價。</p>
-        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-xl text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 40px rgba(6,199,85,0.6);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'bottom'});">
+        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-xl text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 40px rgba(6,199,85,0.6);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'bottom'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";">
             <iconify-icon icon="line-md:chat" class="text-2xl"></iconify-icon> 加 LINE 洽詢包場
         </a>
         <p class="text-sm text-gray-500">24 小時回覆・平均 30 分鐘到府・見面後再付款</p>
@@ -503,7 +520,7 @@
     <div class="glass-panel p-8 rounded-2xl">
         <h3 class="text-2xl font-bold mb-3">想辦一場難忘的派對？</h3>
         <p class="text-gray-400 mb-6">LINE 說明最快，24 小時有人回。</p>
-        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-xl text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 40px rgba(6,199,85,0.6);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'footer'});">
+        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-xl text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 40px rgba(6,199,85,0.6);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'footer'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";">
             <iconify-icon icon="line-md:chat" class="text-2xl"></iconify-icon> 加 LINE 洽詢
         </a>
     </div>
@@ -542,11 +559,11 @@
 
 <!-- Sticky -->
 <div id="stickyBar" class="fixed bottom-0 left-0 right-0 bg-[#0D0616]/95 backdrop-blur-xl border-t border-white/10 p-3 flex justify-center gap-3 z-40 opacity-0 translate-y-4 transition-all duration-300 pointer-events-none" style="display:none;">
-    <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="flex-1 max-w-xs flex items-center justify-center gap-2 py-3 rounded-full font-bold text-white text-sm transition-all hover:scale-105" style="background:#06C755;" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'sticky_bar'});"><iconify-icon icon="line-md:chat"></iconify-icon> LINE 洽詢</a>
-    <a href="tel:+886926656666" class="flex items-center justify-center gap-2 px-5 py-3 rounded-full font-bold border border-white/20 text-sm hover:border-[#7B2CFF] transition-all" onclick="gtag('event','phone_click',{'event_category':'CTA','event_label':'sticky_bar'});"><iconify-icon icon="ph:phone"></iconify-icon> 致電</a>
+    <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="flex-1 max-w-xs flex items-center justify-center gap-2 py-3 rounded-full font-bold text-white text-sm transition-all hover:scale-105" style="background:#06C755;" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'sticky_bar'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";"><iconify-icon icon="line-md:chat"></iconify-icon> LINE 洽詢</a>
+    <a href="tel:+886926656666" class="flex items-center justify-center gap-2 px-5 py-3 rounded-full font-bold border border-white/20 text-sm hover:border-[#7B2CFF] transition-all" onclick="gtag('event','phone_click',{'event_category':'CTA','event_label':'sticky_bar'});if(typeof fbq!=='undefined'){fbq('trackCustom','phone_click');}";"><iconify-icon icon="ph:phone"></iconify-icon> 致電</a>
 </div>
 <script>
-if(typeof gtag==='undefined'){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-534539378');}
+if(typeof gtag==='undefined'){window.}
 window.addEventListener('scroll',function(){var el=document.getElementById('stickyBar');if(window.scrollY>500){el.style.display='flex';setTimeout(function(){el.style.opacity='1';el.style.transform='translateY(0)';},10);}else{el.style.opacity='0';el.style.transform='translateY(4px)';setTimeout(function(){el.style.display='none';},300);}},{passive:true});
 </script>
 <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3cb977b9c09332d',t:'MTc4OTY4NDYwNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"f6b9dfc89a694cb18bd1bdba65df92aa","r":1,"spa":2}' crossorigin="anonymous"></script>

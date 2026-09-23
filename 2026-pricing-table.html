@@ -119,6 +119,23 @@
   gtag('js', new Date());
   gtag('config', 'G-534539378');
 </script>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1377320045457011');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1377320045457011&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body class="bg-[#0A0015] text-[#E0D6F0] font-sans">
 
@@ -188,7 +205,7 @@
             基礎 NT$3,000 到頂級 NT$5,000+——加時費、車馬費、節日加價，全部用一張表說清楚。
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 30px rgba(6,199,85,0.5);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'hero'});">
+            <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 30px rgba(6,199,85,0.5);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'hero'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";">
                 <iconify-icon icon="line-md:chat" class="text-xl"></iconify-icon> LINE 詢價最快
             </a>
             <a href="#main-table" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg border border-white/20 hover:border-[#7B2CFF] hover:text-[#B794FF] transition-all">
@@ -405,7 +422,7 @@
     <section class="text-center space-y-6">
         <h2 class="text-2xl md:text-3xl font-bold">想要最準確的報價？</h2>
         <p class="text-gray-400 max-w-lg mx-auto">告知聚會時間、地點、人數，歐巴傳播官方 LINE 5 分鐘內回覆含稅報價。</p>
-        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-xl text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 40px rgba(6,199,85,0.6);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'bottom'});">
+        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-xl text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 40px rgba(6,199,85,0.6);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'bottom'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";">
             <iconify-icon icon="line-md:chat" class="text-2xl"></iconify-icon> 加 LINE @938nzmjr 詢價
         </a>
         <p class="text-sm text-gray-500">24 小時回覆・平均 30 分鐘到府・見面後再付款</p>
@@ -430,7 +447,7 @@
     <div class="glass-panel p-8 rounded-2xl">
         <h3 class="text-2xl font-bold mb-3">還有疑問？</h3>
         <p class="text-gray-400 mb-6">LINE 說明最快，24 小時有人回。</p>
-        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-xl text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 40px rgba(6,199,85,0.6);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'footer'});">
+        <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-xl text-white transition-all hover:scale-105" style="background:#06C755;box-shadow:0 0 40px rgba(6,199,85,0.6);" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'footer'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";">
             <iconify-icon icon="line-md:chat" class="text-2xl"></iconify-icon> 加 LINE 詢問
         </a>
     </div>
@@ -469,11 +486,11 @@
 
 <!-- Sticky -->
 <div id="stickyBar" class="fixed bottom-0 left-0 right-0 bg-[#0D0616]/95 backdrop-blur-xl border-t border-white/10 p-3 flex justify-center gap-3 z-40 opacity-0 translate-y-4 transition-all duration-300 pointer-events-none" style="display:none;">
-    <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="flex-1 max-w-xs flex items-center justify-center gap-2 py-3 rounded-full font-bold text-white text-sm transition-all hover:scale-105" style="background:#06C755;" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'sticky_bar'});"><iconify-icon icon="line-md:chat"></iconify-icon> LINE 預約</a>
-    <a href="tel:+886926656666" class="flex items-center justify-center gap-2 px-5 py-3 rounded-full font-bold border border-white/20 text-sm hover:border-[#7B2CFF] transition-all" onclick="gtag('event','phone_click',{'event_category':'CTA','event_label':'sticky_bar'});"><iconify-icon icon="ph:phone"></iconify-icon> 致電</a>
+    <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer" class="flex-1 max-w-xs flex items-center justify-center gap-2 py-3 rounded-full font-bold text-white text-sm transition-all hover:scale-105" style="background:#06C755;" onclick="gtag('event','LINE_click',{'event_category':'CTA','event_label':'sticky_bar'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";"><iconify-icon icon="line-md:chat"></iconify-icon> LINE 預約</a>
+    <a href="tel:+886926656666" class="flex items-center justify-center gap-2 px-5 py-3 rounded-full font-bold border border-white/20 text-sm hover:border-[#7B2CFF] transition-all" onclick="gtag('event','phone_click',{'event_category':'CTA','event_label':'sticky_bar'});if(typeof fbq!=='undefined'){fbq('trackCustom','phone_click');}";"><iconify-icon icon="ph:phone"></iconify-icon> 致電</a>
 </div>
 <script>
-if(typeof gtag==='undefined'){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-534539378');}
+if(typeof gtag==='undefined'){window.}
 function updateCalc(){var l=parseInt(document.getElementById('calc-level').value);var h=parseInt(document.getElementById('calc-hours').value);var c=parseInt(document.getElementById('calc-count').value);var first2=l;var extraH=Math.max(0,h-2);var hourRate=0;if(l==3000)hourRate=1500;else if(l==3600)hourRate=1800;else if(l==4000)hourRate=2000;else hourRate=2500;var total=(first2+(extraH*hourRate))*c;document.getElementById('calc-result').textContent='NT$'+total.toLocaleString();}
 document.getElementById('calc-level').addEventListener('change',updateCalc);
 document.getElementById('calc-hours').addEventListener('change',updateCalc);
