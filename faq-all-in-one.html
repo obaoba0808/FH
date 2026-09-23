@@ -245,15 +245,6 @@
 })();
 </script>
 
-<!-- Google Ads Remarketing -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-GOOGLE_ADS_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-GOOGLE_ADS_ID');
-</script>
-
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -281,6 +272,14 @@ src="https://www.facebook.com/tr?id=1377320045457011&ev=PageView&noscript=1"
     })(window, document, "clarity", "script", "ykmbmbct7c");
 </script>
 
+<!-- Google Ads tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-7950621899"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-7950621899');
+  </script>
 </head>
 <body class="antialiased selection:bg-neonPink selection:text-white relative">
 
@@ -298,7 +297,7 @@ src="https://www.facebook.com/tr?id=1377320045457011&ev=PageView&noscript=1"
             </a>
             
             <!-- 預約按鈕 -->
-            <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105 order-2 md:order-3" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});if(typeof fbq!=='undefined'){fbq('trackCustom','phone_click');}";">
+            <a href="tel:+886926656666" class="btn-neon px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-sm tracking-wide transition-transform hover:scale-105 order-2 md:order-3" onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'Phone'});if(typeof fbq!=='undefined'){fbq('trackCustom','phone_click');}gtag('event','conversion',{'send_to':'AW-7950621899','event_category':'CTA'});/*__ads_conv*/";">
                 預約 <span class="hidden sm:inline">0926-656666</span>
             </a>
 
@@ -1007,13 +1006,13 @@ src="https://www.facebook.com/tr?id=1377320045457011&ev=PageView&noscript=1"
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener noreferrer"
                        class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-[#06C755] hover:bg-[#05a546] text-white font-black text-lg transition-all shadow-[0_0_30px_rgba(6,199,85,0.4)] hover:shadow-[0_0_50px_rgba(6,199,85,0.6)] hover:scale-[1.03]"
-                       onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'faq_hub_bottom'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}";">
+                       onclick="gtag('event', 'LINE_click', {'event_category': 'CTA', 'event_label': 'faq_hub_bottom'});if(typeof fbq!=='undefined'){fbq('trackCustom','LINE_click');}gtag('event','conversion',{'send_to':'AW-7950621899','event_category':'CTA'});/*__ads_conv*/";">
                         <iconify-icon icon="bi:line" class="text-2xl"></iconify-icon>
                         加 LINE 直接問
                     </a>
                     <a href="tel:+886926656666"
                        class="inline-flex items-center gap-2 px-6 py-4 rounded-2xl border-2 border-white/30 hover:border-neonPink text-textWhite font-bold transition-all hover:scale-[1.03]"
-                       onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'faq_hub_bottom'});if(typeof fbq!=='undefined'){fbq('trackCustom','phone_click');}";">
+                       onclick="gtag('event', 'phone_click', {'event_category': 'CTA', 'event_label': 'faq_hub_bottom'});if(typeof fbq!=='undefined'){fbq('trackCustom','phone_click');}gtag('event','conversion',{'send_to':'AW-7950621899','event_category':'CTA'});/*__ads_conv*/";">
                         <iconify-icon icon="ph:phone-fill" class="text-xl"></iconify-icon>
                         0926-656666
                     </a>
