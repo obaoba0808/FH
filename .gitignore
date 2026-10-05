@@ -60,3 +60,6 @@ agency-agents-temp/
 
 # dev verify scripts
 verify_p*.py
+
+# Tailwind build tooling (local only, not for public deploy)
+_tw/

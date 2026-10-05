@@ -1,4 +1,4 @@
-name: Deploy to OBAOBA.online
+name: Verify OBAOBA.online deployment
 
 on:
   push:
@@ -8,28 +8,33 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  verify:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout source
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    
-    - name: Setup Git
-      run: |
-        git config user.name "OBAOBA Bot"
-        git config user.email "bot@obaoba.online"
-    
-    - name: Push to FH repo
-      env:
-        TOKEN: ${{ secrets.FH_DEPLOY_TOKEN }}
-      run: |
-        git remote add fh https://x-access-token:${TOKEN}@github.com/obaoba0808/FH.git
-        git push fh main:main --force
-    
+
     - name: Verify deployment
       run: |
-        echo "Deployment triggered. Check https://obaoba.online/ in 2-3 minutes."
+        echo "GitHub Pages deployment is triggered automatically by the push to main."
+        echo "Waiting for Pages to rebuild..."
+        sleep 60
+        echo "--- checking live assets ---"
+        for url in \
+          "https://obaoba.online/" \
+          "https://obaoba.online/dist/main.css?v=2" \
+          "https://obaoba.online/site.webmanifest"
+        do
+          code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+          size=$(curl -s -o /dev/null -w "%{size_download}" "$url")
+          echo "$code  LEN=$size  $url"
+          if [ "$code" != "200" ]; then
+            echo "::error::Deployment check failed for $url (HTTP $code)"
+            exit 1
+          fi
+        done
+        echo "All checks passed."
         echo "Build status: https://github.com/obaoba0808/FH/actions"
