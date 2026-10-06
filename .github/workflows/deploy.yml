@@ -18,21 +18,31 @@ jobs:
     - name: Verify deployment
       run: |
         echo "GitHub Pages deployment is triggered automatically by the push to main."
-        echo "Waiting for Pages to rebuild..."
-        sleep 60
-        echo "--- checking live assets ---"
-        for url in \
-          "https://obaoba.online/" \
-          "https://obaoba.online/dist/main.css?v=2" \
-          "https://obaoba.online/site.webmanifest"
-        do
-          code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
-          size=$(curl -s -o /dev/null -w "%{size_download}" "$url")
-          echo "$code  LEN=$size  $url"
-          if [ "$code" != "200" ]; then
-            echo "::error::Deployment check failed for $url (HTTP $code)"
-            exit 1
-          fi
-        done
+        echo "Polling live assets until they are ready (CDN propagation takes time)..."
+
+        check_url() {
+          url="$1"
+          for attempt in $(seq 1 20); do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+            size=$(curl -s -o /dev/null -w "%{size_download}" "$url")
+            if [ "$code" = "200" ]; then
+              echo "OK   $code  LEN=$size  $url  (attempt $attempt)"
+              return 0
+            fi
+            echo "wait $code  LEN=$size  $url  (attempt $attempt)"
+            sleep 15
+          done
+          echo "::error::Deployment check failed for $url (last HTTP $code)"
+          return 1
+        }
+
+        sleep 30
+        rc=0
+        check_url "https://obaoba.online/" || rc=1
+        check_url "https://obaoba.online/dist/main.css?v=2" || rc=1
+        check_url "https://obaoba.online/site.webmanifest" || rc=1
+        if [ "$rc" != "0" ]; then
+          exit 1
+        fi
         echo "All checks passed."
         echo "Build status: https://github.com/obaoba0808/FH/actions"
