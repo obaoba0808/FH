@@ -58,8 +58,9 @@ node_modules/
 website/
 agency-agents-temp/
 
-# dev verify scripts
+# dev verify scripts (local only; CI needs verify_p1.py)
 verify_p*.py
+!verify_p1.py
 
 # Tailwind build tooling (local only, not for public deploy)
 _tw/
