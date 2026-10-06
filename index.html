@@ -180,6 +180,51 @@
             pointer-events: none;
             background: linear-gradient(135deg, #0F0A1A 0%, #2A0E3F 100%);
         }
+
+        /* FAQ Accordion */
+        .faq-section { max-width: 56rem; margin: 0 auto; padding: 4rem 1.5rem; }
+        .faq-section .section-title {
+            font-size: 1.875rem; font-weight: 700; text-align: center;
+            margin-bottom: 2.5rem;
+            background: linear-gradient(135deg, #7B2CFF, #FF2DAF);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+        .faq-item {
+            background: rgba(123, 44, 255, 0.05);
+            border: 1px solid rgba(255, 45, 175, 0.2);
+            border-radius: 1rem;
+            padding: 0 1.5rem;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+        }
+        .faq-item[open] { border-color: rgba(255, 45, 175, 0.5); }
+        .faq-q {
+            display: flex; align-items: center; gap: 0.75rem;
+            padding: 1.25rem 0; cursor: pointer;
+            font-weight: 600; color: #F5F3FF; list-style: none;
+        }
+        .faq-q::-webkit-details-marker { display: none; }
+        .faq-q-mark {
+            display: inline-flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            width: 1.75rem; height: 1.75rem; border-radius: 9999px;
+            background: linear-gradient(135deg, #7B2CFF, #FF2DAF);
+            color: #fff; font-size: 0.875rem; font-weight: 700;
+        }
+        .faq-q-text { flex: 1 1 auto; }
+        .faq-arrow {
+            width: 1.25rem; height: 1.25rem;
+            flex: 0 0 auto; flex-shrink: 0;
+            margin-left: auto;
+            color: #7B2CFF;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] .faq-arrow { transform: rotate(180deg); }
+        .faq-a {
+            margin: 0; padding: 0 0 1.25rem 2.5rem;
+            color: #C9BFE0; line-height: 1.75; font-size: 0.9375rem;
+        }
     </style>
 
     <!-- Schema: Organization + WebSite + FAQPage -->
