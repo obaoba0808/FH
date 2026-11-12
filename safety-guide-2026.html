@@ -136,8 +136,9 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background: #fff;
+            background: rgba(13, 6, 22, 0.98);
             min-width: 300px;
+            border: 1px solid rgba(255, 45, 175, 0.2);
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             border-radius: 8px;
             top: 100%;
@@ -153,10 +154,10 @@
         }
 
         .dropdown-content a {
-            color: #333 !important;
+            color: #F5F3FF !important;
             padding: 12px 20px;
             display: block;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
             font-size: 15px;
         }
 
@@ -165,7 +166,7 @@
         }
 
         .dropdown-content a:hover {
-            background: #f5f5f5;
+            background: rgba(123, 44, 255, 0.15);
         }
 
         /* HERO 區 */
@@ -221,10 +222,12 @@
         }
 
         article {
-            background: #fff;
+            background: rgba(123, 44, 255, 0.03);
+            backdrop-filter: blur(20px);
             padding: 50px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 45, 175, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
         }
 
         h2 {
@@ -241,14 +244,14 @@
         }
 
         h3 {
-            color: #333;
+            color: #FF2DAF;
             font-size: 22px;
             margin: 30px 0 15px;
         }
 
         p {
             margin-bottom: 20px;
-            color: #555;
+            color: #C9BFE0;
             font-size: 17px;
         }
 
@@ -258,7 +261,7 @@
 
         li {
             margin-bottom: 10px;
-            color: #555;
+            color: #C9BFE0;
         }
 
         /* 內容圖片 */
@@ -276,16 +279,17 @@
         }
 
         .image-caption {
-            background: #f5f5f5;
+            background: rgba(123, 44, 255, 0.08);
             padding: 12px 20px;
             font-size: 14px;
-            color: #666;
+            color: #C9BFE0;
             text-align: center;
         }
 
         /* 重點框 */
         .highlight-box {
-            background: linear-gradient(135deg, #fff5f5 0%, #fce4ec 100%);
+            background: rgba(255, 80, 80, 0.08);
+            border: 1px solid rgba(255, 80, 80, 0.25);
             border-left: 5px solid #FF5050;
             padding: 25px 30px;
             margin: 30px 0;
@@ -304,7 +308,8 @@
 
         /* 警告框 */
         .warning-box {
-            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            background: rgba(255, 149, 0, 0.08);
+            border: 1px solid rgba(255, 149, 0, 0.25);
             border-left: 5px solid #ff9800;
             padding: 25px 30px;
             margin: 30px 0;
@@ -323,8 +328,8 @@
 
         /* 安全檢查表 */
         .checklist {
-            background: #f0f8ff;
-            border: 2px solid #06C755;
+            background: rgba(6, 199, 85, 0.06);
+            border: 2px solid rgba(6, 199, 85, 0.4);
             border-radius: 12px;
             padding: 30px;
             margin: 30px 0;
@@ -343,7 +348,7 @@
 
         .checklist li {
             padding: 10px 0;
-            border-bottom: 1px dashed #ccc;
+            border-bottom: 1px dashed rgba(255,255,255,0.12);
             position: relative;
             padding-left: 35px;
         }
@@ -363,11 +368,11 @@
 
         /* FAQ 區 */
         .faq-section {
-            background: #fafafa;
+            background: rgba(123, 44, 255, 0.03);
             padding: 50px;
             margin: 50px 0;
-            border-radius: 12px;
-            border: 1px solid #eee;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 45, 175, 0.15);
         }
 
         .faq-section h2 {
@@ -380,7 +385,7 @@
         .faq-item {
             margin: 30px 0;
             padding-bottom: 30px;
-            border-bottom: 1px dashed #ddd;
+            border-bottom: 1px dashed rgba(255,255,255,0.12);
         }
 
         .faq-item:last-child {
@@ -396,7 +401,7 @@
 
         .faq-item p {
             margin-bottom: 0;
-            color: #666;
+            color: #C9BFE0;
         }
 
         /* CTA 區 */
@@ -422,8 +427,9 @@
 
         .cta-button {
             display: inline-block;
-            background: #fff;
-            color: #FF5050;
+            background: rgba(0,0,0,0.35);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
             padding: 15px 40px;
             border-radius: 30px;
             text-decoration: none;
@@ -440,14 +446,15 @@
 
         /* Footer */
         footer {
-            background: #333;
-            color: #aaa;
+            background: #0A0015;
+            color: #C9BFE0;
             padding: 40px 20px;
+            border-top: 1px solid rgba(255, 45, 175, 0.15);
             text-align: center;
         }
 
         footer p {
-            color: #aaa;
+            color: #C9BFE0;
             font-size: 14px;
         }
 

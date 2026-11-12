@@ -61,16 +61,81 @@
     </script>
     
     <style>
-        body { font-family: 'Noto Sans TC', sans-serif; background: #0D0616; color: #F5F3FF; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #FF2DAF; font-size: 2em; }
-        h2 { color: #7B2CFF; margin-top: 30px; }
-        .cta { background: linear-gradient(45deg, #7B2CFF, #FF2DAF); padding: 20px; border-radius: 10px; text-align: center; margin: 30px 0; }
-        .cta a { color: white; text-decoration: none; font-weight: bold; display: inline-block; margin: 10px; padding: 10px 20px; background: rgba(0,0,0,0.3); border-radius: 5px; }
-        .price { font-size: 1.2em; color: #FF2DAF; }
-        .areas { background: rgba(123,44,255,0.1); padding: 15px; border-radius: 8px; }
-        nav { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
-        nav a { color: #7B2CFF; margin-right: 15px; }
+        :root {
+            --primary: #F5F3FF;
+            --secondary: #C9BFE0;
+            --accent: #7B2CFF;
+            --accent2: #FF2DAF;
+            --accent3: #06C755;
+            --bg: #0D0616;
+            --border: rgba(255, 45, 175, 0.15);
+        }
+        body {
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+            background: var(--bg);
+            color: var(--primary);
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(123, 44, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 48px 40px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(123, 44, 255, 0.05);
+        }
+        h1 { color: #FF2DAF; font-size: 2em; margin-bottom: 16px; }
+        h2 { color: #7B2CFF; margin-top: 36px; margin-bottom: 16px; font-size: 1.4em; }
+        h3 { color: #FF2DAF; margin-top: 24px; }
+        p { color: var(--secondary); margin-bottom: 16px; }
+        ul { color: var(--secondary); padding-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        strong { color: var(--primary); }
+        .cta {
+            background: linear-gradient(45deg, #7B2CFF, #FF2DAF);
+            padding: 28px 24px;
+            border-radius: 14px;
+            text-align: center;
+            margin: 36px 0;
+            border: 1px solid rgba(255, 45, 175, 0.3);
+        }
+        .cta h2 { color: #fff; margin-top: 0; }
+        .cta p { color: rgba(255,255,255,0.9); }
+        .cta a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 8px;
+            padding: 12px 28px;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .cta a:hover { background: rgba(0,0,0,0.5); transform: translateY(-2px); }
+        .price { font-size: 1.2em; color: #FF2DAF; font-weight: bold; }
+        .areas {
+            background: rgba(123,44,255,0.08);
+            padding: 20px 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(123, 44, 255, 0.2);
+        }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+        th { background: rgba(123,44,255,0.2); color: var(--primary); padding: 12px; text-align: left; font-weight: 600; }
+        td { padding: 12px; color: var(--secondary); border-top: 1px solid rgba(255,255,255,0.08); }
+        tr:nth-child(even) { background: rgba(255,255,255,0.03); }
+        nav { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
+        nav a { color: #7B2CFF; margin-right: 15px; text-decoration: none; }
+        nav a:hover { color: #FF2DAF; }
+        @media (max-width: 640px) {
+            .container { padding: 32px 24px; }
+            h1 { font-size: 1.5rem; }
+        }
     </style>
     <!-- Meta Pixel Code -->
     <script>
@@ -123,26 +188,26 @@
         </div>
         
         <h2>大安區傳播價格</h2>
-        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
-            <tr style="background: rgba(123,44,255,0.2);">
-                <th style="padding: 10px; text-align: left;">等級</th>
-                <th style="padding: 10px; text-align: left;">2小時價格</th>
-                <th style="padding: 10px; text-align: left;">特色</th>
+        <table>
+            <tr>
+                <th>等級</th>
+                <th>2小時價格</th>
+                <th>特色</th>
             </tr>
             <tr>
-                <td style="padding: 10px;">基礎級</td>
-                <td style="padding: 10px;" class="price">NT$3,000</td>
-                <td style="padding: 10px;">親切活潑，適合一般聚會</td>
-            </tr>
-            <tr style="background: rgba(255,255,255,0.05);">
-                <td style="padding: 10px;">標準級</td>
-                <td style="padding: 10px;" class="price">NT$3,600</td>
-                <td style="padding: 10px;">外貌氣質佳，互動性強</td>
+                <td>基礎級</td>
+                <td class="price">NT$3,000</td>
+                <td>親切活潑，適合一般聚會</td>
             </tr>
             <tr>
-                <td style="padding: 10px;">VIP級</td>
-                <td style="padding: 10px;" class="price">NT$4,000</td>
-                <td style="padding: 10px;">頂級外貌，專業禮儀</td>
+                <td>標準級</td>
+                <td class="price">NT$3,600</td>
+                <td>外貌氣質佳，互動性強</td>
+            </tr>
+            <tr>
+                <td>VIP級</td>
+                <td class="price">NT$4,000</td>
+                <td>頂級外貌，專業禮儀</td>
             </tr>
         </table>
         <p>大安區車馬費：通常 <strong>免費</strong> 或 NT$300-500（視距離而定）</p>
