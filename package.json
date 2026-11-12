@@ -1,0 +1,25 @@
+{
+  "name": "fh-website",
+  "version": "1.0.0",
+  "description": "歐巴傳播官方網站",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "private": true,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obaoba0808/FH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obaoba0808/FH/issues"
+  },
+  "homepage": "https://github.com/obaoba0808/FH#readme"
+}
