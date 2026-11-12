@@ -42,6 +42,19 @@
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "叫傳播安全嗎？新手需要注意什麼？", "acceptedAnswer": {"@type": "Answer", "text": "叫傳播本身是合法的娛樂服務，但選擇安全可靠的傳播公司很重要。建議選擇有良好口碑、價格透明的業者，並事先確認所有費用明細。"}}, {"@type": "Question", "name": "如何判斷傳播公司是否可信？", "acceptedAnswer": {"@type": "Answer", "text": "可信賴的傳播公司特徵包括：價格透明公道、有實體店面或辦公室、可以電話聯繫、提供完整服務說明、有良好網路口碑。"}}, {"@type": "Question", "name": "傳播常見的詐騙手法有哪些？", "acceptedAnswer": {"@type": "Answer", "text": "常見詐騙手法包括：先收款後消失、照片造假、臨時加價、仙人跳、酒水摻假、強制小費等。新手務必提高警覺。"}}, {"@type": "Question", "name": "叫傳播遇到問題該怎麼辦？", "acceptedAnswer": {"@type": "Answer", "text": "遇到問題時應保持冷靜，儘速離開現場並蒐集證據。事後可向消保官申訴，或在網路上分享經驗提醒其他人。"}}, {"@type": "Question", "name": "如何保護個人隱私和安全？", "acceptedAnswer": {"@type": "Answer", "text": "不要透露過多個人資訊、使用暱稱、選擇公共場所見面、確認對方身份、隨時保持警覺、有異常立即離開。"}}]}</script>
 
     <style>
+        /* ===== FAQ Accordion ===== */
+        .faq-section { max-width: 56rem; margin: 0 auto; padding: 4rem 1.5rem; }
+        .faq-section .section-title { font-size: 1.875rem; font-weight: 700; text-align: center; margin-bottom: 2.5rem; background: linear-gradient(135deg, #7B2CFF, #FF2DAF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+        .faq-item { background: rgba(123, 44, 255, 0.05); border: 1px solid rgba(255, 45, 175, 0.2); border-radius: 1rem; padding: 0 1.5rem; overflow: hidden; transition: border-color 0.3s ease; }
+        .faq-item[open] { border-color: rgba(255, 45, 175, 0.5); }
+        .faq-q { display: flex; align-items: center; gap: 0.75rem; padding: 1.25rem 0; cursor: pointer; font-weight: 600; color: #F5F3FF; list-style: none; }
+        .faq-q::-webkit-details-marker { display: none; }
+        .faq-q-mark { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 1.75rem; height: 1.75rem; border-radius: 9999px; background: linear-gradient(135deg, #7B2CFF, #FF2DAF); color: #fff; font-size: 0.875rem; font-weight: 700; }
+        .faq-q-text { flex: 1 1 auto; }
+        .faq-arrow { width: 1.25rem; height: 1.25rem; flex: 0 0 auto; flex-shrink: 0; margin-left: auto; color: #7B2CFF; transition: transform 0.25s ease; }
+        .faq-item[open] .faq-arrow { transform: rotate(180deg); }
+        .faq-a { margin: 0; padding: 0 0 1.25rem 2.5rem; color: #C9BFE0; line-height: 1.75; font-size: 0.9375rem; }
         * {
             margin: 0;
             padding: 0;
