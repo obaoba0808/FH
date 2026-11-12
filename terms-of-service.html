@@ -19,11 +19,45 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "歐巴傳播服務條款",
-    "url": "https://obaoba.online/terms-of-service.html",
-    "description": "歐巴傳播服務條款：預約規則、付款方式與權責說明完整規範。",
-    "publisher": { "@type": "Organization", "name": "歐巴傳播", "url": "https://obaoba.online/" }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "歐巴傳播服務條款",
+        "url": "https://obaoba.online/terms-of-service.html",
+        "description": "歐巴傳播服務條款：預約規則、付款方式與權責說明完整規範。",
+        "publisher": { "@type": "Organization", "name": "歐巴傳播", "url": "https://obaoba.online/" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "歐巴傳播的服務內容是什麼？",
+            "acceptedAnswer": { "@type": "Answer", "text": "歐巴傳播提供台北傳播妹到府服務、KTV 派對公關、飯局陪同與汽車旅館等陪伴服務，依客戶需求安排合適的公關人選。" }
+          },
+          {
+            "@type": "Question",
+            "name": "預約流程如何進行？",
+            "acceptedAnswer": { "@type": "Answer", "text": "客戶可透過 LINE：@938nzmjr 或電話 0926-656666 預約，專人會確認需求、安排人選，並於指定時間地點提供服務。" }
+          },
+          {
+            "@type": "Question",
+            "name": "付款方式有哪些？",
+            "acceptedAnswer": { "@type": "Answer", "text": "歐巴傳播採見面確認後才付款的方式，客戶於現場確認服務內容後才需付款，保障客戶權益。" }
+          },
+          {
+            "@type": "Question",
+            "name": "取消或變更預約的規則為何？",
+            "acceptedAnswer": { "@type": "Answer", "text": "取消或變更預約請於服務前聯繫我們，視情況可能需支付已產生的交通或安排費用，詳細規則以服務條款為準。" }
+          },
+          {
+            "@type": "Question",
+            "name": "什麼是打槍換人制度？",
+            "acceptedAnswer": { "@type": "Answer", "text": "打槍換人制度指客戶若對安排的人選不滿意，可要求更換人選，歐巴傳播將依現場情況協助安排，保障客戶權益。" }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <style>

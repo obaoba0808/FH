@@ -19,11 +19,40 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "歐巴傳播隱私權政策",
-    "url": "https://obaoba.online/privacy-policy.html",
-    "description": "歐巴傳播隱私權政策：個資保護、蒐集範圍與用戶權利完整說明。",
-    "publisher": { "@type": "Organization", "name": "歐巴傳播", "url": "https://obaoba.online/" }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "歐巴傳播隱私權政策",
+        "url": "https://obaoba.online/privacy-policy.html",
+        "description": "歐巴傳播隱私權政策：個資保護、蒐集範圍與用戶權利完整說明。",
+        "publisher": { "@type": "Organization", "name": "歐巴傳播", "url": "https://obaoba.online/" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "歐巴傳播會蒐集哪些個人資料？",
+            "acceptedAnswer": { "@type": "Answer", "text": "歐巴傳播僅在預約流程中蒐集必要的聯絡資訊（如姓名、電話、LINE ID），用於安排服務與聯繫，不蒐集與服務無關的個人資料。" }
+          },
+          {
+            "@type": "Question",
+            "name": "我的個人資料會被如何使用？",
+            "acceptedAnswer": { "@type": "Answer", "text": "您的個人資料僅用於預約安排、服務聯繫與客戶服務，不會用於其他用途，亦不會出售或分享給第三方。" }
+          },
+          {
+            "@type": "Question",
+            "name": "我對我的個人資料有哪些權利？",
+            "acceptedAnswer": { "@type": "Answer", "text": "您得隨時查詢、閱覽、製給複製本、補充或更正、請求停止蒐集或處理，以及請求刪除您的個人資料。" }
+          },
+          {
+            "@type": "Question",
+            "name": "如何聯繫歐巴傳播處理個資問題？",
+            "acceptedAnswer": { "@type": "Answer", "text": "您可以透過 LINE：@938nzmjr 或電話 0926-656666 聯繫我們，我們將儘速處理您的個資相關請求。" }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <style>
