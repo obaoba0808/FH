@@ -1218,6 +1218,8 @@ src="https://www.facebook.com/tr?id=1377320045457011&ev=PageView&noscript=1"
 
     <!-- Scripts for Animations -->
     <script>
+        window.addEventListener('DOMContentLoaded', function() {
+
         // 1. Anime.js Background Particles (Floating Orbs)
         const canvas = document.getElementById('bg-canvas');
         const numParticles = 30;
@@ -1310,6 +1312,7 @@ src="https://www.facebook.com/tr?id=1377320045457011&ev=PageView&noscript=1"
             card.addEventListener('mouseleave', () => {
                 card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
             });
+        });
         });
     </script>
 
