@@ -13,3 +13,6 @@
 .faq-arrow { width: 1.25rem; height: 1.25rem; flex: 0 0 auto; flex-shrink: 0; margin-left: auto; color: #7B2CFF; transition: transform 0.25s ease; }
 .faq-item[open] .faq-arrow { transform: rotate(180deg); }
 .faq-a { margin: 0; padding: 0 0 1.25rem 2.5rem; color: #C9BFE0; line-height: 1.75; font-size: 0.9375rem; }
+
+/* PWA: 防止水平溢出（透鏡光暈超出 viewport） */
+html,body{overflow-x:hidden}
