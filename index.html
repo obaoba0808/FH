@@ -66,6 +66,8 @@ body{background:linear-gradient(160deg,#0F0A1A 0%,#0D0616 45%,#2A0E3F 100%);colo
 .noise{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E")}
 .glass{background:rgba(123,44,255,.05);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid rgba(255,45,175,.16);box-shadow:0 18px 60px -20px rgba(0,0,0,.75),inset 0 1px 0 rgba(255,255,255,.06)}
 .glass-strong{background:rgba(13,6,22,.62);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(123,44,255,.28)}
+.booking-card{background:rgba(30,15,52,.72);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(123,44,255,.42);box-shadow:0 24px 70px -20px rgba(123,44,255,.5)}
+.booking-card .muted{color:#C4B5FD}
 .text-gradient{background:linear-gradient(120deg,#A78BFA 0%,var(--ep) 35%,var(--np) 75%,#FF7AD9 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .glow{text-shadow:0 0 18px rgba(123,44,255,.65),0 0 40px rgba(255,45,175,.35)}
 .btn-neon{position:relative;background:linear-gradient(45deg,var(--ep),var(--np));box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 12px 40px -8px rgba(255,45,175,.65);transition:.35s cubic-bezier(.2,.8,.2,1)}
@@ -165,15 +167,15 @@ details[open] .plus{transform:rotate(45deg);color:var(--np)}
     </div>
 
     <div class="lg:col-span-5 rise">
-      <div class="glass-strong rounded-3xl p-6 md:p-7 relative">
+      <div class="glass-strong booking-card rounded-3xl p-6 md:p-7 relative">
         <div class="absolute -top-3 left-6 bg-gradient-to-r from-electricPurple to-neonPink text-xs font-bold px-3 py-1 rounded-full tracking-widest">AI 快速預約</div>
         <h3 class="font-display text-lg font-bold mt-2 mb-5">5 步驟完成預約</h3>
         <ol class="space-y-4 text-sm">
-          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">1</span><div><div class="font-bold">時間</div><div class="text-gray-400 text-xs mt-0.5">今天晚上、明天下午…</div></div></li>
-          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">2</span><div><div class="font-bold">地點</div><div class="text-gray-400 text-xs mt-0.5">台北市 / 新北市 皆可</div></div></li>
-          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">3</span><div><div class="font-bold">人數</div><div class="text-gray-400 text-xs mt-0.5">幾位客人</div></div></li>
-          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">4</span><div><div class="font-bold">公關級別</div><div class="text-gray-400 text-xs mt-0.5">一般 / 高級 / 小局 / 大局</div></div></li>
-          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">5</span><div><div class="font-bold">聯絡手機</div><div class="text-gray-400 text-xs mt-0.5">立馬專人確認</div></div></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">1</span><div><div class="font-bold">時間</div><div class="muted text-xs mt-0.5">今天晚上、明天下午…</div></div></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">2</span><div><div class="font-bold">地點</div><div class="muted text-xs mt-0.5">台北市 / 新北市 皆可</div></div></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">3</span><div><div class="font-bold">人數</div><div class="muted text-xs mt-0.5">幾位客人</div></div></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">4</span><div><div class="font-bold">公關級別</div><div class="muted text-xs mt-0.5">一般 / 高級 / 小局 / 大局</div></div></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-electricPurple/20 border border-electricPurple/40 flex items-center justify-center font-display font-bold">5</span><div><div class="font-bold">聯絡手機</div><div class="muted text-xs mt-0.5">立馬專人確認</div></div></li>
         </ol>
         <a href="https://line.me/R/ti/p/@938nzmjr" target="_blank" rel="noopener" class="btn-neon mt-6 w-full py-3.5 rounded-full font-bold text-center block">立即預約 →</a>
         <p class="text-[11px] text-gray-500 mt-3 text-center">免訂金 · 見面確認後才付款 · 資料不外流</p>
