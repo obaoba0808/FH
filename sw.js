@@ -1,5 +1,5 @@
 /* 歐巴傳播 OBAOBA — Service Worker (PWA) */
-const CACHE = 'obaoba-v1';
+const CACHE = 'obaoba-v2';
 const CORE = [
   '/',
   '/index.html',
