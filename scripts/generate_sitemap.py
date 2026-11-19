@@ -8,12 +8,19 @@ import glob
 import os
 from datetime import datetime
 
-SITE_DIR = 'C:/tmp/obaoba_marketing/FH'
+# 自我定位：優先真正的倉庫（AppData/Local/Temp/FH），退回腳本上層目錄
+_CANDIDATES = [
+    os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')),
+    'C:/tmp/obaoba_marketing/FH',
+]
+SITE_DIR = next((d for d in _CANDIDATES if os.path.isfile(os.path.join(d, 'index.html'))), _CANDIDATES[-1])
 os.chdir(SITE_DIR)
 
 # 排除的頁面
 EXCLUDE = {
     'b1xb689gu3wgchds0j20dytklnhzda.html',  # FB 驗證檔
+    'google1798bed44632c997.html',          # Google 驗證檔
+    'pricing-guide-2026.html',              # noindex 轉址頁（已整併至 how_much）
 }
 
 # 優先級設定
